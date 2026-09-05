@@ -52,7 +52,8 @@ Where every fact physically lives, and how to get it out or in without losing it
 | **Accounts** | `5029570132` | — | Reached from a Lead via `board_relation_mm64fq68` |
 | **Contacts** | `5029570130` | `5029570422` · `5029570423` | The retired boards sat in the *monday CRM - Test Environment* workspace. Legacy contact IDs belong to `5029570423` |
 | **Materials Library** | `5029570546` | — | Unchanged by the migration |
-| **Appliance Library** | `5029694677` | — | |
+| **Appliance Library** | `5029694677` | — | ⛔ **Returned no readable board, 5 September 2026** — §2.5 |
+| **SteedForm — Sink Library** | `5030603238` | — | Exists and reads. **Not the board §2.5 describes** — §2.5 |
 | **Serviceable Areas** | `5029634649` | — | Authoritative for service-area zone `07` §1 |
 
 ---
@@ -167,6 +168,34 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 ⚠ **This is exactly the failure shape this document exists to catch:** a rule that is correct, tagged and current, pointing at a board value that has not yet been changed to match it. **The rule is not wrong and the column is not wrong — they simply do not yet agree.**
 
 ### 2.5 Appliance Library `5029694677`
+
+⛔ **`5029694677` RETURNED NO READABLE BOARD ON 5 SEPTEMBER 2026.** Authorised by
+Matthew Rasheed, recorded by Stella Rasheed. A direct read of that id through the app's own token came back with no board — the
+same answer a board gives when it does not exist and when it has not been shared, and the two
+cannot be told apart from a read. **Every column ID in the table below is therefore unverified
+against anything live**, which is what `06-evidence-requirements.md` OR-26 already warned.
+
+**The rules that read this board are unchanged and remain in force.** `[R-MA5 v3]`, its
+`Rejected — Do Not Use` hard block and the `[R-EVIDENCE-BAR v2]` ORDER rows all stand. A rule
+pointed at data that is not there is still a rule; deleting it would remove the gate as well as
+the gap, and a rejected cutout would then screen clean with nothing to say why. The behaviour
+below — **unverified by default, and a blank read is never a pass** — is what a screen does, and
+it is the same whether the board is missing or merely unreachable.
+
+⚠ **The Sink Library is NOT this board renumbered.** `5030603238 · SteedForm — Sink Library`
+exists, reads, and holds 863 items — and it is a supplier-data reconciliation board, not a
+verification library. None of the identifiers below appear on it. Its columns are
+`color_mm667vav` Asset Status, `color_mm66evww` Audit Status, `text_mm662pp3` SF Cutout
+Dimensions, `text_mm66fzfn` Supplier Cutout Dimensions, `dropdown_mm6664tg` Supplier
+Installation Methods, and a family of `* Match` status columns comparing SteedForm's record
+against the supplier's.
+
+⛔ **`Audit Status` IS NOT `QC Status`.** One says whether SteedForm's copy of a supplier's data
+agrees with the supplier's. The other says whether a physical unit has been measured, programmed,
+cut and dry-fitted. **Reading one as the other would let a data-audit tick pass as a release
+verdict.** Whether any part of the Sink Library may satisfy any part of the QC gate is an open
+question for the owner of `[R-MA5 v3]` — it is carried in `10-open-rulings.md` and has not been
+ruled. Until it is, nothing on `5030603238` closes an appliance gate.
 
 | Field | Column ID | Screening role |
 |---|---|---|
