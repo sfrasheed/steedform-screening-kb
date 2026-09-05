@@ -1,0 +1,74 @@
+name: Load the criteria into Deep Screen
+
+# A rule change that never reaches the app is worse than no rule change: the
+# repository says one thing and every screen keeps applying another. So pushing
+# to main loads it, and nobody has to remember.
+on:
+  push:
+    branches: [main]
+    paths: ['[0-9][0-9]-*.md']
+  workflow_dispatch:
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send each rule file
+        env:
+          BASE: ${{ secrets.DEEP_SCREEN_URL }}
+          CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+          ACTOR: ${{ github.actor }}@steedform.com
+        run: |
+          set -euo pipefail
+          added=0; replaced=0; same=0
+
+          # Numbered files only. A README is not a rule, and loading one puts a
+          # document into the screen that claims no authority and carries none.
+          for f in [0-9][0-9]-*.md; do
+            out=$(curl -sS -X POST "$BASE/api/kb" \
+              -H "X-Actor: $ACTOR" \
+              -H "CF-Access-Client-Id: $CF_ID" \
+              -H "CF-Access-Client-Secret: $CF_SECRET" \
+              -F "file=@$f" -F "name=$f")
+
+            case "$out" in
+              *'"unchanged":true'*) same=$((same+1));  echo "=  $f (already identical)" ;;
+              *'"replaced":"kb_'*)  replaced=$((replaced+1)); echo "↻  $f (replaced)" ;;
+              *'"id":"kb_'*)        added=$((added+1)); echo "+  $f" ;;
+              *) echo "✗  $f — $out"; exit 1 ;;
+            esac
+          done
+
+          echo
+          echo "$added added · $replaced replaced · $same unchanged"
+          echo "LOADED=$((added+replaced))" >> "$GITHUB_ENV"
+
+      - name: Say which jobs are now screened against old rules
+        env:
+          BASE: ${{ secrets.DEEP_SCREEN_URL }}
+          CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+        run: |
+          set -euo pipefail
+          stale=$(curl -sS "$BASE/api/kb/stale" \
+            -H "CF-Access-Client-Id: $CF_ID" \
+            -H "CF-Access-Client-Secret: $CF_SECRET")
+
+          python3 - "$stale" <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, sys
+          d = json.loads(sys.argv[1])
+          rows = d.get("stale", [])
+          print("## Criteria loaded\n")
+          print(f"Fingerprint `{d.get('fingerprint','')[:16]}…`\n")
+          if not rows:
+              print("Nothing open was screened against older rules.")
+          else:
+              # A rule can be corrected everywhere and still leave every job
+              # already screened carrying the old answer. R-RESCREEN v1.
+              print(f"**{len(rows)} open job(s) now screened against older rules — re-run them.**\n")
+              for r in rows:
+                  print(f"- {r.get('client_name') or r.get('reference')}")
+          PY
