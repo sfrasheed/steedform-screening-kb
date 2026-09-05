@@ -15,6 +15,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # A missing secret otherwise surfaces as curl exit 3 and nothing else,
+      # which says the URL was malformed but not that it was never set.
+      - name: Check the three secrets are present
+        env:
+          BASE: ${{ secrets.DEEP_SCREEN_URL }}
+          CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+        run: |
+          set -uo pipefail
+          missing=""
+          [ -n "${BASE:-}" ]      || missing="$missing DEEP_SCREEN_URL"
+          [ -n "${CF_ID:-}" ]     || missing="$missing CF_ACCESS_CLIENT_ID"
+          [ -n "${CF_SECRET:-}" ] || missing="$missing CF_ACCESS_CLIENT_SECRET"
+          if [ -n "$missing" ]; then
+            echo "Not set:$missing" >&2
+            echo "Settings -> Secrets and variables -> Actions -> New repository secret" >&2
+            exit 1
+          fi
+          # Values are masked in these logs, so say what is wrong, never what it is.
+          case "$BASE" in
+            https://*) ;;
+            *) echo "DEEP_SCREEN_URL must start with https:// — it does not." >&2; exit 1 ;;
+          esac
+          case "$CF_ID" in
+            *.access) ;;
+            *) echo "CF_ACCESS_CLIENT_ID must end in .access — it does not." >&2; exit 1 ;;
+          esac
+          echo "All three are set and shaped correctly."
+
       - name: Send each rule file
         env:
           BASE: ${{ secrets.DEEP_SCREEN_URL }}
@@ -23,6 +52,7 @@ jobs:
           ACTOR: ${{ github.actor }}@steedform.com
         run: |
           set -euo pipefail
+          BASE="${BASE%/}"
           added=0; replaced=0; same=0
 
           # Numbered files only. A README is not a rule, and loading one puts a
@@ -53,6 +83,7 @@ jobs:
           CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
         run: |
           set -euo pipefail
+          BASE="${BASE%/}"
           stale=$(curl -sS "$BASE/api/kb/stale" \
             -H "CF-Access-Client-Id: $CF_ID" \
             -H "CF-Access-Client-Secret: $CF_SECRET")
