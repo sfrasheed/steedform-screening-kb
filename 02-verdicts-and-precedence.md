@@ -101,7 +101,7 @@ The stated reason is the same in all three cases: **keyword evidence is too weak
 
 ⚠ **"Seven" is stale wherever it appears.** The count has been found and fixed four separate times, and each time it silently revived the struck curves rule.
 
-⛔ **"Curves >40mm" was STRUCK from layer 2 on 23 July 2026** and must never be re-added. Above a material's polish limit the curve becomes a faceted mitre — 🟡 plus a mandatory documented client sign-off, not a decline `[R-D5 v6]`.
+⛔ **"Curves >40mm" was STRUCK from layer 2 on 23 July 2026** and must never be re-added. Above a material's polish limit the curve becomes a faceted mitre — 🟡 plus a mandatory documented client sign-off, not a decline `[R-D5 v7]`.
 
 ⚠ **Ropox Flexi Electric is APPROVED and is NOT first-of-kind** `[R-BLOCK v3]`.
 

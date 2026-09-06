@@ -226,7 +226,7 @@ Assemble On Site is not material-restricted, **but the risk is not equal across 
 |---|---|
 | **Pencil specified on a face-printed surface** — the highest-frequency profile error to expect, since pencil is a common default request | **🔴 spec conflict — not offered. Steer to ARRIS** (or Sharknose/Euro) `[R-PROFILE v3]` |
 | **Shaped profile on the wrong material** — Bullnose / Double Bullnose / Provincial specified on porcelain, sintered or hard natural | **🔴 spec conflict** |
-| **Curved edge above the material's polish limit** | **🟡 specification + expectation step — never a decline.** The client is told it will be a faceted mitre and signs off the appearance. On veined stone, *recommend* faceted `[R-D5 v6]` |
+| **Curved edge above the material's polish limit** | **🟡 specification + expectation step — never a decline.** The client is told it will be a faceted mitre and signs off the appearance. On veined stone, *recommend* faceted `[R-D5 v7]` |
 | **>80mm build** | **🟡 hand-finish labour band** — cost cliff, price accordingly |
 | **60mm lamination** | **🟡** — confirm the aesthetic carries two glue lines; never on veined stone; offer mitred 60mm as the cleaner face |
 | **30mm specified on engineered, porcelain or sintered** | **🔴 spec conflict — not available** `[R-30MM v1]` |
@@ -263,7 +263,7 @@ Slabs come in single thickness, so any edge deeper than the slab is built one of
 
 - **Mitre minimum = 40mm. Nothing below 40mm is mitred — the minimum mitred build-up is ALWAYS 40mm** (reconfirmed by ruling, 3 September 2026).
 - **Lamination is 20mm layers only.** There is no 30mm layer and no 20+40 combination. **A 50mm laminated build does not exist.**
-- **Lamination is never used on ceramic / porcelain / sintered, nor on hard naturals** (granite, quartzite), nor on **limestone or travertine — ruled not laminable, MD 23 Jul 2026** (§5) `[R-PROFILE v3]` `[R-D5 v6]`.
+- **Lamination is never used on ceramic / porcelain / sintered, nor on hard naturals** (granite, quartzite), nor on **limestone or travertine — ruled not laminable, MD 23 Jul 2026** (§5) `[R-PROFILE v3]` `[R-D5 v7]`.
 - **60mm lamination is CONDITIONAL** — three layers = **two glue lines on the edge face**; only where the aesthetic and the chosen profile carry them. **Not on veined stone** (the joints break the vein twice). A mitred 60mm gives a continuous face with no glue line and is usually the better look.
 - **Straight thick edges are MITRED, not laminated.** Mitre is the default method for any straight thick edge above 20mm — 40 / 50 / 60 / 80mm profile fronts as standard, reinforced with the SteedForm 40mm Whiteboard HMR three-run cleat standard (front / middle / back, full length, **every material, no per-material variation** — included in the standard build price, nothing to flag).
 - **Scope: these rules run to 40mm.** 50–80mm has its own cost step; **>80mm is a hard cost cliff — flag it** `[R-PROFILE v3]`. 50mm and 60mm are *common*, not *free*: flag the thickness so it is priced, not as a risk. **A 50–80mm engineered mitred build scores 🟡 AMBER at D1, on the cost difference** (ruled 3 September 2026; the rung is stated in `03-risk-scoring.md` §3.3). **Engineered ≤ 40mm is 🟢.**
@@ -296,36 +296,44 @@ Supplier fact from Technical Standards §1. **A supplier offering a thickness do
 
 ---
 
-## 5. Curves and faceting `[R-D5 v6]`
+## 5. Curves and faceting `[R-D5 v7]`
 
-**A curve is polished only up to that MATERIAL's limit; above it the curve is a FACETED MITRE — makeable, never a decline** `[R-D5 v6]`. The limit is **material-dependent, not a flat 40mm**, because only engineered and marble laminate.
+**A curve is polished only up to that MATERIAL's limit; above it the curve is a FACETED MITRE — makeable, never a decline** `[R-D5 v7]`. The limit is **material-dependent, not a flat 40mm**, because only engineered and marble laminate.
 
 | Material | Polished curve up to | Faceted **elective** from | Faceted **mandatory** from |
 |---|---|---|---|
 | **Porcelain / sintered** *(printed face — a polishing pad cannot touch it; never laminated)* | single thickness (12 / 20) | 40 | **40** |
 | **Hard natural — granite, quartzite** *(non-laminable by hardness)* | single thickness (12 / 20 / 30) | 40 | **40** |
-| **Limestone · travertine** *(**RULED not laminable — MD 23 Jul 2026** `[R-D5 v6]`. This is settled, not pending: no carrier may reopen it, and it may be stated as MD law in a client-facing brief)* | single thickness | 40 | **40** |
+| **Limestone · travertine** *(**RULED not laminable — MD 23 Jul 2026** `[R-D5 v7]`. This is settled, not pending: no carrier may reopen it, and it may be stated as MD law in a client-facing brief)* | single thickness | 40 | **40** |
 | **Engineered · marble** *(laminable to 60)* | **40 (20+20 lamination)** | **40 — if the vein justifies it** | **60** |
 
 *Why there is no 50mm curve to argue about: there is no 50mm lamination (20mm layers only), and a 50mm mitred curve is faceted by definition.*
 
-**A curve above the limit scores 🟡 plus a MANDATORY documented client sign-off on the faceted appearance before fabrication. It is NOT blocking and must never force Needs Review** `[R-D5 v6]`. Curves/radius at or below 40mm, and splayed/angled benches, are 🟡 always.
+**A curve above the limit scores 🟡 plus a MANDATORY documented client sign-off on the faceted appearance before fabrication. It is NOT blocking and must never force Needs Review** `[R-D5 v7]`.
+
+**The document is the SIGNED ORDER CONFIRMATION** (ruled 7 Sep 2026). A screen therefore never confirms that a sign-off has happened — it states the condition and names what will carry it.
+
+**A curve on single thickness (12 / 20 / 30) is ordinary work and scores nothing on its own** — the tooling is built for it. **A request for faceting below 40mm is 🟡**: below the lamination threshold there is nothing to facet, so the specification needs checking rather than pricing. Splayed and angled benches remain 🟡 always.
 
 **Faceting is not a compromise.** On veined product a polished radius **grinds through the vein**; a faceted mitre folds the face and **preserves it**. It is frequently the better aesthetic outcome and should be offered as such, not apologised for. Faceting is also **elective from 40mm on any material**.
 
+**What "elective" means on engineered and marble** (ruled 7 Sep 2026): the vein is too clashy for lamination. Two glue lines break the vein twice, so faceting is the alternative route. **The trade is that the curve will not necessarily be smooth — and that trade is the CUSTOMER's call**, offered by the estimator and decided by the client, carried by the same signed order confirmation.
+
 ### 5.1 The mandatory conservative fallback — carry this, it is often dropped
 
-The marble-vs-hard-natural split **is not derivable from the board.** Material Type says only "Natural Stone", and `dropdown_mm4rq7jd` Stone Sub-Type records granite vs non-granite (not marble vs hard natural) and is populated on only **3 of 392** materials as at 18 Aug 2026 `[R-SUBTYPE v2]`. Until an authoritative field carries the distinction, `[R-D5 v6]` requires:
+The marble-vs-hard-natural split **is not derivable from the board, and no field is coming.** Material Type says only "Natural Stone", and `dropdown_mm4rq7jd` Stone Sub-Type records granite vs non-granite (not marble vs hard natural) and is populated on only **3 of 392** materials as at 18 Aug 2026 `[R-SUBTYPE v2]`.
+
+**It is resolved by a person, per job. This is the standing position, not an interim one** (ruled 7 Sep 2026): nobody is waiting on a field, and the flag below is permanent. `[R-D5 v7]` requires:
 
 > **Treat ANY natural stone as HARD NATURAL — faceted from 40mm — unless a human has confirmed it is marble.**
 
-and a visible flag on the output. **There is now ONE flag string, and it is fixed** `[R-D5 v6]` (ruled 3 September 2026). Emit it **verbatim**:
+and a visible flag on the output. **There is now ONE flag string, and it is fixed** `[R-D5 v7]` (ruled 3 September 2026). Emit it **verbatim**:
 
 > `"⚠ marble vs hard natural not derivable from the board; confirm before quoting the curve"`
 
 *(The former second string — "natural sub-type not recorded — faceting threshold assumed 40mm…" — is retired. Do not emit it.)*
 
-**Why this direction** `[R-D5 v6]`: assuming marble and being wrong means **promising a polished 40mm curve on granite that cannot be made** — the exact mis-sell this rule was written to stop. Assuming hard natural and being wrong means quoting a facet where a polish was possible: recoverable, and visible at sign-off. An unnecessary sign-off costs a conversation; a promised polished radius that cannot be made costs a remake and a client. **When the data is missing, fail toward the flag, never toward the promise. Never resolve it from the colour or brand name.**
+**Why this direction** `[R-D5 v7]`: assuming marble and being wrong means **promising a polished 40mm curve on granite that cannot be made** — the exact mis-sell this rule was written to stop. Assuming hard natural and being wrong means quoting a facet where a polish was possible: recoverable, and visible at sign-off. An unnecessary sign-off costs a conversation; a promised polished radius that cannot be made costs a remake and a client. **When the data is missing, fail toward the flag, never toward the promise. Never resolve it from the colour or brand name.**
 
 ⚠ **Several carriers state the material-dependent limits without this fallback.** A 40mm curved porcelain or granite edge **is** faceted and **does** need the sign-off — the flat-40mm reading is what caused the 25 Jul faceting mis-sell.
 

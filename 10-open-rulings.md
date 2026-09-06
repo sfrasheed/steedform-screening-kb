@@ -92,7 +92,7 @@ The board carries **`Boundary — verify`** alongside Full Service (504) and Sup
 
 ## OR-38 · Is Screening Philosophy retired as a document?
 
-**The consequential half of this is CLOSED.** The owner's note *"all stone to follow same rules"* was reviewed against `[R-D5 v6]` and **the material-dependent thresholds were re-confirmed, not flattened.**
+**The consequential half of this is CLOSED.** The owner's note *"all stone to follow same rules"* was reviewed against `[R-D5 v6]` (the version current that day) and **the material-dependent thresholds were re-confirmed, not flattened.**
 
 > Engineered and marble **laminate**. That is why they polish to a 40mm lamination and facet from **60mm**, while porcelain, sintered and hard natural — which cannot laminate — facet from **40mm**. The thresholds are lamination physics, not policy. Flattening them would promise a polished 40mm curve on granite that cannot be made: the exact mis-sell `R-D5` exists to prevent, and the one its own history records happening.
 

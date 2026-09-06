@@ -262,25 +262,30 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
-### R-D5 · v6 · LAW
+### R-D5 · v7 · LAW
 **A curve is polished only up to that MATERIAL's limit; above it the curve is a FACETED MITRE — makeable, never a decline.** The limit is **material-dependent, not a flat 40mm**, because only engineered and marble can laminate:
 - **Engineered · marble** — polished to a 40mm lamination (20+20); **faceted from 60mm**
 - **Porcelain · sintered** — single thickness only (12/20), never laminated; **faceted from 40mm**
 - **Hard natural (granite, quartzite, limestone, travertine)** — single thickness (12/20/30); **faceted from 40mm**. **Limestone and travertine are RULED not laminable (MD 23 Jul 2026) — this is not a pending question.**
 
-⚠ **THE MARBLE-vs-HARD-NATURAL SPLIT IS NOT DERIVABLE FROM THE BOARD — resolve it conservatively (added 27 Jul 2026).** This rule needs to know whether a natural stone is **marble** (polished to 40mm, faceted from 60mm) or **hard natural** (faceted from 40mm). The live Materials Library `5029570546` still uses `color_mm4qt817` Material Type and `dropdown_mm4rq7jd` Stone Sub-Type. Stone Sub-Type is granite vs non-granite, which does not identify marble, and is populated on only 3 of 392 materials as at 18 Aug 2026 `[R-SUBTYPE v2]`.
-**Until a field exists: treat any natural stone as HARD NATURAL — faceted from 40mm — and flag "⚠ marble vs hard natural not derivable from the board; confirm before quoting the curve".**
+**A curve on SINGLE THICKNESS (12 / 20 / 30) is ordinary work and scores nothing on its own** — the tooling is built for it. **A request for faceting BELOW 40mm scores 🟡:** below the lamination threshold there is nothing to facet, so the specification needs checking rather than pricing. Splayed and angled benches remain 🟡 always, unchanged.
+
+⚠ **THE MARBLE-vs-HARD-NATURAL SPLIT IS NOT DERIVABLE FROM THE BOARD, AND NO FIELD IS COMING.** This rule needs to know whether a natural stone is **marble** (polished to 40mm, faceted from 60mm) or **hard natural** (faceted from 40mm). The live Materials Library `5029570546` still uses `color_mm4qt817` Material Type and `dropdown_mm4rq7jd` Stone Sub-Type. Stone Sub-Type is granite vs non-granite, which does not identify marble, and is populated on only 3 of 392 materials as at 18 Aug 2026 `[R-SUBTYPE v2]`.
+**It is resolved BY A PERSON, PER JOB. This is the standing position, not an interim one** (ruled 7 Sep 2026) — nobody is waiting on a field, and the flag below is permanent rather than temporary.
+**Treat any natural stone as HARD NATURAL — faceted from 40mm — and flag "⚠ marble vs hard natural not derivable from the board; confirm before quoting the curve".**
 **Why that direction:** assuming marble and being wrong means **promising a polished 40mm curve on granite that cannot be made** — the exact mis-sell this rule was written to stop. Assuming hard natural and being wrong means quoting a facet where a polish was possible: recoverable, and visible at sign-off. Never resolve it from the colour or brand name.
 
 **Why this direction:** asking for a faceted sign-off you did not strictly need costs a conversation. Promising a polished radius that cannot be made costs a remake and a client. **When the data is missing, fail toward the flag, never toward the promise.**
 
 **The flag string is fixed. Emit it verbatim:** *"⚠ marble vs hard natural not derivable from the board; confirm before quoting the curve"*.
 
-A curve above the limit scores **🟡 + a MANDATORY documented client sign-off on the faceted appearance before fabrication**. It is **NOT blocking** and must never force Needs Review. Faceting is also elective from 40mm on any material, and is frequently the *recommendation* on veined stone — a polished radius grinds through the vein, a facet preserves it.
+A curve above the limit scores **🟡 + a MANDATORY documented client sign-off on the faceted appearance before fabrication**. It is **NOT blocking** and must never force Needs Review. **The document is the SIGNED ORDER CONFIRMATION** (ruled 7 Sep 2026) — so a screen never confirms a sign-off has happened; it states the condition and names what will carry it.
+
+Faceting is also elective from 40mm on any material, and is frequently the *recommendation* on veined stone — a polished radius grinds through the vein, a facet preserves it. **On engineered and marble, "elective" means the vein is too clashy for lamination** (ruled 7 Sep 2026): two glue lines break the vein twice, and faceting is the alternative route. **The trade is that the curve will not necessarily be smooth, and that trade is the CUSTOMER's call** — offered by the estimator, decided by the client, and carried by the same signed order confirmation.
 **Why:** v1 (blocking 🔴) → v2 (flat >40mm faceted) → v3. **v2 caused a live mis-sell**: a 40mm curved porcelain or granite edge passed with no sign-off, and the client would have been quoted a polished radius that cannot be made.
 **Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `05 Material & Capability`
 
-**History:** **v6 **3 Sep 2026 (Stella Rasheed)**** — closes OR-32 and OR-33. One canonical flag string is nominated; limestone and travertine are confirmed ruled rather than pending, so no carrier can reopen a settled question. · v1 20 Jul 2026 · v2 23 Jul 2026 (MD profile audit, supersedes Q18 blocking rule) · v3 25 Jul 2026 (material-dependent thresholds) · v4 27 Jul 2026 (conservative fallback) · **v5 18 Aug 2026** (live Materials identifiers and 3/392 coverage reverified; fallback unchanged)
+**History:** **v7 **7 Sep 2026 (Stella Rasheed)**** — a curve on single thickness no longer scores on its own, and the 🟡 moves to a faceting request below 40mm; the sign-off document is named as the signed order confirmation; the marble split is recorded as a permanent human call rather than a wait for a field; and "if the vein justifies it" is defined, with the trade-off placed with the customer. · **v6 3 Sep 2026 (Stella Rasheed)** — closes OR-32 and OR-33. One canonical flag string is nominated; limestone and travertine are confirmed ruled rather than pending, so no carrier can reopen a settled question. · v1 20 Jul 2026 · v2 23 Jul 2026 (MD profile audit, supersedes Q18 blocking rule) · v3 25 Jul 2026 (material-dependent thresholds) · v4 27 Jul 2026 (conservative fallback) · **v5 18 Aug 2026** (live Materials identifiers and 3/392 coverage reverified; fallback unchanged)
 
 ### R-MA2 · v1 · LAW
 **Vein-match Level-3, or match-to-existing installed stone, is BLOCKING → Needs Review.** Vein-continuity geometry below Level 3 is a **non-blocking** flag, triggered on **geometry alone** — a veined colour on 2+ adjacent visible faces (island + waterfall, book-match pairs, continuity runs) — and never waits for a stated client expectation. Feasibility is read live from `boolean_mm4r4qcp` Bookmatch Available.
@@ -443,7 +448,7 @@ occupancy `[R-OCCUPANCY v1]` · live Customer Tier `Do-Not-Quote`, or an unresol
 
 **LAYER 2 — the 20 July 2026 addition set. SIX rules, not seven:** clad fireplace with no published brand rule · trench/rebate to receive joinery · first-of-kind fabrication with no fab rule · appliance QC Status `Rejected — Do Not Use` · vein-match Level-3 or match-to-existing · client-supplied stone.
 
-⛔ **"Curves >40mm" was STRUCK from layer 2 on 23 Jul 2026 — see `[R-D5 v6]`.** It must never be re-added, and **"seven" is stale wherever it appears.**
+⛔ **"Curves >40mm" was STRUCK from layer 2 on 23 Jul 2026 — see `[R-D5 v7]`.** It must never be re-added, and **"seven" is stale wherever it appears.**
 **Ropox Flexi Electric is APPROVED and is NOT first-of-kind.**
 Both layers are amended only by an **MD or GM** decision, recorded here with a version bump.
 **Why:** the stale count "seven" has been found and fixed **four separate times** in different files; each time it silently revived the struck curves rule. v2 fixed the count but described layer 2 as "the blocking closed list", which read as the whole list — leaving seven conditions the screen applies every day with no rule behind them.
