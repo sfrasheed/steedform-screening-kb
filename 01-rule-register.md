@@ -262,6 +262,45 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
+### R-ASK · v1 · LAW
+**A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE.** Everything else is an
+order-gate condition: it stays on the job, it is raised when the job converts, and it
+does not go in front of a customer who has asked for a price. Ruled by Stella Rasheed,
+8 September 2026.
+
+**Needed to quote — ask for these:**
+- **Dimensioned drawings.** Mandatory at both gates, for every tier `[R-EVIDENCE-BAR v2]`.
+- **Material to RANGE level.** A range is a specification `[R-RANGE v1]`. ⛔ **Never ask
+  for a colour to produce a quote.**
+- **The scope** — which rooms and which pieces.
+- **The site address or suburb.** Not optional: Full Service vs Supply Only is decided
+  by the site against Serviceable Areas `5029634649`, and nothing else answers it.
+
+⛔ **DO NOT ask for these at lead stage. They are order facts:**
+
+| Not asked at quote | Why |
+|---|---|
+| **Appliance and sink model numbers, spec sheets** | An ORDER-bar requirement `[R-EVIDENCE-BAR v2]` `[R-MA5 v3]`. At quote, **fitment is enough** — that a 900 cooktop and an undermount sink are going in. The model matters when cutouts are programmed, not when a price is given |
+| **Edge profile** | **Arris is the SteedForm standard where none is noted**, per the Terms & Conditions, changed only on the customer's request. It is not missing information — it is the default, and asking for it invents a decision the customer did not have to make |
+| **A specific colour** | The range is enough `[R-RANGE v1]` |
+| **Photos of installed cabinetry** | Site-readiness, not pricing |
+| **Builder or joiner contact for site coordination** | Coordination, not pricing |
+
+**Why:** quoting is how SteedForm wins work, and every extra item in that first reply is
+a reason for the customer to put it aside. A list of eight things reads as a form. The
+screen still finds and records all of it — the findings and the conditions are
+unchanged, and the order gate still holds later. **What changes is what a customer is
+asked for, and when.**
+
+⚠ **This governs the DRAFT REPLY only.** It removes nothing from the risk strip, the
+findings or the order-gate conditions. A screen that stopped *finding* an unverified
+appliance would be a different and much worse change.
+**Carried by:** `09 Response Templates` · `06 Evidence Requirements`
+
+**History:** **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after draft replies were
+asking for spec sheets, edge profiles, installed-cabinetry photos and a site contact on
+first contact, all of which are order facts.
+
 ### R-RANGE · v1 · LAW
 **A RANGE IS ENOUGH AT LEAD. A COLOUR IS REQUIRED AT ORDER.** A customer who specifies
 *"Caesarstone ICON"* without naming a colour has given a sufficient material specification for a

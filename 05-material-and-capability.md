@@ -183,7 +183,7 @@ Notes carried with the list: **Smartstone** is sintered-only (§1) · **Neolith*
 
 | Family | Sizes on the menu | Straight | Curved | Materials |
 |---|---|---|---|---|
-| **Arris** | 12 · 20\* · 30 · 40\* · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ EdiPlus (≤80 calibrated; >80 hand) | per §5 | **All materials** (build path per §4). The default. |
+| **Arris** | 12 · 20\* · 30 · 40\* · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ EdiPlus (≤80 calibrated; >80 hand) | per §5 | **All materials** (build path per §4). **THE DEFAULT — and the default is ASSUMED where no profile is noted**, per the Terms & Conditions, changed only on the customer's request. An unstated profile is not missing information `[R-ASK v1]`. |
 | **Pencil** | 12 · 20 · **30 (to add)** · 40 · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ flat polish + **HAND pencil** | per §5 | **🔴 NOT on any FACE-PRINTED surface** (§2) — read `Print Construction` live, blank fails closed `[R-PROFILE v5]`. Excludes all porcelain and sintered, **and the face-printed engineered ranges — Kaya, all ranges.** Full-body engineered, marble and hard natural only. Hand-finished at every size (#157) — "routine" ≠ "no labour". |
 | **Bullnose** | 20mm | ✓ | ✓ (CNC tooling does curves too) | **ENGINEERED + MARBLE ONLY** → 🔴 elsewhere |
 | **Double Bullnose** | 40mm (20+20) | ✓ | ✓ (CNC) | **ENGINEERED + MARBLE ONLY.** Build sequence is **REVERSED**: CNC-polish each 20mm piece FIRST, then laminate the two together (each radius must be reachable while the piece is separate). Consequence: the polish cannot be corrected after assembly, and the glue line sits at the waist between the two radii — **designed in, not a defect**. |

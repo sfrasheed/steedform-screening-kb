@@ -1,5 +1,18 @@
 # 09 — Response Templates
 
+⛔ **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE** `[R-ASK v1]`. Dimensioned
+drawings, the stone **range**, the scope, and the site address. **Never** a colour, an
+edge profile, an appliance or sink model, a spec sheet, photos of installed cabinetry,
+or a site contact — those are order facts, they stay on the job, and they are raised
+when the job converts.
+
+**Arris is assumed where no edge profile is noted**, per the Terms & Conditions. An
+unstated profile is not a gap and must not be written into a reply as one.
+
+⚠ This governs what a customer is **asked for**. It removes nothing from the risk
+strip, the findings or the order-gate conditions — the screen still finds all of it.
+
+
 **Status:** Active. Extracted from `Communications.md` v1.6 (27 August 2026). Subordinate to `01-rule-register.md`: where this document and the Rule Register disagree, the Register is correct and this file is stale. Template wording is carried **verbatim** — do not paraphrase, modernise or "tidy" a template before sending. Unresolved questions are quarantined in `10-open-rulings.md` and must not be acted on.
 **Owner:** Matthew Rasheed (MD) — template wording and voice. Rule authorship stays with `01-rule-register.md`.
 **Last updated:** 3 September 2026 — the rulings of 3 September 2026 propagated from `01-rule-register.md`
@@ -417,7 +430,7 @@ not authority.
 
 > Hi {{recipient.first_name}},
 >
-> Thanks for sending this through. To get a quote back to you, we need dimensioned cabinetry drawings, your material and edge profile selections, and cut-out specs for any cooktops, sinks, or basins.
+> Thanks for sending this through. To get a quote back to you, we need dimensioned cabinetry drawings, the stone range you're after, and which rooms are included.
 >
 > I've attached our information requirements document — it covers everything we need in one place. Once we have the complete set, we'll turn a quote around within two business days.
 >
@@ -429,7 +442,7 @@ not authority.
 >
 > Thank you for considering SteedForm for your project.
 >
-> Before we can prepare a quote, we need a few key pieces of information — most importantly, dimensioned drawings of your cabinetry from your builder or cabinetmaker, along with your stone, edge profile, and sink/cooktop selections.
+> Before we can prepare a quote, we need a few key pieces of information — most importantly, dimensioned drawings of your cabinetry from your builder or cabinetmaker, and the stone range you're considering.
 >
 > I've attached a document that explains everything we need. If you're unsure about any of the items, your cabinetmaker or builder should be able to help, or feel free to reply to this email and we'll guide you through it.
 >
