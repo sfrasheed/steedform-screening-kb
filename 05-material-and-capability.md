@@ -546,6 +546,36 @@ Class, print construction and outdoor suitability are all unreadable for it. **U
 added to the library, a Larona job cannot satisfy `[R-REF v2]`** and the material lane is
 scored on what the documents say, flagged as unresolved — never as clean.
 
+#### Eclos — a SteedForm working limit, not a manufacturer figure
+
+> **Treat 300 mm as the maximum unsupported overhang on Eclos. Above it, confirm support with
+> the builder.** Ruled by Stella Rasheed, 7 September 2026.
+
+⛔ **THIS IS A HOUSE RULE AND MUST NEVER BE QUOTED AS "ECLOS SAYS 300mm".** Everything else in
+§6.1b is a manufacturer's own published limit. This one is SteedForm choosing a single number
+because the Cosentino table is organised by overhang *geometry* rather than by distance, and a
+simple conservative figure was preferred to carrying it.
+
+**It is conservative by a wide margin.** What Cosentino actually publishes *(ECLOS Kitchen
+Countertops Design & Installation, cantilevers on islands)*:
+
+| Overhang shape | 20 mm | 30 mm |
+|---|---|---|
+| Long side | ≤ 600 mm | ≤ 1,000 mm |
+| Short side | ≤ 600 mm | ≤ 1,000 mm |
+| L-shaped | ≤ 500 mm | ≤ 900 mm |
+| U-shaped | ≤ 500 mm | ≤ 900 mm |
+| Partial *(support long side ≥ overhang long side)* | ≤ 1,600 mm | — |
+| Between two supports | ≤ 2,000 mm | ≤ 3,000 mm |
+
+Maximum concentrated static load **100 kg**. Where a side waterfall is combined with a cantilever,
+both are capped at **≤ 500 mm** at 20 and 30mm unless the waterfall is 100% adhered.
+
+⚠ **The cost of the house rule is visible above.** A long-side overhang of 500mm on 20mm Eclos is
+permitted outright by Cosentino and will be flagged by SteedForm. That is a deliberate choice, not
+an error — but it is worth revisiting if Eclos volume grows beyond its current 7 rows on the
+Materials Library.
+
 #### Not yet extracted — treat as unknown, never as unlimited
 
 Zenith · Kaya · Neolith · Lavistone · Vasari · Smartstone Sintered · Dekton · Cosentino Silestone
