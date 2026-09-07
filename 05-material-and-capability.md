@@ -456,6 +456,26 @@ parallel construction the 12mm line is missing *"on two or three sides"*. **That
 yet ruled.** Until it is, a 12mm one-side overhang between 250 and 300mm is confirmed with the
 builder rather than passed.
 
+#### Larona Porcelain *(manufacturer table, supplied 7 Sep 2026)*
+
+| Overhang | Support |
+|---|---|
+| **< 150 mm** | None required |
+| **150 – 300 mm** | Adequate support required from the base |
+| **> 300 mm** | Adequate support from the bases, **at least every 600 mm** |
+
+⚠ **Larona is roughly twice as conservative as Caesarstone Porcelain.** Support begins at
+**150mm** here, where Caesarstone allows 300mm unsupported on one side at 12mm. **Never carry a
+Caesarstone figure onto a Larona job** — this is the reason D11 compares against a *brand* table
+and not a single number.
+
+⛔ **LARONA IS NOT ON THE MATERIALS LIBRARY** (`5029570546`), confirmed 7 Sep 2026. So a drawing
+naming Larona resolves to **no material record at all**: `[R-MATERIAL-TERMS v1]` matches exactly
+with no fuzzy fallback, so the lookup fails **silently** rather than reporting an unknown brand.
+Class, print construction and outdoor suitability are all unreadable for it. **Until the brand is
+added to the library, a Larona job cannot satisfy `[R-REF v2]`** and the material lane is
+scored on what the documents say, flagged as unresolved — never as clean.
+
 #### Not yet extracted — treat as unknown, never as unlimited
 
 Zenith · Kaya · Neolith · Lavistone · Vasari · Smartstone Sintered · Dekton · Cosentino Silestone
