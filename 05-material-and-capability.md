@@ -90,7 +90,7 @@ Whether a specified job can physically be made by SteedForm, and if so how far i
 
 ⛔ **ENGINEERED STONE CANNOT BE USED FOR AN ALFRESCO BENCHTOP** `[R-ALFRESCO v1]`. Australian Standards require a barbecue-area benchtop to be non-flammable. SteedForm's alfresco tops are made in **natural stone, or ceramic / sintered** — nothing else.
 
-⚠ **This is a CLASS rule, and the corpus previously stated it only by BRAND.** The old outdoor test named four indoor-only brands (Zenith, Kaya, Silestone QXeron, Caesarstone ICON). Those four happen to be engineered, so the brand list produced the right answer by accident — but **an engineered brand not on that list would have passed.** Same defect shape as the pencil-on-printed-face rule, which was also stated by proxy until `[R-PROFILE v3]` moved it to the real test. Read the class live off the Materials Library `[R-M1 v2]`.
+⚠ **This is a CLASS rule, and the corpus previously stated it only by BRAND.** The old outdoor test named four indoor-only brands (Zenith, Kaya, Silestone QXeron, Caesarstone ICON). Those four happen to be engineered, so the brand list produced the right answer by accident — but **an engineered brand not on that list would have passed.** Same defect shape as the pencil-on-printed-face rule, which was also stated by proxy until `[R-PROFILE v4]` moved it to the real test. Read the class live off the Materials Library `[R-M1 v2]`.
 
 ⚠ **There IS an `Outdoor Suitability` column on the Materials Library — and it must stay SUPPLEMENTARY, not authoritative.** Verified against the 3 September 2026 export: `Outdoor Suitability`, `UV Resistance` and `Technical Reviewed` are populated on **41 of 392 rows**, all reviewed 18 August 2026, and **all 41 are Lavistone**. Every one reads `Prohibited` / `No`.
 
@@ -141,13 +141,13 @@ Notes carried with the list: **Smartstone** is sintered-only (§1) · **Neolith*
 
 > ⚠ **This list is about SUBSTITUTION NOISE, not capability.** A local supplier does not make a combination makeable: §3's profile × material matrix and §4's thickness rules still govern. Equally, a brand being absent from this list is not a decline — it is a proximity flag.
 
-> ⚠ **Technical Standards §1 describes Smartstone Sintered as "full-bodied — vein colour matched into slab body, visible on 20mm edge profile" in its slab-specification table. That descriptor is not carried here.** It would permit a pencil profile on a sintered material, which the Edge Profile Capability Matrix §3a/§4 and `[R-PROFILE v3]` both exclude — porcelain and sintered remain excluded as a class regardless of what a slab table calls them. Where a Smartstone item's `Print Construction` reads blank, it fails closed to review like any other (§2).
+> ⚠ **Technical Standards §1 describes Smartstone Sintered as "full-bodied — vein colour matched into slab body, visible on 20mm edge profile" in its slab-specification table. That descriptor is not carried here.** It would permit a pencil profile on a sintered material, which the Edge Profile Capability Matrix §3a/§4 and `[R-PROFILE v4]` both exclude — porcelain and sintered remain excluded as a class regardless of what a slab table calls them. Where a Smartstone item's `Print Construction` reads blank, it fails closed to review like any other (§2).
 
 ---
 
 ## 2. Print construction — the pencil prohibition is by CONSTRUCTION, not class
 
-**The test is construction, not class** `[R-PROFILE v3]` (corrected by the MD, 24 Aug 2026). Read **`Print Construction` (`color_mm6hz0dd`) live off Materials Library `5029570546`** `[R-REF v2]`:
+**The test is construction, not class** `[R-PROFILE v4]` (corrected by the MD, 24 Aug 2026). Read **`Print Construction` (`color_mm6hz0dd`) live off Materials Library `5029570546`** `[R-REF v2]`:
 
 ⛔ **THE COLUMN IS 99% BLANK — 5 populated, 387 blank, 0 `Full body`** (verified 3 Sep 2026). The five populated rows are exactly the five face-printed materials named below, so the column is being maintained as a **positive marker** while this rule reads blank as **unknown**. **As it stands, 387 of 392 materials send every pencil job to review.** The rule is not wrong and the column is not wrong — **they do not yet agree**, and which one moves is **OR-40**, quarantined in `10-open-rulings.md`. ⛔ **Do not resolve it here.** Interim: flag it and say why — *"print construction not recorded"*, never *"may be face-printed"*. Coverage in `08` §7.1.
 
@@ -170,22 +170,22 @@ Notes carried with the list: **Smartstone** is sintered-only (§1) · **Neolith*
 > - **Zenith Ottoman Grey** and **Zenith Rosè** — Zenith is full-body *except* these two.
 > This list is the named evidence, not the test. The test is the board value.
 
-**Worked example — QU-58883.** A **20mm Pencil** was priced on **Kaya Sienna**. The item reads `Engineered Stone` on the Materials Library and is face-printed per the Zenith/Kaya Manual May 2026 §7.2. **Both the quote and a full screen cleared it** — because both followed the rule exactly as it was then written: every carrier scoped the prohibition to "porcelain / sintered", which is a *proxy* for the real fact. `color_mm6hz0dd` Print Construction is now the authority for the fact, and blank fails closed `[R-PROFILE v3]`.
+**Worked example — QU-58883.** A **20mm Pencil** was priced on **Kaya Sienna**. The item reads `Engineered Stone` on the Materials Library and is face-printed per the Zenith/Kaya Manual May 2026 §7.2. **Both the quote and a full screen cleared it** — because both followed the rule exactly as it was then written: every carrier scoped the prohibition to "porcelain / sintered", which is a *proxy* for the real fact. `color_mm6hz0dd` Print Construction is now the authority for the fact, and blank fails closed `[R-PROFILE v4]`.
 
-> ⚠ **Carrier note for the app.** Edge Profile Capability Matrix **§1a, §5.5, §5.6 and §6** still scope the pencil and lamination rules by CLASS ("porcelain / sintered") — those sections predate the 24 Aug 2026 correction that was applied to §3a. **Apply the construction-based test everywhere**, including wherever a class-scoped restatement appears. The class exclusion of porcelain and sintered still stands `[R-PROFILE v3]`; it is a floor, not the whole test.
+> ⚠ **Carrier note for the app.** Edge Profile Capability Matrix **§1a, §5.5, §5.6 and §6** still scope the pencil and lamination rules by CLASS ("porcelain / sintered") — those sections predate the 24 Aug 2026 correction that was applied to §3a. **Apply the construction-based test everywhere**, including wherever a class-scoped restatement appears. The class exclusion of porcelain and sintered still stands `[R-PROFILE v4]`; it is a floor, not the whole test.
 
 ---
 
 ## 3. Edge profile × material capability matrix
 
-> **The `Edge Profile Capability Matrix` is the governing document for profile × material × machine capability.** Technical Standards §3 says so itself: *"The governing document is `Edge Profile Capability Matrix.md` … The rules below are the summary; **the matrix wins on any conflict.**"* `[R-PROFILE v3]` is the canonical rule; **do not price a combination this set rules out.**
+> **The `Edge Profile Capability Matrix` is the governing document for profile × material × machine capability.** Technical Standards §3 says so itself: *"The governing document is `Edge Profile Capability Matrix.md` … The rules below are the summary; **the matrix wins on any conflict.**"* `[R-PROFILE v4]` is the canonical rule; **do not price a combination this set rules out.**
 
 ### 3.1 The profile menu — capability by family
 
 | Family | Sizes on the menu | Straight | Curved | Materials |
 |---|---|---|---|---|
 | **Arris** | 12 · 20\* · 30 · 40\* · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ EdiPlus (≤80 calibrated; >80 hand) | per §5 | **All materials** (build path per §4). The default. |
-| **Pencil** | 12 · 20 · **30 (to add)** · 40 · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ flat polish + **HAND pencil** | per §5 | **🔴 NOT on any FACE-PRINTED surface** (§2) — read `Print Construction` live, blank fails closed `[R-PROFILE v3]`. Excludes all porcelain and sintered, **and face-printed engineered ranges — Kaya (all), Zenith Ottoman Grey, Zenith Rosè.** Full-body engineered, marble and hard natural only. Hand-finished at every size (#157) — "routine" ≠ "no labour". |
+| **Pencil** | 12 · 20 · **30 (to add)** · 40 · 50 · 60 · 70 · 80 · 90 · 100 · 150 · 200 | ✓ flat polish + **HAND pencil** | per §5 | **🔴 NOT on any FACE-PRINTED surface** (§2) — read `Print Construction` live, blank fails closed `[R-PROFILE v4]`. Excludes all porcelain and sintered, **and face-printed engineered ranges — Kaya (all), Zenith Ottoman Grey, Zenith Rosè.** Full-body engineered, marble and hard natural only. Hand-finished at every size (#157) — "routine" ≠ "no labour". |
 | **Bullnose** | 20mm | ✓ | ✓ (CNC tooling does curves too) | **ENGINEERED + MARBLE ONLY** → 🔴 elsewhere |
 | **Double Bullnose** | 40mm (20+20) | ✓ | ✓ (CNC) | **ENGINEERED + MARBLE ONLY.** Build sequence is **REVERSED**: CNC-polish each 20mm piece FIRST, then laminate the two together (each radius must be reachable while the piece is separate). Consequence: the polish cannot be corrected after assembly, and the glue line sits at the waist between the two radii — **designed in, not a defect**. |
 | **Provincial (Lamb's Tongue)** | 40mm | ✓ | ✓ (CNC) | **ENGINEERED + MARBLE ONLY** |
@@ -194,7 +194,7 @@ Notes carried with the list: **Smartstone** is sintered-only (§1) · **Neolith*
 | **Lamination** | 40mm (tooling: pencil + arris) · 60mm (conditional) | ✓ | 40mm = CMS-polishable | **Engineered + marble only** (§4) |
 | **Waterfall end — regular** | 12 · 20 · 30 (if available) · 40 | ✓ | — | **ALL materials — STANDARD chargeable install.** Routine at these thicknesses (30mm natural-only per §4). Veined stone still adds the vein-continuity line (#123). |
 | **Assemble On Site** | — | method, not a shape | — | **ALL materials — geometry-driven, NOT material-restricted.** A boxed island that cannot be glued up in the factory is an Assemble On Site: the factory cuts the 45°, the box is glued on site. QC note below. |
-| **~~Ogee~~** | — | — | — | **NOT OFFERED — removed from all documents 23 Jul 2026 (MD).** Never quote it. **RESET the spec to a lamb's tongue (Provincial)** `[R-SCOPE v2]` `[R-PROFILE v3]` — which is 40mm CNC, straight and curved, engineered + marble only, so check the material before offering it. |
+| **~~Ogee~~** | — | — | — | **NOT OFFERED — removed from all documents 23 Jul 2026 (MD).** Never quote it. **RESET the spec to a lamb's tongue (Provincial)** `[R-SCOPE v2]` `[R-PROFILE v4]` — which is 40mm CNC, straight and curved, engineered + marble only, so check the material before offering it. |
 
 \* asterisked on the live menu (standard/default sizes).
 
@@ -224,13 +224,13 @@ Assemble On Site is not material-restricted, **but the risk is not equal across 
 
 | Situation | Verdict |
 |---|---|
-| **Pencil specified on a face-printed surface** — the highest-frequency profile error to expect, since pencil is a common default request | **🔴 spec conflict — not offered. Steer to ARRIS** (or Sharknose/Euro) `[R-PROFILE v3]` |
+| **Pencil specified on a face-printed surface** — the highest-frequency profile error to expect, since pencil is a common default request | **🔴 spec conflict — not offered. Steer to ARRIS** (or Sharknose/Euro) `[R-PROFILE v4]` |
 | **Shaped profile on the wrong material** — Bullnose / Double Bullnose / Provincial specified on porcelain, sintered or hard natural | **🔴 spec conflict** |
 | **Curved edge above the material's polish limit** | **🟡 specification + expectation step — never a decline.** The client is told it will be a faceted mitre and signs off the appearance. On veined stone, *recommend* faceted `[R-D5 v7]` |
 | **>80mm build** | **🟡 hand-finish labour band** — cost cliff, price accordingly |
 | **60mm lamination** | **🟡** — confirm the aesthetic carries two glue lines; never on veined stone; offer mitred 60mm as the cleaner face |
 | **30mm specified on engineered, porcelain or sintered** | **🔴 spec conflict — not available** `[R-30MM v1]` |
-| **Ogee specified** | **NOT OFFERED — RESET to a lamb's tongue (Provincial)** `[R-SCOPE v2]` `[R-PROFILE v3]`. A reset, not a decline: the enquiry continues on the supported profile and the client is told before the quote goes out (§6) |
+| **Ogee specified** | **NOT OFFERED — RESET to a lamb's tongue (Provincial)** `[R-SCOPE v2]` `[R-PROFILE v4]`. A reset, not a decline: the enquiry continues on the supported profile and the client is told before the quote goes out (§6) |
 
 ### 3.5 Processing complexity — where the time actually lands (Matrix §9, MD 23 Jul 2026)
 
@@ -258,15 +258,17 @@ Slabs come in single thickness, so any edge deeper than the slab is built one of
 
 | Method | How | Sizes possible | Materials |
 |---|---|---|---|
-| **Mitred** | fold the return from the same slab (45°) | **any height ≥ 40mm** (rail cut to size) | **ALL materials** — the only build path for porcelain / sintered / hard natural |
-| **Laminated** | glue **20mm layers** | **40mm (20+20) and 60mm (20+20+20) ONLY** — no 50 / 70 / 90 | **Engineered + marble only** |
+| **Mitred** | fold the return from the same slab (45°) | **any height ≥ 40mm** (rail cut to size) | **ALL materials** — and the only build path for porcelain / sintered and any face-printed surface |
+| **Laminated** | glue **20mm layers** | **40mm (20+20) and 60mm (20+20+20) ONLY** — no 50 / 70 / 90 | **Full-body engineered + marble.** Other natural stone **case by case** (below). Never on a printed face, nor limestone or travertine |
 
 - **Mitre minimum = 40mm. Nothing below 40mm is mitred — the minimum mitred build-up is ALWAYS 40mm** (reconfirmed by ruling, 3 September 2026).
 - **Lamination is 20mm layers only.** There is no 30mm layer and no 20+40 combination. **A 50mm laminated build does not exist.**
-- **Lamination is never used on ceramic / porcelain / sintered, nor on hard naturals** (granite, quartzite), nor on **limestone or travertine — ruled not laminable, MD 23 Jul 2026** (§5) `[R-PROFILE v3]` `[R-D5 v7]`.
+- **A PRINTED FACE CANNOT BE LAMINATED** `[R-PROFILE v4]`. Ceramic, porcelain and sintered are never laminated, and neither is any material whose `Print Construction` (`color_mm6hz0dd`) reads `Face-printed`. **The print is the reason; the class is only a proxy** — the same correction MD made to the pencil rule on 24 Aug 2026, for the same reason.
+- **Limestone and travertine are ruled not laminable — MD 23 Jul 2026** (§5). Unchanged and not a pending question.
+- **The rest of natural stone — granite, quartzite, marble — is CASE BY CASE, resolved by a person per job** (ruled 7 Sep 2026, Stella Rasheed). It is not a property of the material recorded on a board, and no column will answer it: the answer is about the slab in front of you. ⚠ **This does not move any faceting threshold.** Lamination and faceting are different operations, and `[R-D5 v7]`'s table is unchanged — a stone that laminates still facets from 40 unless a rule says otherwise.
 - **60mm lamination is CONDITIONAL** — three layers = **two glue lines on the edge face**; only where the aesthetic and the chosen profile carry them. **Not on veined stone** (the joints break the vein twice). A mitred 60mm gives a continuous face with no glue line and is usually the better look.
 - **Straight thick edges are MITRED, not laminated.** Mitre is the default method for any straight thick edge above 20mm — 40 / 50 / 60 / 80mm profile fronts as standard, reinforced with the SteedForm 40mm Whiteboard HMR three-run cleat standard (front / middle / back, full length, **every material, no per-material variation** — included in the standard build price, nothing to flag).
-- **Scope: these rules run to 40mm.** 50–80mm has its own cost step; **>80mm is a hard cost cliff — flag it** `[R-PROFILE v3]`. 50mm and 60mm are *common*, not *free*: flag the thickness so it is priced, not as a risk. **A 50–80mm engineered mitred build scores 🟡 AMBER at D1, on the cost difference** (ruled 3 September 2026; the rung is stated in `03-risk-scoring.md` §3.3). **Engineered ≤ 40mm is 🟢.**
+- **Scope: these rules run to 40mm.** 50–80mm has its own cost step; **>80mm is a hard cost cliff — flag it** `[R-PROFILE v4]`. 50mm and 60mm are *common*, not *free*: flag the thickness so it is priced, not as a risk. **A 50–80mm engineered mitred build scores 🟡 AMBER at D1, on the cost difference** (ruled 3 September 2026; the rung is stated in `03-risk-scoring.md` §3.3). **Engineered ≤ 40mm is 🟢.**
 
 ### 4.2 30mm — natural stone only
 
@@ -358,7 +360,7 @@ and a visible flag on the output. **There is now ONE flag string, and it is fixe
 | **IKEA kitchens** | **DECLINE or refer** | Including via a cabinetmaker | #60 / #64 |
 | **Flush mounting** — sinks or cooktops set flush into the stone | **RESET** the spec to a supported mount, before the quote | See §6.1 `[R-FLUSH v1]` — `[R-FLUSH v1]` stands unchanged | #31 |
 | **Masons mitre as a standalone selection** | **RESET** the spec to SteedForm's standard mitred build | 🟡 substitute note, non-blocking. ⚠ **The CNC masons-mitre exception is PRODUCTION'S DISCRETION and must NEVER be promised by the screen** — a piece already on the CNC for profiling or lamination may absorb it at no meaningful extra cost, but that is decided in production, not at screening | — |
-| **The ogee profile** | **RESET** the spec to a **lamb's tongue (Provincial)** | Removed from all documents 23 Jul 2026 (MD) `[R-PROFILE v3]`. Provincial is 40mm CNC, **engineered + marble only** — check the material before offering it (§3.1) | — |
+| **The ogee profile** | **RESET** the spec to a **lamb's tongue (Provincial)** | Removed from all documents 23 Jul 2026 (MD) `[R-PROFILE v4]`. Provincial is 40mm CNC, **engineered + marble only** — check the material before offering it (§3.1) | — |
 
 ⚖ **Client-supplied slabs — classification, now settled.** `[R-SCOPE v2]` places the item in the DECLINE column and `[R-BLOCK v3]` keeps *"client-supplied stone"* in the layer-2 blocking set. Those are not in conflict: **the default is a DECLINE, and the single A-tier carve-out is the 🔴 that routes to Needs Review.** No other item in the table has one. T-DECLINE-07 remains the decline, and the $20k remake (§9) is the reason behind it.
 
@@ -379,7 +381,7 @@ Also NOT OFFERED, from adjacent rulings:
 
 At screening: a **🔴 condition entry with the reason stated** (chipping · silicone gap · brochure vs reality), and propose overmount/drop-in `[R-FLUSH v1]`. **The builder/client must be told BEFORE the quote goes out** — a flush-mount expectation discovered at install is a remake. Communication template: **T-TECHNICAL-01**.
 
-**Flush mounting is a mounting method, not an edge profile** — `[R-PROFILE v3]` governs edge profile × material and does not cover it; this is a separate capability refusal with its own tag `[R-FLUSH v1]`.
+**Flush mounting is a mounting method, not an edge profile** — `[R-PROFILE v4]` governs edge profile × material and does not cover it; this is a separate capability refusal with its own tag `[R-FLUSH v1]`.
 
 **Mounting type is ORDER-bar evidence, and it is a board field.** `[R-EVIDENCE-BAR v2]`'s ORDER bar for *Appliances / sinks* requires **model number, mounting type, linked Library record** — so at Order a mount must be a *recorded value*, not an assumption, and "flush" surfacing there is a reset, not a variation to price. The Appliance Library `5029694677` column carrying it is **`color_mm4zdfnd` Mount Type** (being added to `08-board-and-column-registry.md`), alongside **Cutout Spec `long_text_mm4zayzp`**. Read both live — never screen a mount or a cutout from memory or from a snapshot pasted into a document. **That same ORDER-bar row now also requires QC Status** `[R-EVIDENCE-BAR v2]` (ruled 3 September 2026), matching the adjacent Cut-outs row. *(Evidence-bar mechanics are owned by `06-evidence-requirements.md`; what is carried here is the capability half — a mount SteedForm cannot make.)*
 
@@ -536,7 +538,7 @@ Related vocabulary facts held elsewhere in this document: **"Smartstone" always 
 | **Standard sink cutouts** | Routine CNC work; the cutout only becomes a finding when it breaks a rule (narrow web, cutout-to-joint clearance, flush mount, a radius conflict per §6.2). |
 | **Standard corner radii** | The industry R10 default is not news. The finding is the *conflict* (§6.2), not the radius. |
 
-⚠ **The carve-out — 50mm and 60mm are NOT in this "don't mention it" bucket** `[R-PROFILE v3]`. The ratified profile/build rules are scoped **to 40mm**: 50–80mm carries its own cost step and >80mm is a hard cost cliff (§4.1). A 60mm engineered island edge is routine work that still prices differently from 40mm. **Flag the thickness so it is priced — do not flag it as a *risk*.** *(The earlier "50mm vanities, 60mm kitchen edges → do not flag" wording suppressed the cost step and is superseded.)* **RULED 3 September 2026: D1 scores a 50–80mm engineered mitred build 🟡 AMBER, on the cost difference** — an amber that prices the step, never a doubt about wanting the job. **Engineered ≤ 40mm is 🟢**, and the minimum mitred build-up is always 40mm.
+⚠ **The carve-out — 50mm and 60mm are NOT in this "don't mention it" bucket** `[R-PROFILE v4]`. The ratified profile/build rules are scoped **to 40mm**: 50–80mm carries its own cost step and >80mm is a hard cost cliff (§4.1). A 60mm engineered island edge is routine work that still prices differently from 40mm. **Flag the thickness so it is priced — do not flag it as a *risk*.** *(The earlier "50mm vanities, 60mm kitchen edges → do not flag" wording suppressed the cost step and is superseded.)* **RULED 3 September 2026: D1 scores a 50–80mm engineered mitred build 🟡 AMBER, on the cost difference** — an amber that prices the step, never a doubt about wanting the job. **Engineered ≤ 40mm is 🟢**, and the minimum mitred build-up is always 40mm.
 
 **Content Rule 8** (`SKILL.md`): *"**CS Porcelain caveats are only relevant if CS Porcelain is specified.**"* Do not raise Caesarstone Porcelain restrictions on a job in another material — it is noise. The principle generalises across this whole document: **flag anomalies, not standard practice**, and never a brand caveat for a brand that is not in the spec. The same discipline governs supplier proximity (§1.2 — a local brand is ALL CLEAR and is not raised at all) and the outdoor caveats (§1.1).
 
