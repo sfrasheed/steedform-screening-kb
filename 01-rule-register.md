@@ -262,7 +262,7 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
-### R-ASK · v1 · LAW
+### R-ASK · v2 · LAW
 **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE.** Everything else is an
 order-gate condition: it stays on the job, it is raised when the job converts, and it
 does not go in front of a customer who has asked for a price. Ruled by Stella Rasheed,
@@ -276,13 +276,23 @@ does not go in front of a customer who has asked for a price. Ruled by Stella Ra
 - **The site address or suburb.** Not optional: Full Service vs Supply Only is decided
   by the site against Serviceable Areas `5029634649`, and nothing else answers it.
 
-⛔ **DO NOT ask for these at lead stage. They are order facts:**
+⚠ **THE LIST BELOW APPLIES TO A RECOGNISED ACCOUNT.** Where the customer resolves to an
+account `[R-ACCTMATCH v5]`, their habits are known, the defaults hold, and the reply
+stays short. **Where the account is NOT recorded — no match, or an unknown entity
+`[R-ENTITY v1]` — the draft MAY also ask for the material selection and the edge
+profile**, and should. Nothing is known about how this customer works, there is no
+history to read a preference from, and a wrong assumption at first contact with a
+stranger is more expensive than one more question. The range is still enough to
+*produce* a quote `[R-RANGE v1]`; this is about agreeing what they are getting, not
+about being able to price it.
+
+⛔ **DO NOT ask a RECOGNISED account for these at lead stage. They are order facts:**
 
 | Not asked at quote | Why |
 |---|---|
 | **Appliance and sink model numbers, spec sheets** | An ORDER-bar requirement `[R-EVIDENCE-BAR v2]` `[R-MA5 v3]`. At quote, **fitment is enough** — that a 900 cooktop and an undermount sink are going in. The model matters when cutouts are programmed, not when a price is given |
-| **Edge profile** | **Arris is the SteedForm standard where none is noted**, per the Terms & Conditions, changed only on the customer's request. It is not missing information — it is the default, and asking for it invents a decision the customer did not have to make |
-| **A specific colour** | The range is enough `[R-RANGE v1]` |
+| **Edge profile** | **Arris is the SteedForm standard where none is noted**, per the Terms & Conditions, changed only on the customer's request. It is not missing information — it is the default, and asking for it invents a decision the customer did not have to make. ⚠ **Unrecorded account: ask** |
+| **A specific colour** | The range is enough `[R-RANGE v1]`. ⚠ **Unrecorded account: ask for the material selection** |
 | **Photos of installed cabinetry** | Site-readiness, not pricing |
 | **Builder or joiner contact for site coordination** | Coordination, not pricing |
 
@@ -297,9 +307,12 @@ findings or the order-gate conditions. A screen that stopped *finding* an unveri
 appliance would be a different and much worse change.
 **Carried by:** `09 Response Templates` · `06 Evidence Requirements`
 
-**History:** **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after draft replies were
-asking for spec sheets, edge profiles, installed-cabinetry photos and a site contact on
-first contact, all of which are order facts.
+**History:** **v2 **8 Sep 2026 (Stella Rasheed)**** — the exclusions are scoped to a
+recognised account. An unrecorded customer is asked for material and edge profile after
+all: there is no history to read a preference from, and assuming a stranger's intent is
+the more expensive mistake. · **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after
+draft replies were asking for spec sheets, edge profiles, installed-cabinetry photos and
+a site contact on first contact, all of which are order facts.
 
 ### R-RANGE · v1 · LAW
 **A RANGE IS ENOUGH AT LEAD. A COLOUR IS REQUIRED AT ORDER.** A customer who specifies

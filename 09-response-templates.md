@@ -1,6 +1,6 @@
 # 09 — Response Templates
 
-⛔ **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE** `[R-ASK v1]`. Dimensioned
+⛔ **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE** `[R-ASK v2]`. Dimensioned
 drawings, the stone **range**, the scope, and the site address. **Never** a colour, an
 edge profile, an appliance or sink model, a spec sheet, photos of installed cabinetry,
 or a site contact — those are order facts, they stay on the job, and they are raised
@@ -8,6 +8,10 @@ when the job converts.
 
 **Arris is assumed where no edge profile is noted**, per the Terms & Conditions. An
 unstated profile is not a gap and must not be written into a reply as one.
+
+⚠ **THAT IS FOR A RECOGNISED ACCOUNT.** Where the customer does not resolve to an
+account, **also ask for the material selection and the edge profile** — nothing is known
+about how they work, and assuming a stranger's intent costs more than one more question.
 
 ⚠ This governs what a customer is **asked for**. It removes nothing from the risk
 strip, the findings or the order-gate conditions — the screen still finds all of it.
