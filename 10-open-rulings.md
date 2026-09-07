@@ -21,7 +21,7 @@
 
 | # | Item | Status |
 |---|---|---|
-| **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v3]`? | **OPEN — highest stakes in this file** |
+| **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v4]`? | **OPEN — highest stakes in this file** |
 | **OR-41** | Site-readiness scores on two entirely empty columns | **OPEN** |
 | **OR-39** | The Serviceable Areas board has a third zone value no rule handles | **OPEN** — one row today |
 | OR-38 | Is Screening Philosophy retired as a document? | **OPEN** — low stakes |
@@ -42,7 +42,7 @@
 | **blank** | **387** |
 | `Full body` | **0** |
 
-The five populated rows are **exactly** the five materials this knowledge base names as face-printed — Kaya Como · Kaya Eclipse · Kaya Sienna · Zenith Ottoman Grey · Zenith Rosè. Whoever maintains the column uses it as a **positive marker**: populate when face-printed, leave blank otherwise. `[R-PROFILE v3]` reads blank as **unknown** and fails closed. **Both are reasonable. They are not compatible.**
+The five populated rows are **exactly** the five materials this knowledge base names as face-printed — Kaya Como · Kaya Eclipse · Kaya Sienna · Zenith Ottoman Grey · Zenith Rosè. Whoever maintains the column uses it as a **positive marker**: populate when face-printed, leave blank otherwise. `[R-PROFILE v4]` reads blank as **unknown** and fails closed. **Both are reasonable. They are not compatible.**
 
 ⛔ **As written, 387 of 392 materials send every pencil-profile job to Needs Review.** The screen would look broken from its first day, and the fault would not be the rule.
 
@@ -51,9 +51,9 @@ The five populated rows are **exactly** the five materials this knowledge base n
 | Option | Effect |
 |---|---|
 | **Populate `Full body` on the other 387** | Blank becomes meaningful again. The rule works exactly as designed, and a **genuinely unknown** material still fails closed. **Recommended** — it is a bulk edit, and it keeps the safety property |
-| **Amend `[R-PROFILE v3]` so blank means full body** | One line, no data work. But it removes the fail-closed guard, and a **new face-printed range added without being marked** would be priced with a pencil — which is precisely QU-58883 |
+| **Amend `[R-PROFILE v4]` so blank means full body** | One line, no data work. But it removes the fail-closed guard, and a **new face-printed range added without being marked** would be priced with a pencil — which is precisely QU-58883 |
 
-⛔ **This is a Register change if it goes the second way**, not a board change — `[R-PROFILE v3]` is a LAW, and amending it needs a dated version bump and propagation, not an edit in `05`.
+⛔ **This is a Register change if it goes the second way**, not a board change — `[R-PROFILE v4]` is a LAW, and amending it needs a dated version bump and propagation, not an edit in `05`.
 
 **Interim, and it is an interim:** flag a pencil profile on a blank-construction material as reviewable, and **say why in the flag** — *"print construction not recorded"*, **never** *"may be face-printed"*. The first is true; the second invents a finding.
 
