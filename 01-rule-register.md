@@ -262,6 +262,33 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
+### R-RANGE · v1 · LAW
+**A RANGE IS ENOUGH AT LEAD. A COLOUR IS REQUIRED AT ORDER.** A customer who specifies
+*"Caesarstone ICON"* without naming a colour has given a sufficient material specification for a
+quote. **Read the range's own properties and quote against them** — ICON is Engineered Stone and
+Full body, so a pencil profile is offered and there is nothing to flag. **⛔ A range-only
+specification must NOT be flagged in a way that holds up quoting.**
+
+**How a range answers.** Read the rows carrying that `Brand / Range` (`dropdown_mm4p7eja`, Materials
+Library `5029570546`) and take the value where **they all agree**. Verified 7 Sep 2026: all
+thirteen ranges are uniform on both Material Type and Print Construction, so every one of them
+answers today. ⚠ **Where the rows DISAGREE the range answers nothing and the colour is required** —
+this is a live test against the board, never a frozen list, because a face-printed colour added to
+a full-body range would silently break a rule stated any other way.
+
+**At ORDER the colour is required** and its absence is a gap like any other `[R-EVIDENCE-BAR v2]`.
+A range cannot carry slab availability, vein character, part-slab waste or a price band, and those
+are order facts.
+
+**Why:** quoting is how SteedForm wins the job, and a customer naming a range has told us what they
+want in the terms suppliers actually sell in. Treating that as missing information turns a normal
+enquiry into a question, and the estimator who has to answer it already knows the range is full
+body. **Missing evidence is never a match and never green — but a range is not missing evidence.**
+**Carried by:** `05 Material & Capability` · `06 Evidence Requirements` · `03 Risk Scoring`
+
+**History:** **v1 **7 Sep 2026 (Stella Rasheed)**** — registered after a range-only specification
+was being treated as an unresolved material.
+
 ### R-D5 · v8 · LAW
 **A curve is polished only up to that MATERIAL's limit; above it the curve is a FACETED MITRE — makeable, never a decline.** The limit is **material-dependent, not a flat 40mm**, because only engineered and marble can laminate:
 - **Engineered · marble** — polished to a 40mm lamination (20+20); **faceted from 60mm**

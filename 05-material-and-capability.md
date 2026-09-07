@@ -384,6 +384,32 @@ At screening: a **🔴 condition entry with the reason stated** (chipping · sil
 
 **Mounting type is ORDER-bar evidence, and it is a board field.** `[R-EVIDENCE-BAR v2]`'s ORDER bar for *Appliances / sinks* requires **model number, mounting type, linked Library record** — so at Order a mount must be a *recorded value*, not an assumption, and "flush" surfacing there is a reset, not a variation to price. The Appliance Library `5029694677` column carrying it is **`color_mm4zdfnd` Mount Type** (being added to `08-board-and-column-registry.md`), alongside **Cutout Spec `long_text_mm4zayzp`**. Read both live — never screen a mount or a cutout from memory or from a snapshot pasted into a document. **That same ORDER-bar row now also requires QC Status** `[R-EVIDENCE-BAR v2]` (ruled 3 September 2026), matching the adjacent Cut-outs row. *(Evidence-bar mechanics are owned by `06-evidence-requirements.md`; what is carried here is the capability half — a mount SteedForm cannot make.)*
 
+### 6.1a A range is a specification `[R-RANGE v1]`
+
+**A customer who names a RANGE without a colour has specified their material for quoting
+purposes.** Read the range's own properties off the Materials Library and quote against them.
+⛔ **Do not flag a range-only specification in a way that holds up the quote.**
+
+Verified 7 September 2026 — every range on the board agrees with itself on both fields that matter
+to capability:
+
+| Brand / Range | Material Type | Print Construction | Pencil? |
+|---|---|---|---|
+| Caesarstone ICON · Eclos · Lavistone Gen Surface · Silestone QXERON · Zenith Surfaces | Engineered Stone | Full body | ✅ offered |
+| Kaya Surfaces | Engineered Stone | **Face-printed** | ⛔ never |
+| Caesarstone Porcelain · Dekton · Neolith · Smartstone Sintered · Vasari Porcelain | Porcelain | Face-printed | ⛔ excluded as a class |
+| Scalea · Sensa | Natural Stone | Full body | ✅ offered |
+
+⚠ **Read this off the board, not off this table.** The rule is *"take the value the range's rows
+agree on"*. Where they stop agreeing — a face-printed colour added to a full-body range — the range
+answers nothing and the colour is required. A frozen list here would go on saying "full body" long
+after it stopped being true.
+
+**At ORDER the colour is required.** A range carries no slab availability, no vein character, no
+part-slab waste and no price band, and those are order facts `[R-EVIDENCE-BAR v2]`.
+
+---
+
 ### 6.1b Overhang limits — the table `[D11]` compares against
 
 **Reference data, read off the manufacturers' own fabrication manuals, 7 September 2026.**
