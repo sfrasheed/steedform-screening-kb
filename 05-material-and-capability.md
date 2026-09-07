@@ -391,6 +391,20 @@ At screening: a **🔴 condition entry with the reason stated** (chipping · sil
 limit — and until today that table existed nowhere in this knowledge base, so the rung had no
 threshold and fired on **every** drawn overhang. These are the thresholds.
 
+🟠 **EVERY TABLE HERE IS AMBIGUOUS AT ITS OWN THRESHOLD, AND THAT IS WHERE D11 FIRES.** Three
+manuals, three different ways of not quite saying it: Caesarstone ICON prints `<300 mm` in one
+band and `300-500 mm` in the next, so 300 falls in both readings depending on which row you
+trust. Neolith prints **"≤ 350 mm (less than 350 mm)"** — inclusive and exclusive in a single
+cell. Larona prints `A < 150mm` then `A = 150mm - 300mm`, the same overlap as Caesarstone.
+
+**One SteedForm ruling should settle all of them and every table added later**, rather than a
+separate reading per brand:
+
+> **At the exact figure — does it pass, or does it flag?**
+
+⛔ **NOT YET RULED.** Until it is, a drawn overhang landing exactly on a published figure is
+**flagged and confirmed with the builder**, which is what D11 already does with everything.
+
 #### Rules that apply to every brand below
 
 - ⛔ **The unsupported overhang must be no greater than ONE THIRD of the complete surface
@@ -455,6 +469,16 @@ allowance two lines above it. The 20mm section directly below scopes both of its
 parallel construction the 12mm line is missing *"on two or three sides"*. **That reading is not
 yet ruled.** Until it is, a 12mm one-side overhang between 250 and 300mm is confirmed with the
 builder rather than passed.
+
+#### Neolith *(Neolith Technical Guide APAC)*
+
+| Thickness | Maximum unsupported overhang |
+|---|---|
+| **12 mm** | **≤ 350 mm** |
+| **20 mm** | **≤ 500 mm** |
+
+Reinforcement at **600mm centres** where support is used, with additional reinforcement at the
+X sections of a full-perimeter frame.
 
 #### Larona Porcelain *(manufacturer table, supplied 7 Sep 2026)*
 
