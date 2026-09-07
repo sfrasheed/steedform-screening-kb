@@ -146,7 +146,7 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 | Field | Column ID | Screening role |
 |---|---|---|
 | Material Type | `color_mm4qt817` | Class, read **live**, never inferred from a brand name `[R-M1 v2]`. Class scoring: engineered 🟢 · porcelain + sintered 🟡 · natural 🔴. **Ceramic scores as porcelain / sintered — 🟡.** ✅ **392 / 392 populated, three values only** — Engineered Stone 171 · Porcelain 168 · Natural Stone 53. Maps cleanly onto the three rungs. ⚠ **OUTSTANDING DATA ACTION — see below** |
-| Stone Sub-Type | `dropdown_mm4rq7jd` | Granite vs non-granite. ✅ **Verified 3 Sep 2026: 3 of 392, all `Marble`** — Scalea Arabescato Corchia, Sensa Arabescato Corchia, Sensa Nero Portoro. Exactly what `[R-SUBTYPE v2]` records. The library holds **53 natural stones**, so `[R-D5 v7]`'s conservative fallback fires on **50 of 53** — a blank takes the conservative branch plus a visible flag `[R-SUBTYPE v2]` |
+| Stone Sub-Type | `dropdown_mm4rq7jd` | **Granite · Marble · Quartzite · Travertine · Limestone** — every branch `[R-D5 v8]` needs, corrected 7 Sep 2026 from an earlier note calling it granite vs non-granite. ✅ **Verified 3 Sep 2026: 3 of 392, all `Marble`** — Scalea Arabescato Corchia, Sensa Arabescato Corchia, Sensa Nero Portoro. Exactly what `[R-SUBTYPE v2]` records. The library holds **53 natural stones**, so `[R-D5 v8]`'s conservative fallback fires on **50 of 53** — a blank takes the conservative branch plus a visible flag `[R-SUBTYPE v2]` |
 | **Print Construction** | `color_mm6hz0dd` | `Face-printed` · `Full body` · blank. **Blank FAILS CLOSED to review — never read blank as "not printed"** `[R-PROFILE v5]`. ⛔ **99% BLANK — see §7.1. The rule is correct and the column is not being maintained the way it assumes** |
 | Bookmatch Available | `boolean_mm4r4qcp` | Vein-match feasibility `[R-MA2 v1]` |
 | Discontinued | `boolean_mm4r934z` | A discontinued colour scores 🟡 |
@@ -366,7 +366,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 
 ⚠ **Coverage is not identity.** These exports settle *how populated* a column is. They do **not** settle a single column ID, and they cannot: an export carries names, not identifiers. **OR-26 is untouched by this.**
 
-**Why this section exists.** Several rules in this set **fail closed on blank data** — `[R-PROFILE v5]`, `[R-SUBTYPE v2]`, `[R-D5 v7]`, `[R-LEADTIME v2]`, `[R-MA5 v3]`. A fail-closed rule is only as good as the column behind it: **a rule that is perfectly correct against an empty column sends every job to review, and looks like a broken screen.** Coverage therefore belongs in the registry, beside the identifier, and should be re-measured whenever the boards are re-exported.
+**Why this section exists.** Several rules in this set **fail closed on blank data** — `[R-PROFILE v5]`, `[R-SUBTYPE v2]`, `[R-D5 v8]`, `[R-LEADTIME v2]`, `[R-MA5 v3]`. A fail-closed rule is only as good as the column behind it: **a rule that is perfectly correct against an empty column sends every job to review, and looks like a broken screen.** Coverage therefore belongs in the registry, beside the identifier, and should be re-measured whenever the boards are re-exported.
 
 ### 7.1 Print Construction — populated in full, 7 September 2026
 
@@ -376,7 +376,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | **blank** | **387** |
 | `Full body` | **0** |
 
-✅ **FULLY POPULATED, 7 September 2026 — 392 of 392, no blanks.** 228 `Full body` · 164 `Face-printed`. Populated by Stella Rasheed. **This closes OR-40**, which turned on the column being kept as a positive marker while `[R-PROFILE v5]` read blank as unknown: with no blanks the two readings cannot disagree. The fail-closed branch is unchanged and now guards a new material added without being marked. ⚠ **Seven porcelains read `Full body`** — construction and class are different tests, and porcelain stays excluded from pencil **as a class** regardless of what this column says.
+✅ **FULLY POPULATED, 7 September 2026 — 392 of 392, no blanks.** 228 `Full body` · 164 `Face-printed`. Populated by Stella Rasheed. **This closes OR-40**, which turned on the column being kept as a positive marker while `[R-PROFILE v5]` read blank as unknown: with no blanks the two readings cannot disagree. The fail-closed branch is unchanged and now guards a new material added without being marked. The seven Cosentino **Eclos** rows that briefly read `Porcelain / Full body` were a type error and were corrected to `Engineered Stone` the same day; no porcelain now reads `Full body`.
 
 ⛔ **As it stands, 387 of 392 materials send every pencil-profile job to Needs Review**, and the reason would not be the rule — it would be an empty column.
 
@@ -392,7 +392,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | Board · Field | Populated | Consequence |
 |---|---|---|
 | Materials · Material Type | **392 / 392** | ✅ Clean. Three values, mapping exactly onto `[R-M1 v2]` |
-| Materials · Stone Sub-Type | 3 / 392 | Expected. `[R-D5 v7]` fallback fires on 50 of 53 naturals — **working as designed, and expensive.** No field is coming; the split is a per-job human call |
+| Materials · Stone Sub-Type | 3 / 392 | Expected. `[R-D5 v8]` fallback fires on 50 of 53 naturals — **working as designed, and expensive.** No field is coming; the split is a per-job human call |
 | Materials · Print Construction | **392 / 392** | ✅ Complete, 7 Sep 2026. 228 `Full body` · 164 `Face-printed`. OR-40 closed |
 | Materials · Print Construction | 5 / 392 | ⛔ §7.1 |
 | Materials · Alias Names | **0 / 392** | Every misnamed material fails to match, silently `[R-MATERIAL-TERMS v1]` |

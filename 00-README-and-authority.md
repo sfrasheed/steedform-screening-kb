@@ -56,7 +56,7 @@ It is built on one principle, which the previous knowledge base arrived at the h
 Rules look like this: `R-D5 · v6 · LAW`.
 
 - **`R-D5`** — the permanent ID. IDs are never reused and never renumbered. A superseded rule keeps its ID and points at what replaced it.
-- **`v7`** — the version. Any document or executable restating the rule must carry the tag inline as `[R-D5 v7]`. That is how drift is caught: a carrier holding `v6` when the Register says `v7` is stale by definition.
+- **`v8`** — the version. Any document or executable restating the rule must carry the tag inline as `[R-D5 v8]`. That is how drift is caught: a carrier holding `v6` when the Register says `v8` is stale by definition.
 - **`LAW`** — the class.
 
 Each rule also carries a **`Why`** — the incident that produced it. Those are not decoration. Nearly every rule in the Register exists because something specific went wrong, and the Why is what stops a future reader "simplifying" a rule back into the defect it was written to prevent.
