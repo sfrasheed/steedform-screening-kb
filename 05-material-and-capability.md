@@ -576,15 +576,36 @@ permitted outright by Cosentino and will be flagged by SteedForm. That is a deli
 an error — but it is worth revisiting if Eclos volume grows beyond its current 7 rows on the
 Materials Library.
 
-#### Not yet extracted — treat as unknown, never as unlimited
+#### No published limit held — the overhang goes to REVIEW
 
-Zenith · Kaya · Neolith · Lavistone · Vasari · Smartstone Sintered · Dekton · Cosentino Silestone
-and Eclos. Their manuals are held and carry permitted-overhang tables, several of them as
-diagrams rather than text. **Until a brand appears above, D11 has no threshold for it and the
-overhang is confirmed with the builder** — the same answer as before, but now it is a known gap
-rather than the whole rule.
+> **A drawn overhang on a brand not listed above is routed to REVIEW. The screen may not clear
+> it.** Ruled by Stella Rasheed, 7 September 2026.
 
----
+Currently unlisted, with their share of the Materials Library:
+
+| Brand | Rows |
+|---|---|
+| Dekton | 50 |
+| Lavistone Gen Surface | 41 |
+| Sensa *(natural)* | 35 |
+| Silestone QXERON | 25 |
+| Smartstone Sintered | 24 |
+| Scalea *(natural)* | 18 |
+| Larona | ⛔ not on the board at all |
+
+**That is 193 of 392 materials — just under half the library.** The manuals for most of them are
+held; the tables are drawn as diagrams and have not been read out yet. Every brand added above
+takes its rows out of this list, so this is a shrinking set and not a standing position.
+
+**Why review rather than a flag.** An overhang whose limit is unknown cannot be scored against
+anything, and *missing evidence is never a match and never green* — the same reading as
+`[R-READ v1]`. A flag would say "we checked and it needs watching". Review says "we could not
+check", which is what is true.
+
+⚠ **Sensa and Scalea are natural stone**, and natural stone is not usually published as a brand
+overhang table the way engineered and porcelain are. Those two may have nothing to extract, in
+which case they need a **SteedForm standard** rather than a manufacturer figure — a different
+kind of answer from the rest of this section, and one only SteedForm can give.
 
 ### 6.2 Appliance corner radii — the R5 vs R10 conflict check
 
