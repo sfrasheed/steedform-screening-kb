@@ -32,7 +32,7 @@
 
 ---
 
-## OR-40 · Print Construction is 99% blank — populate, or amend the rule?
+## OR-40 · Print Construction was 99% blank — ✅ CLOSED 7 Sep 2026, the column was populated
 
 **The column is not neglected. It is maintained differently than the rule assumes.**
 

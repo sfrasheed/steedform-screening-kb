@@ -368,7 +368,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 
 **Why this section exists.** Several rules in this set **fail closed on blank data** — `[R-PROFILE v5]`, `[R-SUBTYPE v2]`, `[R-D5 v7]`, `[R-LEADTIME v2]`, `[R-MA5 v3]`. A fail-closed rule is only as good as the column behind it: **a rule that is perfectly correct against an empty column sends every job to review, and looks like a broken screen.** Coverage therefore belongs in the registry, beside the identifier, and should be re-measured whenever the boards are re-exported.
 
-### 7.1 Print Construction — 99% blank, and the rule fails closed on blank
+### 7.1 Print Construction — populated in full, 7 September 2026
 
 | Value | Rows |
 |---|---|
@@ -430,7 +430,7 @@ Questions this document deliberately does not settle are recorded in `10-open-ru
 
 | # | Action | Board | Why |
 |---|---|---|---|
-| 1 | **Populate `Full body` on the 387 blank Print Construction rows** | Materials | Otherwise every pencil job goes to review §7.1. **Biggest single unblock** |
+| 1 | ✅ **DONE 7 Sep 2026 — Print Construction populated, 392 of 392.** Pencil jobs are answered from the board instead of going to review | Materials | Was the biggest single unblock; §7.1 |
 | 2 | **Spot-check the known A-tier relationships against Customer Tier** | Accounts | ⚠ **Not "tag the 128".** A blank tier means **unverified**, and 14–16 days is the correct answer for an unverified account `[R-LEADTIME v2]` (owner, 3 Sep 2026). The only real exposure is a genuine A-tier customer sitting untagged. ⛔ **Never bulk-assign a tier to clear blanks** — that turns an honest *unverified* into a false *verified* |
 | 3 | **Populate Rating — Measure-ready and Install-ready, or rule site-readiness out of the composite** | Accounts | OR-14's ruling currently scores on two empty columns §7.2 |
 | 4 | **Extend the outdoor technical review beyond Lavistone** | Materials | Then `Outdoor Suitability` can become the authority instead of a class rule plus a brand list `05` §1.1.1 |
