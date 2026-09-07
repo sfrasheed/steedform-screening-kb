@@ -384,6 +384,59 @@ At screening: a **🔴 condition entry with the reason stated** (chipping · sil
 
 **Mounting type is ORDER-bar evidence, and it is a board field.** `[R-EVIDENCE-BAR v2]`'s ORDER bar for *Appliances / sinks* requires **model number, mounting type, linked Library record** — so at Order a mount must be a *recorded value*, not an assumption, and "flush" surfacing there is a reset, not a variation to price. The Appliance Library `5029694677` column carrying it is **`color_mm4zdfnd` Mount Type** (being added to `08-board-and-column-registry.md`), alongside **Cutout Spec `long_text_mm4zayzp`**. Read both live — never screen a mount or a cutout from memory or from a snapshot pasted into a document. **That same ORDER-bar row now also requires QC Status** `[R-EVIDENCE-BAR v2]` (ruled 3 September 2026), matching the adjacent Cut-outs row. *(Evidence-bar mechanics are owned by `06-evidence-requirements.md`; what is carried here is the capability half — a mount SteedForm cannot make.)*
 
+### 6.1b Overhang limits — the table `[D11]` compares against
+
+**Reference data, read off the manufacturers' own fabrication manuals, 7 September 2026.**
+`03-risk-scoring.md` §3.3 **D11** scores a drawn overhang *at or over* the brand-and-thickness
+limit — and until today that table existed nowhere in this knowledge base, so the rung had no
+threshold and fired on **every** drawn overhang. These are the thresholds.
+
+#### Rules that apply to every brand below
+
+- ⛔ **The unsupported overhang must be no greater than ONE THIRD of the complete surface
+  depth.** This sits on top of every figure below: a 300mm overhang needs 900mm of surface,
+  whatever the millimetre table permits.
+- **The fabricator determines the required support.** The manuals state the limits; they place
+  the responsibility for the support design with the fabricator.
+- Do not load more than **100 kg** on any part of an overhang; do not sit or stand on it.
+- Laminating the edge and bonding a second slab underneath adds strength and moves the job into
+  the laminated row.
+
+#### Caesarstone ICON — engineered *(CSA NZ F&I ICON Ed 3, Dec 2025, §9.7)*
+
+| Overhang | 20mm slab | 40mm laminated |
+|---|---|---|
+| **No additional support** | **< 300 mm** | **< 400 mm** |
+| **Support brackets at 600mm intervals** | **300 – 500 mm** | over 400 mm |
+| **Legs, columns or panels at 600mm intervals** | **> 500 mm** | — |
+
+⚠ **300mm is the first millimetre of the bracket band, not the last of the free one.** A 300mm
+overhang on 20mm ICON requires brackets at 600mm intervals **and** 900mm of supported depth to
+satisfy the one-third rule. It is a boundary case in both tests at once, which is exactly why
+D11 flags it rather than letting it through.
+
+#### Caesarstone Porcelain *(CSA EN Porcelain F&I Ed 4, Nov 2025, §7.10)*
+
+| Overhang | Maximum unsupported | Supported depth needed |
+|---|---|---|
+| 12mm, one side | **≤ 300 mm** | ≥ 600 mm |
+| 12mm, two or three sides | **≤ 250 mm** | ≥ 500 mm |
+| 20mm, one side | **≤ 450 mm** | ≥ 900 mm |
+| 20mm, two or three sides | **≤ 400 mm** | ≥ 800 mm |
+
+⛔ **Single-thickness edge profiles must not overhang on OPEN cabinets.** Where a mitred edge is
+used, a support panel under the entire benchtop is recommended.
+
+#### Not yet extracted — treat as unknown, never as unlimited
+
+Zenith · Kaya · Neolith · Lavistone · Vasari · Smartstone Sintered · Dekton · Cosentino Silestone
+and Eclos. Their manuals are held and carry permitted-overhang tables, several of them as
+diagrams rather than text. **Until a brand appears above, D11 has no threshold for it and the
+overhang is confirmed with the builder** — the same answer as before, but now it is a known gap
+rather than the whole rule.
+
+---
+
 ### 6.2 Appliance corner radii — the R5 vs R10 conflict check
 
 **`SKILL.md` Step 4 requires it explicitly:** *"Flag any known conflicts (e.g., appliances that specify R5 corners when stone minimum is R10)."*
