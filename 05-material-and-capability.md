@@ -391,19 +391,19 @@ At screening: a **🔴 condition entry with the reason stated** (chipping · sil
 limit — and until today that table existed nowhere in this knowledge base, so the rung had no
 threshold and fired on **every** drawn overhang. These are the thresholds.
 
-🟠 **EVERY TABLE HERE IS AMBIGUOUS AT ITS OWN THRESHOLD, AND THAT IS WHERE D11 FIRES.** Three
-manuals, three different ways of not quite saying it: Caesarstone ICON prints `<300 mm` in one
-band and `300-500 mm` in the next, so 300 falls in both readings depending on which row you
-trust. Neolith prints **"≤ 350 mm (less than 350 mm)"** — inclusive and exclusive in a single
-cell. Larona prints `A < 150mm` then `A = 150mm - 300mm`, the same overlap as Caesarstone.
+✅ **THE PUBLISHED FIGURE PASSES. THE FIRST MILLIMETRE ABOVE IT FLAGS.** Ruled by Stella
+Rasheed, 7 September 2026, and it governs every table in this section including ones added later.
 
-**One SteedForm ruling should settle all of them and every table added later**, rather than a
-separate reading per brand:
+The manuals are ambiguous at exactly the number D11 fires on, and each is ambiguous differently:
+Caesarstone ICON prints `<300 mm` in one band and `300-500 mm` in the next; Neolith prints
+**"≤ 350 mm (less than 350 mm)"**, inclusive and exclusive in a single cell; Larona overlaps at
+150 the same way. **Vasari is the one manual that answers it** — it states 150mm *is* the maximum
+unsupported overhang — and that reading is now adopted across all brands rather than settled one
+manual at a time.
 
-> **At the exact figure — does it pass, or does it flag?**
-
-⛔ **NOT YET RULED.** Until it is, a drawn overhang landing exactly on a published figure is
-**flagged and confirmed with the builder**, which is what D11 already does with everything.
+So: **300mm on ICON passes. 350mm on Neolith passes. 150mm on Larona and Vasari passes. 301, 351
+and 151 do not.** The same applies to the one-third-of-depth ceiling: an overhang at exactly a
+third of the complete depth passes.
 
 #### Rules that apply to every brand below
 
@@ -428,10 +428,13 @@ separate reading per brand:
 two laminated bands and stopped at "over 400mm — brackets", which understated the allowance: a
 laminated top runs to 600mm on brackets and only needs legs beyond that.)*
 
-⚠ **300mm is the first millimetre of the bracket band, not the last of the free one.** A 300mm
-overhang on 20mm ICON requires brackets at 600mm intervals **and** 900mm of supported depth to
-satisfy the one-third rule. It is a boundary case in both tests at once, which is exactly why
-D11 flags it rather than letting it through.
+✅ **300mm on 20mm ICON PASSES** under the boundary ruling above — the printed bands read as *up
+to 300*, then *over 300 to 500*. It still needs **900mm of complete depth** to satisfy the
+one-third ceiling, and at exactly 300-on-900 it satisfies it. **301mm takes brackets at 600mm
+intervals.**
+
+⚠ *This reverses an earlier reading in this section, which had 300 falling into the bracket band
+by one millimetre. The bands were read strictly; the ruling reads them as drawn.*
 
 #### Zenith Surfaces · Kaya Surfaces *(Zenith & Kaya F&I Manual, May 2026, §8.9)*
 
@@ -487,13 +490,11 @@ end of the overhang to the floor must be **two slabs joined back-to-back**, neve
 remove the mesh backing from the underside of an overhang** (it may be removed from exposed side
 panels, but Caesarstone warrants no appearance on the back of a slab).
 
-🟠 **UNRESOLVED — the 12mm section contradicts itself.** After allowing 300mm on one side, it
-adds *"Overhangs longer than 250 mm always require support."* Unscoped, that cancels the 300mm
-allowance two lines above it. The 20mm section directly below scopes both of its equivalents —
-*"longer than 450 mm **on one side**"*, *"longer than 400 mm **on two or three sides**"* — so by
-parallel construction the 12mm line is missing *"on two or three sides"*. **That reading is not
-yet ruled.** Until it is, a 12mm one-side overhang between 250 and 300mm is confirmed with the
-builder rather than passed.
+✅ **RULED — 12mm on one side runs to 300mm.** Stella Rasheed, 7 September 2026. The §7.10 line
+*"Overhangs longer than 250 mm always require support"* is read as **scoped to two or three
+sides**, matching how the 20mm section directly below scopes both of its equivalents (*"longer
+than 450 mm on one side"*, *"longer than 400 mm on two or three sides"*). Unscoped it would cancel
+the 300mm allowance printed two lines above it, which cannot be what the section means.
 
 #### Neolith *(Neolith Technical Guide APAC)*
 
@@ -602,10 +603,11 @@ anything, and *missing evidence is never a match and never green* — the same r
 `[R-READ v1]`. A flag would say "we checked and it needs watching". Review says "we could not
 check", which is what is true.
 
-⚠ **Sensa and Scalea are natural stone**, and natural stone is not usually published as a brand
-overhang table the way engineered and porcelain are. Those two may have nothing to extract, in
-which case they need a **SteedForm standard** rather than a manufacturer figure — a different
-kind of answer from the rest of this section, and one only SteedForm can give.
+⚠ **Sensa and Scalea are natural stone** — 53 rows — and natural stone is not usually published
+as a brand overhang table the way engineered and porcelain are. They would need a **SteedForm
+standard** rather than a manufacturer figure. **DEFERRED, 7 September 2026 (Stella Rasheed):** not
+being worked on now. Natural-stone overhangs go to review with everything else on this list, which
+is the honest answer while no figure exists.
 
 ### 6.2 Appliance corner radii — the R5 vs R10 conflict check
 

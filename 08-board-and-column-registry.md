@@ -393,7 +393,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | Board · Field | Populated | Consequence |
 |---|---|---|
 | Materials · Material Type | **392 / 392** | ✅ Clean. Three values, mapping exactly onto `[R-M1 v2]` |
-| Materials · Stone Sub-Type | 3 / 392 | Expected. `[R-D5 v8]` fallback fires on 50 of 53 naturals — **working as designed, and expensive.** No field is coming; the split is a per-job human call |
+| Materials · Stone Sub-Type | **45 / 53 naturals** | Populated 7 Sep 2026 — 39 Granite · 4 Marble · 2 Quartzite. **Eight rows deliberately left blank** across six colours — Blue Galaxy · Calacatta Renoir · Noche Cypress · Noche Havana · Silver Wave · Venice Marble — which could not be classified with confidence. **Ruled to stay blank rather than be deleted (Stella Rasheed, 7 Sep 2026):** blank takes the conservative branch and flags, whereas deleting the row removes the material from the library entirely and `[R-MATERIAL-TERMS v1]` matches exactly with no fuzzy fallback, so an enquiry naming one would match nothing at all — silently. `[R-D5 v8]`'s split remains a per-job human call regardless of what this column says |
 | Materials · Print Construction | **392 / 392** | ✅ Complete, 7 Sep 2026. 228 `Full body` · 164 `Face-printed`. OR-40 closed |
 | Materials · Print Construction | 5 / 392 | ⛔ §7.1 |
 | Materials · Alias Names | **0 / 392** | Every misnamed material fails to match, silently `[R-MATERIAL-TERMS v1]` |
