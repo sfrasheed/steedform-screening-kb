@@ -167,6 +167,39 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 
 ⚠ **This is exactly the failure shape this document exists to catch:** a rule that is correct, tagged and current, pointing at a board value that has not yet been changed to match it. **The rule is not wrong and the column is not wrong — they simply do not yet agree.**
 
+### 2.4b Contacts `5029570130` — how an emailed enquiry finds its account
+
+**Verified live 7 September 2026.** 538 items. This section exists because
+`[R-ACCTMATCH v5]`'s tiers 2 and 3 match on an EMAIL ADDRESS, and until today nothing
+could query a column value — so those rungs never ran and every emailed enquiry from a
+known customer stopped at "the link was never proved".
+
+| Field | Column ID | Screening role |
+|---|---|---|
+| **Email** | `contact_email` | **The tier-2 rung.** Match the sender's address here *exactly* |
+| **Accounts** | `contact_account` | **The way across.** A relation — read `linked_item_ids`, then fetch those records. This is what turns a matched contact into an account |
+| Phone | `contact_phone` | Not a matching key |
+| *Company | `text_mm64h04v` | Free text on the contact. **Not** the account name — the relation is the account |
+
+**The ladder, as it actually runs:**
+
+1. **Tier 2 — exact address.** Match the sender on `contact_email`. One hit gives you a
+   contact; follow `contact_account` to the account and read the whole record.
+2. **Tier 3 — domain.** Match the domain fragment on `contact_email`. ⛔ **A domain is
+   only a match if EVERY hit points at the SAME account.** Two accounts on one domain is
+   an ambiguous match, which is `Needs Review`, not a pick.
+3. Accounts also carries `email_mm64cpfk` *Main POC email address* — one address per
+   account, so it answers only when the sender happens to be that person. **Contacts is
+   the broader index and should be tried first.**
+
+⚠ **Worked example, 7 Sep 2026.** `adele@classiquerobes.com.au` matches contact *Adele
+Steventon* exactly, whose `contact_account` is `2827398298`. A domain search returns ten
+contacts, **all pointing at that same account** — an unambiguous tier-3 match. The answer
+was one query away; the screen lacked the tool, and reported a missing capability as an
+unconfirmed customer.
+
+---
+
 ### 2.5 Appliance Library `5029694677`
 
 ⛔ **`5029694677` RETURNED NO READABLE BOARD ON 5 SEPTEMBER 2026.** Authorised by
