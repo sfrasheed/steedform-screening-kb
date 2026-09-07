@@ -418,11 +418,15 @@ separate reading per brand:
 
 #### Caesarstone ICON — engineered *(CSA NZ F&I ICON Ed 3, Dec 2025, §9.7)*
 
-| Overhang | 20mm slab | 40mm laminated |
+| Support required | 20mm slab | 40mm laminated top |
 |---|---|---|
-| **No additional support** | **< 300 mm** | **< 400 mm** |
-| **Support brackets at 600mm intervals** | **300 – 500 mm** | over 400 mm |
-| **Legs, columns or panels at 600mm intervals** | **> 500 mm** | — |
+| **None** | **< 300 mm** | **< 400 mm** |
+| **Support brackets at 600mm intervals** | **300 – 500 mm** | **400 – 600 mm** |
+| **Legs, columns or panels at 600mm intervals** | **> 500 mm** | **> 600 mm** |
+
+*(Corrected 7 Sep 2026 against the printed table. An earlier reading of this section carried only
+two laminated bands and stopped at "over 400mm — brackets", which understated the allowance: a
+laminated top runs to 600mm on brackets and only needs legs beyond that.)*
 
 ⚠ **300mm is the first millimetre of the bracket band, not the last of the free one.** A 300mm
 overhang on 20mm ICON requires brackets at 600mm intervals **and** 900mm of supported depth to
@@ -437,7 +441,8 @@ D11 flags it rather than letting it through.
 | **300 – 500 mm** | Support brackets at 600 mm intervals |
 | **> 500 mm** | Legs, columns or panels at 600 mm intervals |
 
-**Identical to Caesarstone ICON's 20mm column** — same bands, same intervals, same wording. Two
+**Identical to Caesarstone ICON's 20mm column** — same bands, same intervals, same wording. ICON
+additionally publishes a 40mm laminated column; Zenith and Kaya publish none. Two
 engineered-stone brands landing on the same structure is worth knowing, but they remain separate
 rows here: a shared table today is not a promise of a shared table at the next revision.
 
