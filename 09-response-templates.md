@@ -1,6 +1,6 @@
 # 09 — Response Templates
 
-⛔ **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE** `[R-ASK v2]`. Dimensioned
+⛔ **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE** `[R-ASK v3]`. Dimensioned
 drawings, the stone **range**, the scope, and the site address. **Never** a colour, an
 edge profile, an appliance or sink model, a spec sheet, photos of installed cabinetry,
 or a site contact — those are order facts, they stay on the job, and they are raised

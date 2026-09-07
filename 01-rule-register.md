@@ -262,7 +262,7 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
-### R-ASK · v2 · LAW
+### R-ASK · v3 · LAW
 **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE.** Everything else is an
 order-gate condition: it stays on the job, it is raised when the job converts, and it
 does not go in front of a customer who has asked for a price. Ruled by Stella Rasheed,
@@ -273,8 +273,13 @@ does not go in front of a customer who has asked for a price. Ruled by Stella Ra
 - **Material to RANGE level.** A range is a specification `[R-RANGE v1]`. ⛔ **Never ask
   for a colour to produce a quote.**
 - **The scope** — which rooms and which pieces.
-- **The site address or suburb.** Not optional: Full Service vs Supply Only is decided
-  by the site against Serviceable Areas `5029634649`, and nothing else answers it.
+- **The site address or suburb** — *unless the account is marked supply only*. Full
+  Service vs Supply Only is normally decided by the site against Serviceable Areas
+  `5029634649`. ⛔ **Read `Supply Only Customer` (`color_mm6z1ggc`) on the account
+  first:** `YES` settles it permanently and the address must not be asked for on those
+  grounds. ⚠ **`NO/NA` and BLANK are different.** Blank is 81 of 191 accounts and means
+  nobody has marked it — fall through and ask. Reading blank as "not supply only" would
+  be right most of the time and wrong in silence.
 
 ⚠ **THE LIST BELOW APPLIES TO A RECOGNISED ACCOUNT.** Where the customer resolves to an
 account `[R-ACCTMATCH v5]`, their habits are known, the defaults hold, and the reply
@@ -307,7 +312,9 @@ findings or the order-gate conditions. A screen that stopped *finding* an unveri
 appliance would be a different and much worse change.
 **Carried by:** `09 Response Templates` · `06 Evidence Requirements`
 
-**History:** **v2 **8 Sep 2026 (Stella Rasheed)**** — the exclusions are scoped to a
+**History:** **v3 **8 Sep 2026 (Stella Rasheed)**** — a `Supply Only Customer` column now
+exists on Accounts, so a marked customer is no longer asked for a site address to settle
+a question already settled. Blank is explicitly not a No. · **v2 **8 Sep 2026 (Stella Rasheed)**** — the exclusions are scoped to a
 recognised account. An unrecorded customer is asked for material and edge profile after
 all: there is no history to read a preference from, and assuming a stranger's intent is
 the more expensive mistake. · **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after

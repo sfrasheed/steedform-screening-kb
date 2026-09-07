@@ -168,6 +168,32 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 
 ⚠ **This is exactly the failure shape this document exists to catch:** a rule that is correct, tagged and current, pointing at a board value that has not yet been changed to match it. **The rule is not wrong and the column is not wrong — they simply do not yet agree.**
 
+#### Supply Only Customer — Accounts `5029570132`
+
+| Field | Column ID | Labels | Screening role |
+|---|---|---|---|
+| **Supply Only Customer** | `color_mm6z1ggc` | `YES` · `NO/NA` | The customer is supply only **whatever the site says** |
+
+**Verified live 8 September 2026:** 8 `YES` · 102 `NO/NA` · **81 blank**.
+
+⛔ **BLANK IS NOT `NO/NA`.** Blank means nobody has marked this account, on 81 of 191 —
+well over a third. A blank must fall through to the ordinary route: read the site
+against Serviceable Areas `5029634649` and ask for the address if it is not known. **A
+screen that read blank as "not supply only" would be right most of the time and wrong
+silently**, which is the shape this registry exists to prevent.
+
+**What `YES` settles:**
+- **The site no longer decides the service.** `[R-AREA v1]`'s in-area / out-of-area
+  question and `[R-SUPPLYONLY v2]`'s conversion do not arise — the conversion is already
+  made, permanently, for this customer.
+- **Do not ask for a site address to determine the service** `[R-ASK v3]`. A delivery
+  address may still be needed for freight, but that is an **order** fact and is not
+  asked for at quote.
+- ⚠ The layer-1 blocking condition *"out of area while the Supply Only conversion is
+  undecided"* `[R-BLOCK v3]` **cannot fire** on a `YES` account. Nothing is undecided.
+
+---
+
 ### 2.4b Contacts `5029570130` — how an emailed enquiry finds its account
 
 **Verified live 7 September 2026.** 538 items. This section exists because
