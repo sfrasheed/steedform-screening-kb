@@ -13,6 +13,12 @@ unstated profile is not a gap and must not be written into a reply as one.
 account, **also ask for the material selection and the edge profile** — nothing is known
 about how they work, and assuming a stranger's intent costs more than one more question.
 
+⛔ **A DRAFT REPLY IS CUSTOMER-FACING TEXT AND NOTHING ELSE.** No instruction to staff,
+no warning, no caveat about the enquiry — those belong in the internal note, which is
+shown to the person and never sent. A draft that opens by telling someone not to send it
+is a note, not a reply, and on 7 September 2026 one was sent verbatim because the two
+had nowhere separate to live.
+
 ⚠ This governs what a customer is **asked for**. It removes nothing from the risk
 strip, the findings or the order-gate conditions — the screen still finds all of it.
 
