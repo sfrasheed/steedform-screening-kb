@@ -480,6 +480,24 @@ builder rather than passed.
 Reinforcement at **600mm centres** where support is used, with additional reinforcement at the
 X sections of a full-perimeter frame.
 
+#### Vasari Porcelain *(Vasari Surfaces Fabrication & Installation Guide 2025)*
+
+| Overhang | Support |
+|---|---|
+| **≤ 150 mm** | None — 150mm is stated as *the maximum unsupported overhang* |
+| **150 – 300 mm** | Sufficient support must be provided |
+| **> 300 mm** | Adequate support from the base, **at least every 600–620 mm** |
+
+⚠ **VASARI IS THE ONE MANUAL THAT SETTLES ITS OWN BOUNDARY.** It states 150mm *is* the maximum
+unsupported overhang rather than printing overlapping bands, so 150 passes and 151 does not. Worth
+weighing when the ruling above is made.
+
+⛔ **CUTOUTS NEAR AN OVERHANG ARE A SEPARATE HAZARD, AND ONLY THIS MANUAL RAISES IT.** Vasari's
+static weight tolerance *"depends on the presence of holes in the immediate area"*, and excessive
+weight near a hole can break the surface — a specific assessment is recommended. **A tap hole or
+a cutout landing near an overhang is therefore a condition in its own right**, separate from the
+overhang distance, and the distance table alone does not clear it.
+
 #### Larona Porcelain *(manufacturer table, supplied 7 Sep 2026)*
 
 | Overhang | Support |
@@ -487,6 +505,9 @@ X sections of a full-perimeter frame.
 | **< 150 mm** | None required |
 | **150 – 300 mm** | Adequate support required from the base |
 | **> 300 mm** | Adequate support from the bases, **at least every 600 mm** |
+
+⚠ **Larona's bands are identical to Vasari's** — 150 / 150–300 / >300 at 600mm centres. Recorded
+as observed, not as a claim that they are the same product.
 
 ⚠ **Larona is roughly twice as conservative as Caesarstone Porcelain.** Support begins at
 **150mm** here, where Caesarstone allows 300mm unsupported on one side at 12mm. **Never carry a
