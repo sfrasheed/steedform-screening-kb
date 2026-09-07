@@ -149,7 +149,7 @@ Notes carried with the list: **Smartstone** is sintered-only (§1) · **Neolith*
 
 **The test is construction, not class** `[R-PROFILE v5]` (corrected by the MD, 24 Aug 2026). Read **`Print Construction` (`color_mm6hz0dd`) live off Materials Library `5029570546`** `[R-REF v2]`:
 
-⛔ **THE COLUMN IS 99% BLANK — 5 populated, 387 blank, 0 `Full body`** (verified 3 Sep 2026). The five populated rows are exactly the five face-printed materials named below, so the column is being maintained as a **positive marker** while this rule reads blank as **unknown**. **As it stands, 387 of 392 materials send every pencil job to review.** The rule is not wrong and the column is not wrong — **they do not yet agree**, and which one moves is **OR-40**, quarantined in `10-open-rulings.md`. ⛔ **Do not resolve it here.** Interim: flag it and say why — *"print construction not recorded"*, never *"may be face-printed"*. Coverage in `08` §7.1.
+✅ **THE COLUMN IS FULLY POPULATED — 392 of 392, no blanks** (verified 7 Sep 2026, populated by Stella Rasheed). 228 `Full body` · 164 `Face-printed`. **OR-40 is closed by the data**: the column was maintained as a positive marker while this rule read blank as unknown, and with no blanks left there is nothing for the two readings to disagree about. The fail-closed branch stays exactly as written — it now guards a **new** material added without being marked, which is the case it was always for. Coverage in `08` §7.1.
 
 | `Print Construction` value | Effect |
 |---|---|

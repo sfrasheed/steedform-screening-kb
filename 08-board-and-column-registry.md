@@ -376,7 +376,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | **blank** | **387** |
 | `Full body` | **0** |
 
-**The populated rows are exactly the materials this knowledge base names as face-printed** — **Kaya Como · Kaya Eclipse · Kaya Sienna**. Five until 7 Sep 2026, when Zenith Ottoman Grey and Rosè were corrected to full-body and cleared. The column is **not neglected. It is maintained as a POSITIVE MARKER** — populate when face-printed, leave blank otherwise. `[R-PROFILE v5]` reads blank as **unknown**. Both are reasonable; **they are not compatible.**
+✅ **FULLY POPULATED, 7 September 2026 — 392 of 392, no blanks.** 228 `Full body` · 164 `Face-printed`. Populated by Stella Rasheed. **This closes OR-40**, which turned on the column being kept as a positive marker while `[R-PROFILE v5]` read blank as unknown: with no blanks the two readings cannot disagree. The fail-closed branch is unchanged and now guards a new material added without being marked. ⚠ **Seven porcelains read `Full body`** — construction and class are different tests, and porcelain stays excluded from pencil **as a class** regardless of what this column says.
 
 ⛔ **As it stands, 387 of 392 materials send every pencil-profile job to Needs Review**, and the reason would not be the rule — it would be an empty column.
 
@@ -392,7 +392,8 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | Board · Field | Populated | Consequence |
 |---|---|---|
 | Materials · Material Type | **392 / 392** | ✅ Clean. Three values, mapping exactly onto `[R-M1 v2]` |
-| Materials · Stone Sub-Type | 3 / 392 | Expected. `[R-D5 v7]` fallback fires on 50 of 53 naturals — **working as designed, and expensive** |
+| Materials · Stone Sub-Type | 3 / 392 | Expected. `[R-D5 v7]` fallback fires on 50 of 53 naturals — **working as designed, and expensive.** No field is coming; the split is a per-job human call |
+| Materials · Print Construction | **392 / 392** | ✅ Complete, 7 Sep 2026. 228 `Full body` · 164 `Face-printed`. OR-40 closed |
 | Materials · Print Construction | 5 / 392 | ⛔ §7.1 |
 | Materials · Alias Names | **0 / 392** | Every misnamed material fails to match, silently `[R-MATERIAL-TERMS v1]` |
 | Materials · Outdoor Suitability | 41 / 392 (one brand) | Supplementary only — `05` §1.1.1 |

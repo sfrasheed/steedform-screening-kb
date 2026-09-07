@@ -21,7 +21,7 @@
 
 | # | Item | Status |
 |---|---|---|
-| **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v5]`? | **OPEN — highest stakes in this file** |
+| **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v5]`? | ✅ **CLOSED 7 Sep 2026 — the column was populated.** 392 of 392, no blanks. The rule was never amended, which was the right half to leave alone |
 | **OR-41** | Site-readiness scores on two entirely empty columns | **OPEN** |
 | **OR-39** | The Serviceable Areas board has a third zone value no rule handles | **OPEN** — one row today |
 | OR-38 | Is Screening Philosophy retired as a document? | **OPEN** — low stakes |
