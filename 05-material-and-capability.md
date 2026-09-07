@@ -417,6 +417,9 @@ D11 flags it rather than letting it through.
 
 #### Caesarstone Porcelain *(CSA EN Porcelain F&I Ed 4, Nov 2025, §7.10)*
 
+**The number of overhanging sides changes the limit.** One side is treated more generously than
+two or three, and the manual gives both.
+
 | Overhang | Maximum unsupported | Supported depth needed |
 |---|---|---|
 | 12mm, one side | **≤ 300 mm** | ≥ 600 mm |
@@ -424,8 +427,34 @@ D11 flags it rather than letting it through.
 | 20mm, one side | **≤ 450 mm** | ≥ 900 mm |
 | 20mm, two or three sides | **≤ 400 mm** | ≥ 800 mm |
 
+⚠ **READ THE FRACTION AGAINST THE COMPLETE DEPTH, NOT THE SUPPORTED DEPTH.** §7.10's prose says
+each overhang must be "no greater than 1/3 of the **supported** surface depth", and its own
+worked pairs contradict that: 300 with 600, 450 with 900, 250 with 500, 400 with 800 — every one
+of them is **half** the supported depth. They are all exactly **one third of the COMPLETE depth**
+(overhang + supported), which is what page 50 of the same document says. So:
+
+> **overhang ≤ ⅓ of (overhang + supported depth)** — equivalently **overhang ≤ ½ of the
+> supported depth**.
+
+Applying the prose as printed makes SteedForm **twice as conservative as Caesarstone intends**
+and would decline work the manufacturer permits.
+
 ⛔ **Single-thickness edge profiles must not overhang on OPEN cabinets.** Where a mitred edge is
 used, a support panel under the entire benchtop is recommended.
+
+**When support is needed** *(§7.10, All Slabs)*: non-flexible material — **wedi Building Board,
+Whiteboard HMR, or a support construction**. A Porcelain panel used as vertical support from the
+end of the overhang to the floor must be **two slabs joined back-to-back**, never one. **Do not
+remove the mesh backing from the underside of an overhang** (it may be removed from exposed side
+panels, but Caesarstone warrants no appearance on the back of a slab).
+
+🟠 **UNRESOLVED — the 12mm section contradicts itself.** After allowing 300mm on one side, it
+adds *"Overhangs longer than 250 mm always require support."* Unscoped, that cancels the 300mm
+allowance two lines above it. The 20mm section directly below scopes both of its equivalents —
+*"longer than 450 mm **on one side**"*, *"longer than 400 mm **on two or three sides**"* — so by
+parallel construction the 12mm line is missing *"on two or three sides"*. **That reading is not
+yet ruled.** Until it is, a 12mm one-side overhang between 250 and 300mm is confirmed with the
+builder rather than passed.
 
 #### Not yet extracted — treat as unknown, never as unlimited
 
