@@ -429,6 +429,26 @@ overhang on 20mm ICON requires brackets at 600mm intervals **and** 900mm of supp
 satisfy the one-third rule. It is a boundary case in both tests at once, which is exactly why
 D11 flags it rather than letting it through.
 
+#### Zenith Surfaces · Kaya Surfaces *(Zenith & Kaya F&I Manual, May 2026, §8.9)*
+
+| Overhang depth | Support required |
+|---|---|
+| **< 300 mm** | None |
+| **300 – 500 mm** | Support brackets at 600 mm intervals |
+| **> 500 mm** | Legs, columns or panels at 600 mm intervals |
+
+**Identical to Caesarstone ICON's 20mm column** — same bands, same intervals, same wording. Two
+engineered-stone brands landing on the same structure is worth knowing, but they remain separate
+rows here: a shared table today is not a promise of a shared table at the next revision.
+
+⚠ **THIS TABLE STATES NO THICKNESS.** Caesarstone gives 20mm and 40mm-laminated columns; this one
+gives a single set of bands. **Do not assume the laminated allowance carries across** — a 40mm
+laminated Zenith top has no published figure here, and an unstated thickness is not a permission.
+
+Same guidance as Caesarstone on either side of it: laminating the edge and bonding a second slab
+underneath adds strength, the fabricator determines the support, and a two-direction overhang
+whose outside corner exceeds the limit takes flat brackets in addition.
+
 #### Caesarstone Porcelain *(CSA EN Porcelain F&I Ed 4, Nov 2025, §7.10)*
 
 **The number of overhanging sides changes the limit.** One side is treated more generously than
