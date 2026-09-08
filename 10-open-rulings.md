@@ -23,6 +23,7 @@
 |---|---|---|
 | **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v5]`? | ✅ **CLOSED 7 Sep 2026 — the column was populated.** 392 of 392, no blanks. The rule was never amended, which was the right half to leave alone |
 | **OR-41** | Site-readiness scores on two entirely empty columns | **OPEN** |
+| **OR-42** | Replacement benchtops — `[R-CABINET v2]` says never decline, the supplied template declines | **OPEN** — raised 8 Sep 2026 |
 | **OR-39** | The Serviceable Areas board has a third zone value no rule handles | **OPEN** — one row today |
 | OR-38 | Is Screening Philosophy retired as a document? | **OPEN** — low stakes |
 | OR-26 | No board identifier verified against a live board | **DEFERRED** by the owner |
@@ -163,11 +164,7 @@ Prioritisation as marked on the 3 September decision sheet. The owner builds the
 
 ---
 
-*Related: `RULINGS-2026-09-03.md` · `01-rule-register.md` · `CHANGES.md` · `DATA-VERIFICATION-2026-09-03.md` (the board exports behind OR-39, OR-40 and OR-41) · `08-board-and-column-registry.md` §7 (the coverage record).*
-
----
-
-## OR-41 — Replacement benchtops: `R-CABINET v2` says never decline; the supplied template declines
+## OR-42 — Replacement benchtops: `R-CABINET v2` says never decline; the supplied template declines
 
 **Raised:** 8 September 2026, while propagating six templates supplied by Stella Rasheed.
 **Status:** OPEN. ⛔ **Nothing has been written to `09-response-templates.md` for this.** No
@@ -201,3 +198,7 @@ else's **stone*** a **DECLINE or refer** item. That suggests three cases, not on
 **What is needed:** either an amendment to `[R-CABINET v2]` narrowing part 2, or a ruling
 that the template is narrower than the answer given. Until then `[R-CABINET v2]` is
 authoritative and the screen flags and prices — it does not decline.
+
+---
+
+*Related: `RULINGS-2026-09-03.md` · `01-rule-register.md` · `CHANGES.md` · `DATA-VERIFICATION-2026-09-03.md` (the board exports behind OR-39, OR-40 and OR-41) · `08-board-and-column-registry.md` §7 (the coverage record).*
