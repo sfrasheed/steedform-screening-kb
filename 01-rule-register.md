@@ -312,13 +312,21 @@ what was asked for and what v1 got wrong. v1 read as a global narrowing of the o
 and would have declined an A-tier customer's porcelain. · **v1 **8 Sep 2026** —
 registered unscoped, in error.
 
-### R-CABINET · v1 · LAW
+### R-CABINET · v2 · LAW
 **WHAT THE STONE SITS ON IS A SCREENING QUESTION.** Two facts are usually absent from an
 enquiry and both change the job. Ruled by Stella Rasheed, 8 September 2026.
+
+✅ **BOTH PARTS APPLY TO EVERY CUSTOMER, RATED OR NOT.** Stated because `[R-CLASS v2]`
+sitting beside it is scoped to unrated customers only, and a reader who assumes the scope
+carries across gets both rules wrong. It does not carry.
 
 **1. DIY or flat-pack cabinetry → 🔴 BLOCKING, decline.** Where the enquiry names
 **Bunnings, IKEA, or any flat-pack or self-assembled cabinetry**, the answer is no.
 Stone is not fabricated onto it.
+
+⚠ **In practice this lands almost entirely on unrated enquiries** — SteedForm's rated
+cabinetmakers do not build flat-pack. That is an observation about where it fires, **not
+a scope**: a rated account specifying IKEA cabinetry is declined exactly the same way.
 
 ⚠ **THIS IS A RULED DECLINE, NOT A CAPABILITY STOP** `[R-ANDON v2]`. SteedForm *could*
 cut the stone; the base cannot be relied on to carry it, hold level or stay square, and
@@ -326,7 +334,8 @@ it was assembled by the customer. Do **not** render it as ⛔ — that says "we 
 this", and blending the two is the specific failure `[R-ANDON v2]` names. It is a 🔴
 that a person may not waive.
 
-**2. Replacing an existing benchtop → 🟡, flagged.** Not a decline — it is ordinary work.
+**2. Replacing an existing benchtop → 🟡, flagged. Across the board, every customer.**
+Not a decline — it is ordinary work.
 It changes what is priced: templating off what is there, removal and disposal of the old
 top, and the cabinetry underneath is an unknown until someone looks. Flag it and price
 it; never decline it.
@@ -338,8 +347,10 @@ cabinetry is trade-built, and scoring it as though it had is the assumption this
 exists to stop.
 **Carried by:** `03 Risk Scoring` · `06 Evidence Requirements` · `09 Response Templates`
 
-**History:** **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after neither fact was
-being asked for or scored.
+**History:** **v2 **8 Sep 2026 (Stella Rasheed)**** — scope made explicit: both parts apply
+to every customer. v1 left it implied, next to a rule that is scoped, which is how the
+last scope error happened. · **v1 **8 Sep 2026** — registered after neither fact was being
+asked for or scored.
 
 ### R-ASK · v3 · LAW
 **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE.** Everything else is an
