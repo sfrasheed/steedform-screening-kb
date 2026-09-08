@@ -61,6 +61,8 @@ Verdict vocabulary is the screening skill's board mode: **Qualified · Needs Inf
 | Dekton specified | **Needs Review** (decline-as-spec'd + substitution steer) | **T-DECLINE-06** | Trade / Commercial · Homeowner | **`[R-DEKTON v1]`.** The four-condition materiality exception is available to **A-TIER ACCOUNTS ONLY** — B-tier and below get no exception: decline and substitute | Substitute material (quote it); Legacy **only** if the spec is locked and the client won't substitute | Yes — substitution converts the enquiry |
 | Flush-mount sink or cooktop specified | Condition on the job (🔴), not a whole-job decline | **T-TECHNICAL-01** | One version, all tiers | `[R-FLUSH v1]`; `[R-SCOPE v2]` makes flush mounting a **RESET**, not a decline | Over-mount or undermount detail | Yes — the job proceeds on a supported mount |
 | Outdoor / alfresco porcelain or sintered benchtop | Info Gathering → Quoting | **T-TECHNICAL-02** | Builder / Cabinetmaker | **`[R-ALFRESCO v1]`** — the controlled standard `STD-0017` Rev 1 owns every alfresco figure and supersedes each earlier one; see the ⚠ on that template | Build-to spec so the job can proceed | Yes |
+| **Unrated customer** (no account match / unknown entity / blank tier) **whose material fails `[R-CLASS v2]`** | Unqualified | **T-DECLINE-09** | Single version, all tiers | **`[R-CLASS v2]`** — unrated customers ONLY; a rated account may specify anything SteedForm sells | Legacy (ruled 8 Sep 2026) | **No — permanent for this enquiry** |
+| **New trade customer** while at capacity for new trade customers | Unqualified (capacity, not policy) | **T-DECLINE-10** | Single version, all tiers | None — a capacity call | ⚠ **None** — proposed §6 exception, not yet ruled | **Yes — re-contact is promised** |
 | Clean — no blocking flags | Qualified | No template (internal routing) | — | — | Proceeds to quoting (T-QUOTE-01) | — |
 
 ### Precedence when more than one decline fires
@@ -93,42 +95,29 @@ All decline templates carry the standing Legacy Granite & Marble referral (§6) 
 
 ### T-DECLINE-01 — Scope Outside Capability
 
-- **Trigger:** project involves scope SteedForm doesn't do (non-stone, ultra-complex bespoke, outside geographic range, etc.)
+- **Trigger:** project involves scope SteedForm doesn't do — non-stone, or a level of bespoke detailing, coordination and technical complexity beyond current capacity and preferred scope. The common real case is **highly detailed natural stone fabrication**.
 - **Stage / verdict:** Triage → Disqualified (Unqualified)
 - **Rule authority:** none stated in the source. This is a capability/scope judgement, not a registered rule.
-- **Variants:** Trade · Homeowner
-- **Redirect:** an optional alternative-supplier suggestion in the trade version; the trade version closes by inviting the next job that fits.
+- **Variants:** **one version, all tiers.** Wording supplied by Stella Rasheed, 8 September 2026; the earlier Trade/Homeowner split is retired below.
+- **Redirect:** Legacy Granite & Marble. T-DECLINE-01 is **not** one of the three exceptions in §6, so the standing referral applies.
 - **Permanent?** Permanent for this project. Not a client-type decline.
 - ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-01 is about the *work*; T-DECLINE-08 is about *who is behind the job* `[R-RETAIL v1]`. A retail enquiry for work SteedForm does every day is a T-DECLINE-08, never a T-DECLINE-01.
-- ⛔ **"Outside geographic range" is NOT a decline ground at screening** `[R-AREA v1]`. Out of area is **blocking → Needs Review** while the Supply Only conversion is undecided, and once `Job Type` is set to `Supply Only [− FREIGHT]` the job proceeds on that delivery model `[R-SUPPLYONLY v2]`. **Distance changes the delivery model, not whether SteedForm wants the work.** The template's optional service-area reason line may only be used once a human has decided to decline a job that could not be converted — never as a triage output, and never on a confirmed Supply Only zone.
-
-**Trade version:**
+- ⛔ **"Outside geographic range" is NOT a decline ground at screening** `[R-AREA v1]`. Out of area is **blocking → Needs Review** while the Supply Only conversion is undecided, and once `Job Type` is set to `Supply Only [− FREIGHT]` the job proceeds on that delivery model `[R-SUPPLYONLY v2]`. **Distance changes the delivery model, not whether SteedForm wants the work.**
 
 > Hi {{recipient.first_name}},
 >
-> Thanks for thinking of us on this one. We've had a look and this project sits outside what we're set up to do well — [specific reason: e.g. "the curved laminated panels require tooling and materials we don't work with" / "the location is outside our standard service area for templating and installation"].
+> Thank you for the opportunity to review this project and for sending through the documentation.
 >
-> Rather than take it on and deliver something we're not confident in, we'd prefer to be upfront about it.
+> After consideration, we'll have to respectfully decline to provide a quote on this occasion. The project involves a level of bespoke detailing, coordination, and technical complexity that sits outside our current capacity and preferred scope.
 >
-> [If applicable: "You might want to try [alternative suggestion] — they're better set up for this kind of work."]
->
-> Happy to help on the next one that fits.
+> Legacy Granite & Marble
+> 555 Churchill Road, Kilburn SA 5084
+> 0480 282 715
+> legacygraniteandmarble.com.au
 
-**Homeowner version:**
+**Agent instruction:** Send as written. ⛔ **Do not add a specific technical reason.** The earlier version carried a `[specific reason]` merge slot and an instruction never to send without one; that is retired — this wording declines on scope as a whole and naming a particular detail invites negotiation on that detail. The referral block is part of the template.
 
-> Hi {{recipient.first_name}},
->
-> Thank you for considering SteedForm for your project.
->
-> After reviewing the details, this particular project falls outside the scope of work we specialise in — [softer reason: e.g. "the materials involved aren't ones we fabricate" / "the level of custom detailing required goes beyond our standard offering"].
->
-> We'd rather be honest about this upfront than take on something where we can't guarantee the quality we're known for.
->
-> We wish you all the best with your project.
-
-**Agent instruction:** Always populate the [specific reason] field. Pull the disqualification trigger from Sales Qualification and translate it to the appropriate audience register. Never send a decline without a reason.
-
----
+**RETIRED — the Trade and Homeowner versions, superseded 8 September 2026.** Kept as a tombstone; **not live, must not be sent.** Both carried a `[specific reason]` field: Trade opened *"Thanks for thinking of us on this one…"* and closed *"Happy to help on the next one that fits."*; Homeowner opened *"Thank you for considering SteedForm for your project."* and closed *"We wish you all the best with your project."*
 
 ### T-DECLINE-03 — DIY / Existing / Relocated Cabinetry
 
@@ -320,46 +309,31 @@ All decline templates carry the standing Legacy Granite & Marble referral (§6) 
 - **Trigger:** install-only, fab-and-install-only, or any arrangement where the customer supplies the slab — regardless of who the customer is or which supplier they source from, including SteedForm-relationship suppliers.
 - **Stage / verdict:** Triage → Disqualified (Unqualified) on every account **except an A-tier one**. Client-supplied stone is also a layer-2 blocking rule `[R-BLOCK v3]`.
 - **Rule authority:** `[R-SCOPE v2]` (client-supplied slabs — NOT OFFERED) **and** `[R-BLOCK v3]` (client-supplied stone). Policy locked in SteedForm Identity, Services section, May 2026.
-- ⚖ **The two rules no longer disagree — ruled 3 September 2026 (OR-03).** `[R-SCOPE v2]` gives client-supplied slabs **the only carve-out in the NOT-OFFERED table**: a hard stop for every account, **except an A-tier account, where it becomes a 🔴 RISK routed to Needs Review** for a named human to accept or decline. **No other item in that table carries a carve-out.**
+- ⚖ **The two rules no longer disagree — ruled 3 September 2026 (OR-03).** `[R-SCOPE v2]` gives client-supplied slabs **the only carve-out in the NOT-OFFERED table**: a hard stop for every account, **except an A-tier account, where it becomes a 🔴 RISK routed to Needs Review** for a named human to accept or decline.
   - **Non-A account →** hard stop. This template is the decline, and there is no human call to wait for.
   - **A-tier account →** screen to **Needs Review** first; this template is the letter sent only if the named human decides to decline.
-- **Variants:** **Trade / Cabinetmaker** (the full technical reason, carried over from the retired T-DECLINE-02) · **Homeowner / Standard**
-- **Redirect: SteedForm-supplied material.** The closing offer to quote the full scope is the conversion path and must never be omitted.
-- **Permanent?** Permanent as an install-only arrangement; converts if the customer lets SteedForm supply.
-- ⚠ **This is the one decline with no Legacy referral** — see the source instruction below and §6.
-- *Note:* the source's claim that this is "the only decline ground in this document that is carried by the Rule Register" is false and is not carried forward — `[R-SCOPE v2]` also grounds T-DECLINE-03 and the flush-mount case, `[R-FLUSH v1]` and `[R-DRAWINGS v1]` ground T-TECHNICAL-01 and T-INFO-01, and since 3 September 2026 `[R-RETAIL v1]` and `[R-DEKTON v1]` ground T-DECLINE-08 and T-DECLINE-06.
-
-**Trade / Cabinetmaker version** (full technical reason — carried over from the retired T-DECLINE-02):
+- **Variants:** **one version, all tiers.** Wording supplied by Stella Rasheed, 8 September 2026; the earlier Trade/Cabinetmaker and Homeowner/Standard split is retired below.
+- **Redirect: none in the letter.** ⚠ **Changed 8 September 2026 (Stella Rasheed).**
+- **Permanent?** Permanent as an install-only arrangement.
+- ⚠ **This is the one decline with no Legacy referral** — see §6.
 
 > Hi {{recipient.first_name}},
 >
-> Thanks for sending this through.
->
-> We don't take on projects where the stone is supplied by the client. Managing the full supply and fabrication process — from slab selection through to installation — is how we control quality, handle any material variations, and stand behind our workmanship warranty.
->
-> When we supply the material ourselves we can inspect slabs before cutting, manage bookmatching and vein continuity, and replace material if something unexpected turns up during fabrication. With client-supplied stone we lose that control and can't offer the same guarantees.
->
-> If you'd like us to quote the project with material supply included, we'd be happy to do that.
-
-**Homeowner / Standard version:**
-
-> Hi {{recipient.first_name}},
->
-> Thanks for reaching out.
+> Thank you for considering Steed Form for your upcoming project.
 >
 > To ensure we deliver the level of quality, consistency, and warranty coverage we stand behind, we don't take on projects where the material is client-supplied. Managing the full supply and fabrication process allows us to carefully control slab selection, handle any variations or unforeseen issues, and provide our standard workmanship and product guarantees with confidence.
 >
 > We completely understand that material may sometimes be pre-purchased, and we hope you can appreciate that this approach helps us protect both your project and our standards.
->
-> If you'd like SteedForm to handle the full scope including supply, we'd be happy to put a quote together — please let us know.
 
-**Agent instruction:** This is a polite-but-firm categorical decline. The policy is locked — there is no negotiation path on install-only work. Do NOT propose to "do it this once" or invent exceptions. **The closing offer to handle the full scope is the conversion path and must never be omitted** — if the customer comes back willing to convert the slab purchase to a SteedForm-supplied job, that is a normal quote. Never disparage the customer's chosen supplier. If the customer is already locked in to a slab purchase they can't reverse, the decline stands.
+⚠ **THE CLOSING CONVERSION OFFER IS REMOVED — ruled 8 September 2026 (Stella Rasheed).** Earlier versions of this template ended with an offer to quote the full scope with SteedForm supplying the material, and this document previously marked that line **"must never be omitted."** That instruction is **withdrawn**: the letter now ends where it ends. If a customer comes back willing to convert the slab purchase to a SteedForm-supplied job, that is still a normal quote — it simply is not solicited in the decline.
 
-⚠ **Do NOT refer these to Legacy Granite & Marble.** This is the one decline where the standing referral practice does not apply — the redirect is SteedForm supplying the material, and sending the enquirer to another fabricator throws away a live conversion.
+**Agent instruction:** A polite-but-firm categorical decline. The policy is locked — there is no negotiation path on install-only work. Do NOT propose to "do it this once" or invent exceptions, and do not re-add a closing offer. Never disparage the customer's chosen supplier.
 
-**Why the policy exists (Technical Standards §9.3):** a client-supplied natural stone job produced **~$20k in remakes**. The client selected slabs at the supplier, SteedForm had no control over block matching or slab pairing, and SteedForm absorbed the full cost of the remake because the fabrication error was on our side. No material control, full liability. Use this if a trade contact pushes back — not in the initial email.
+⚠ **Do NOT refer these to Legacy Granite & Marble.** This is the one decline where the standing referral practice does not apply.
 
----
+**Why the policy exists (Technical Standards §9.3):** a client-supplied natural stone job produced **~$20k in remakes**. The client selected slabs at the supplier, SteedForm had no control over block matching or slab pairing, and SteedForm absorbed the full cost because the fabrication error was on our side. No material control, full liability. Use this if a trade contact pushes back — not in the initial email.
+
+**RETIRED — the Trade/Cabinetmaker and Homeowner/Standard versions, superseded 8 September 2026.** Kept as a tombstone; **not live, must not be sent.** The Trade version carried the full technical reason inherited from T-DECLINE-02 (slab inspection before cutting, bookmatching and vein continuity, material replacement mid-fabrication); both closed with the conversion offer now withdrawn.
 
 ### T-DECLINE-08 — No Approved Trade Account (Retail / Direct)
 
@@ -427,6 +401,57 @@ ground is `[R-RETAIL v1]` and carries full Register authority**; the precedence 
 not authority.
 
 ---
+
+### T-DECLINE-09 — Unrated Customer (General)
+
+- **Trigger:** the enquiry is from an **unrated customer** — no confident account match `[R-ACCTMATCH v5]`, an unknown entity `[R-ENTITY v1]`, or a blank Customer Tier — and it fails `[R-CLASS v2]`: the material specified is Porcelain or Natural Stone rather than Engineered Stone.
+- **Stage / verdict:** Triage → Unqualified. 🔴 blocking.
+- **Rule authority:** **`[R-CLASS v2]`** — for an unrated customer only, engineered stone or the enquiry is declined. ⛔ **Scope is the whole rule: a RATED customer may specify any material SteedForm sells.** Miller Kitchens ordering Vasari Porcelain is ordinary work and must never receive this letter.
+- **Variants:** one version, all tiers. Wording supplied by Stella Rasheed, 8 September 2026.
+- **Redirect:** Legacy Granite & Marble — ruled 8 September 2026 (Stella Rasheed). The supplied wording said only *"continue looking for a local stone fabricator"*; naming nobody would have made this the only decline in the document that leaves someone with a bare no, against §6.
+- **Permanent?** Permanent for this enquiry as specified. It is not a statement about the customer forever — an account that later gets rated is screened on its rating.
+- ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-08 is *no approved trade account* `[R-RETAIL v1]` and leads with the trade route. T-DECLINE-09 is *unrated **and** the material fails `[R-CLASS v2]`*. Where both fire, send the **more specific** one per §1 precedence.
+
+> Hi {{recipient.first_name}},
+>
+> Thanks for reaching out and for considering SteedForm for your project.
+>
+> Unfortunately, we're unable to take this project on and won't be able to provide a quote.
+>
+> We'd much rather be upfront so you can continue looking for a local stone fabricator who is better placed to assist.
+>
+> Legacy Granite & Marble
+> 555 Churchill Road, Kilburn SA 5084
+> 0480 282 715
+> legacygraniteandmarble.com.au
+>
+> All the best with the project.
+
+**Agent instruction:** ⛔ **Do not state the material as the reason.** The wording is deliberately general — it declines without opening a negotiation about substituting to engineered stone, which is not on offer to an unvetted customer. ⛔ **Check the rating before sending.** This letter to a rated account is the `[R-CLASS v2]` scope error the rule exists to prevent.
+
+---
+
+### T-DECLINE-10 — New Trade Customer, At Capacity
+
+- **Trigger:** a **new** trade customer's enquiry, where SteedForm is at capacity servicing existing trade customers. This is about the customer being new, not about the project's timeline.
+- **Stage / verdict:** Triage → Unqualified (capacity, not policy or scope).
+- **Rule authority:** none — a capacity call, like T-DECLINE-04. Not a registered rule.
+- **Variants:** one version, all tiers. Wording supplied by Stella Rasheed, 8 September 2026.
+- **Redirect:** ⚠ **none, and that is deliberate.** See the note below.
+- **Permanent?** **No — the door is explicitly open**, and re-contact is promised. Along with T-DECLINE-04 this is the only decline that keeps it open.
+- ⚠ **Do not conflate with T-DECLINE-04.** T-DECLINE-04 is *we cannot meet your programme on this project* and is available to existing customers. T-DECLINE-10 is *we are not onboarding new trade customers at present*. Sending T-DECLINE-10 to an existing customer tells them they are not a customer.
+
+> Hi {{recipient.first_name}},
+>
+> Thanks for sending this project through and for considering SteedForm.
+>
+> We're currently at capacity servicing our existing trade customers and aren't in a position to quote projects for new trade customers at present.
+>
+> We don't want to close the door on working together. We'd like to stay in touch and will get back in contact when we have capacity to take on new customers.
+
+⚠ **NO LEGACY REFERRAL — proposed as a fourth exception to §6, NOT YET RULED.** Every other decline carries the standing referral. This one is held back because *"we'd like to stay in touch and will get back in contact"* and *"here is a competitor"* contradict each other in the same letter: a referral converts a customer SteedForm has just said it wants. **Until this is ruled, send as written and do not add the referral.** Logged in `10-open-rulings.md`.
+
+**Agent instruction:** The promise to re-contact is the point of the letter — never drop it, and never soften it into "feel free to check back with us", which puts the work on them. If capacity changes, this list is a callback list.
 
 ## 3. Information-request templates
 
@@ -519,28 +544,28 @@ not authority.
 ### T-TECHNICAL-01 — Technical Limitation: Flush Mount Sinks / Hotplates
 
 - **Trigger:** client requests flush-mount sink or hotplate installation
-- **Stage / verdict:** Info Gathering (or Triage if non-negotiable). This is a **condition on the job**, not a whole-job decline — the spec is reset to a supported mount and the job proceeds `[R-FLUSH v1]`.
-- **Rule authority:** `[R-FLUSH v1]`; flush mounting is also on the `[R-SCOPE v2]` NOT-OFFERED list, where its stated action is **RESET** — the spec moves to a supported mount and the enquiry continues. ⛔ **A RESET item is not a decline**, and the client is told before the quote goes out.
-- **Variants:** one version, all tiers — same depth for everyone. This is a technical education piece.
+- **Stage / verdict:** Info Gathering (or Triage if non-negotiable). ⛔ **This is a condition on the job, not a whole-job decline** — the spec is reset to a supported mount and the job proceeds `[R-FLUSH v1]`. Confirmed 8 September 2026 (Stella Rasheed): *"review not decline."*
+- **Rule authority:** `[R-FLUSH v1]`; flush mounting is also on the `[R-SCOPE v2]` NOT-OFFERED list, where its stated action is **RESET**. ⛔ **A RESET item is not a decline**, and the client is told before the quote goes out.
+- **Variants:** one version, all tiers — same depth for everyone. This is a technical education piece. Wording supplied by Stella Rasheed, 8 September 2026.
 - **Redirect:** over-mount or undermount detail.
 - **Timing:** the builder/client must be told **before the quote goes out** `[R-FLUSH v1]` — a flush-mount expectation discovered at install is a remake.
 - *Provenance:* the source names this template as the one the entire SteedForm communication standard was derived from (§5, the four-step pattern).
 
 > Hi {{recipient.first_name}},
 >
-> Thanks for the detail on the project. I wanted to specifically address the flush-mount sink/hotplate detail.
+> I wanted to follow up specifically regarding the request for flush mounting sinks and hotplates into the stone.
 >
-> Flush mounting requires a rebate machined into the stone surface using CNC tooling. Due to the nature of the tooling, it's not possible to achieve a perfectly sharp, clean internal edge. The process leaves fine chipping along the rebate edge — particularly in engineered stone, porcelain, and sintered surfaces.
+> While this detail is often specified for a seamless look, it is important to understand the manufacturing limitations associated with achieving this finish in stone.
 >
-> These chips may be small, but they're visible and become more noticeable over time and under certain lighting. In our experience, this finish is frequently deemed unacceptable by clients post-installation because it doesn't meet the expected visual standard of a clean, seamless detail.
+> Flush mounting requires a rebate to be machined into the surface using CNC tooling. Due to the nature of the tooling, it is not possible to achieve a perfectly sharp, clean internal edge. The process inherently leaves very fine chipping along the edge of the rebate, particularly in materials such as engineered stone, porcelain, and sintered surfaces.
 >
-> For that reason, we don't offer flush mounting. We'd be happy to suggest alternative installation methods — such as an over-mount or undermount detail — that achieve a clean, durable result while maintaining the design intent.
+> Although these chips can be small, they are still visible and become more noticeable over time and under certain lighting conditions. In our experience, this finish is frequently deemed unacceptable by clients post-installation, as it does not meet the expected visual standard of a clean, seamless flush detail.
 >
-> Let me know how you'd like to proceed.
+> For this reason, and to ensure we consistently deliver a high-quality, defect-free product, we do not offer flush mounting of sinks or hotplates as part of our service.
+>
+> We would be more than happy to suggest alternative installation methods that achieve a clean and durable result while maintaining the overall design intent.
 
----
-
----
+**Agent instruction:** ⛔ **Never send this as a decline letter and never let it set the verdict to Unqualified.** It is the notification attached to a job that continues on a supported mount. The closing offer of alternative methods is the reset and must not be dropped.
 
 ### T-TECHNICAL-02 — Alfresco / Outdoor Porcelain & Sintered Stone Requirements
 
@@ -681,6 +706,7 @@ The source's voice-rule wording is "when declining a project for **any reason** 
 | **T-DECLINE-07** (client-supplied / install-only) | ⛔ **Never refer to Legacy.** The redirect is SteedForm supplying the material; a referral throws away a live conversion. |
 | **T-DECLINE-06** (Dekton) | **Conditional.** Refer to Legacy *only* if the spec is locked on Dekton and the client won't consider alternatives. |
 | **T-DECLINE-08** (no trade account) | Included, but **below** the trade-route redirect — never as the primary answer. |
+| **T-DECLINE-10** (new trade customer, at capacity) | ⚠ **PROPOSED, NOT RULED — 8 September 2026.** Held back because the letter promises re-contact; a referral contradicts it. Send with no referral until ruled. |
 
 ---
 

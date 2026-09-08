@@ -164,3 +164,40 @@ Prioritisation as marked on the 3 September decision sheet. The owner builds the
 ---
 
 *Related: `RULINGS-2026-09-03.md` · `01-rule-register.md` · `CHANGES.md` · `DATA-VERIFICATION-2026-09-03.md` (the board exports behind OR-39, OR-40 and OR-41) · `08-board-and-column-registry.md` §7 (the coverage record).*
+
+---
+
+## OR-41 — Replacement benchtops: `R-CABINET v2` says never decline; the supplied template declines
+
+**Raised:** 8 September 2026, while propagating six templates supplied by Stella Rasheed.
+**Status:** OPEN. ⛔ **Nothing has been written to `09-response-templates.md` for this.** No
+template exists for it and none may be sent until this is ruled.
+
+**The conflict, both sides verbatim.**
+
+`01-rule-register.md` — `[R-CABINET v2]`, ruled by Stella Rasheed on 8 September 2026:
+
+> **2. Replacing an existing benchtop → 🟡, flagged. Across the board, every customer.**
+> Not a decline — it is ordinary work. … Flag it and price it; **never decline it.**
+
+The template supplied the same day, and the scope confirmed for it (*"any existing benchtop
+being replaced"*), makes that same fact a **decline** with a referral to Legacy Granite &
+Marble: *"There can be a number of challenges when installing stone benchtops after laminate
+benchtops have been removed. Unfortunately, this is not a service that SteedForm offers."*
+
+**Both cannot stand.** A screen cannot score a fact 🟡-and-price-it while the reply declines it.
+
+**The likely reconciliation, offered but NOT assumed.** The template's own reasoning is
+specific to **laminate** removal — what the old top was, and what the cabinetry beneath it
+was built to carry. `[R-SCOPE v2]` separately makes *replacement or remedial work on someone
+else's **stone*** a **DECLINE or refer** item. That suggests three cases, not one:
+
+| What is being replaced | Possible action |
+|---|---|
+| An existing **stone** benchtop | DECLINE or refer — already `[R-SCOPE v2]` |
+| An existing **laminate** benchtop | the supplied template's decline |
+| Any other existing benchtop | 🟡, flagged and priced — `[R-CABINET v2]` as it stands |
+
+**What is needed:** either an amendment to `[R-CABINET v2]` narrowing part 2, or a ruling
+that the template is narrower than the answer given. Until then `[R-CABINET v2]` is
+authoritative and the screen flags and prices — it does not decline.
