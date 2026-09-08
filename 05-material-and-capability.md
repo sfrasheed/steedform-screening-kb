@@ -409,10 +409,14 @@ At screening: a **🔴 condition entry with the reason stated** (chipping · sil
 
 **Mounting type is ORDER-bar evidence, and it is a board field.** `[R-EVIDENCE-BAR v2]`'s ORDER bar for *Appliances / sinks* requires **model number, mounting type, linked Library record** — so at Order a mount must be a *recorded value*, not an assumption, and "flush" surfacing there is a reset, not a variation to price. The Appliance Library `5029694677` column carrying it is **`color_mm4zdfnd` Mount Type** (being added to `08-board-and-column-registry.md`), alongside **Cutout Spec `long_text_mm4zayzp`**. Read both live — never screen a mount or a cutout from memory or from a snapshot pasted into a document. **That same ORDER-bar row now also requires QC Status** `[R-EVIDENCE-BAR v2]` (ruled 3 September 2026), matching the adjacent Cut-outs row. *(Evidence-bar mechanics are owned by `06-evidence-requirements.md`; what is carried here is the capability half — a mount SteedForm cannot make.)*
 
-### 6.1a A range is a specification `[R-RANGE v1]`
+### 6.1a A range is a specification `[R-RANGE v2]`
 
-**A customer who names a RANGE without a colour has specified their material for quoting
-purposes.** Read the range's own properties off the Materials Library and quote against them.
+**A customer who names a RANGE or a SUPPLIER TIER without a colour has specified their
+material for quoting purposes.** *"Caesarstone M3"* is a tier — 13 ICON materials — and
+is a **subset** of the brand, so it answers everything the brand answers and the price
+band as well. ⛔ **Never report a tier-level specification as unresolved.** Read
+`Supplier Range / Tier` (`dropdown_mm4q13wg`) alongside `Brand / Range`, and note that
+what a customer calls a "range" is usually the tier `[R-RANGE v2]`. Read the range's own properties off the Materials Library and quote against them.
 ⛔ **Do not flag a range-only specification in a way that holds up the quote.**
 
 Verified 7 September 2026 — every range on the board agrees with itself on both fields that matter

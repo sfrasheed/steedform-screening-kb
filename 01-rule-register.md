@@ -270,7 +270,7 @@ does not go in front of a customer who has asked for a price. Ruled by Stella Ra
 
 **Needed to quote — ask for these:**
 - **Dimensioned drawings.** Mandatory at both gates, for every tier `[R-EVIDENCE-BAR v2]`.
-- **Material to RANGE level.** A range is a specification `[R-RANGE v1]`. ⛔ **Never ask
+- **Material to RANGE level.** A range is a specification `[R-RANGE v2]`. ⛔ **Never ask
   for a colour to produce a quote.**
 - **The scope** — which rooms and which pieces.
 - **The site address or suburb** — *unless the account is marked supply only*. Full
@@ -288,7 +288,7 @@ stays short. **Where the account is NOT recorded — no match, or an unknown ent
 profile**, and should. Nothing is known about how this customer works, there is no
 history to read a preference from, and a wrong assumption at first contact with a
 stranger is more expensive than one more question. The range is still enough to
-*produce* a quote `[R-RANGE v1]`; this is about agreeing what they are getting, not
+*produce* a quote `[R-RANGE v2]`; this is about agreeing what they are getting, not
 about being able to price it.
 
 ⛔ **DO NOT ask a RECOGNISED account for these at lead stage. They are order facts:**
@@ -297,7 +297,7 @@ about being able to price it.
 |---|---|
 | **Appliance and sink model numbers, spec sheets** | An ORDER-bar requirement `[R-EVIDENCE-BAR v2]` `[R-MA5 v3]`. At quote, **fitment is enough** — that a 900 cooktop and an undermount sink are going in. The model matters when cutouts are programmed, not when a price is given |
 | **Edge profile** | **Arris is the SteedForm standard where none is noted**, per the Terms & Conditions, changed only on the customer's request. It is not missing information — it is the default, and asking for it invents a decision the customer did not have to make. ⚠ **Unrecorded account: ask** |
-| **A specific colour** | The range is enough `[R-RANGE v1]`. ⚠ **Unrecorded account: ask for the material selection** |
+| **A specific colour** | The range is enough `[R-RANGE v2]`. ⚠ **Unrecorded account: ask for the material selection** |
 | **Photos of installed cabinetry** | Site-readiness, not pricing |
 | **Builder or joiner contact for site coordination** | Coordination, not pricing |
 
@@ -321,12 +321,33 @@ the more expensive mistake. · **v1 **8 Sep 2026 (Stella Rasheed)**** — regist
 draft replies were asking for spec sheets, edge profiles, installed-cabinetry photos and
 a site contact on first contact, all of which are order facts.
 
-### R-RANGE · v1 · LAW
+### R-RANGE · v2 · LAW
 **A RANGE IS ENOUGH AT LEAD. A COLOUR IS REQUIRED AT ORDER.** A customer who specifies
 *"Caesarstone ICON"* without naming a colour has given a sufficient material specification for a
 quote. **Read the range's own properties and quote against them** — ICON is Engineered Stone and
 Full body, so a pencil profile is offered and there is nothing to flag. **⛔ A range-only
 specification must NOT be flagged in a way that holds up quoting.**
+
+**A SUPPLIER TIER ALSO ANSWERS, AND ANSWERS MORE PRECISELY.** *"Caesarstone M3"*,
+*"Zenith Prestige"*, *"Vasari Cat 2"* — these name a price band inside a brand, and they
+are a **subset** of that brand's rows. A tier answers everything a range answers, plus
+the price band. ⛔ **A tier-level specification must never be reported as unresolved.**
+
+Read it from `Supplier Range / Tier` (`dropdown_mm4q13wg`) **together with**
+`Brand / Range` (`dropdown_mm4p7eja`). *Caesarstone M3* is Brand `Caesarstone ICON` and
+tier `M3` — 13 materials as at 8 Sep 2026.
+
+⚠ **A TIER NAMED WITHOUT ITS BRAND IS NOT ALWAYS ONE THING.** Verified on the live
+board: `M0`–`M4` and `P1`–`P3` belong to Caesarstone alone, but **`Deluxe` is both
+Smartstone and Zenith**, **`Premium` is both Lavistone and Zenith**, **`Group 0`, `1`
+and `2` are both Dekton and Neolith**, and **`Builder Group 1` and `2` are both Scalea
+and Sensa**. A bare tier resolves only when it belongs to exactly one brand — test it,
+never assume it, and where two brands share it the enquiry is ambiguous and the brand
+must be asked for.
+
+⚠ **"RANGE" MEANS TWO DIFFERENT THINGS AND THE COLUMN NAMES COLLIDE.** The board's
+`Brand / Range` holds the *brand*; what a customer usually calls a range — "the M3
+range" — is the *tier*. Read both before deciding a specification is missing.
 
 **How a range answers.** Read the rows carrying that `Brand / Range` (`dropdown_mm4p7eja`, Materials
 Library `5029570546`) and take the value where **they all agree**. Verified 7 Sep 2026: all
