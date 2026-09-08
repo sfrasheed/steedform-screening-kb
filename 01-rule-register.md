@@ -262,6 +262,35 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
+### R-CABINET · v1 · LAW
+**WHAT THE STONE SITS ON IS A SCREENING QUESTION.** Two facts are usually absent from an
+enquiry and both change the job. Ruled by Stella Rasheed, 8 September 2026.
+
+**1. DIY or flat-pack cabinetry → 🔴 BLOCKING, decline.** Where the enquiry names
+**Bunnings, IKEA, or any flat-pack or self-assembled cabinetry**, the answer is no.
+Stone is not fabricated onto it.
+
+⚠ **THIS IS A RULED DECLINE, NOT A CAPABILITY STOP** `[R-ANDON v2]`. SteedForm *could*
+cut the stone; the base cannot be relied on to carry it, hold level or stay square, and
+it was assembled by the customer. Do **not** render it as ⛔ — that says "we cannot make
+this", and blending the two is the specific failure `[R-ANDON v2]` names. It is a 🔴
+that a person may not waive.
+
+**2. Replacing an existing benchtop → 🟡, flagged.** Not a decline — it is ordinary work.
+It changes what is priced: templating off what is there, removal and disposal of the old
+top, and the cabinetry underneath is an unknown until someone looks. Flag it and price
+it; never decline it.
+
+**When neither is stated — and usually neither is — ASK.** The reply asks who made or is
+making the cabinetry, and whether an existing benchtop is being replaced. ⛔ **Silence is
+not a "no" on either.** An enquiry that does not mention flat-pack has not told you the
+cabinetry is trade-built, and scoring it as though it had is the assumption this rule
+exists to stop.
+**Carried by:** `03 Risk Scoring` · `06 Evidence Requirements` · `09 Response Templates`
+
+**History:** **v1 **8 Sep 2026 (Stella Rasheed)**** — registered after neither fact was
+being asked for or scored.
+
 ### R-ASK · v3 · LAW
 **A DRAFT REPLY ASKS ONLY FOR WHAT IS NEEDED TO QUOTE.** Everything else is an
 order-gate condition: it stays on the job, it is raised when the job converts, and it

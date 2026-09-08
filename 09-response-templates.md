@@ -13,6 +13,11 @@ unstated profile is not a gap and must not be written into a reply as one.
 account, **also ask for the material selection and the edge profile** — nothing is known
 about how they work, and assuming a stranger's intent costs more than one more question.
 
+**Two things to ask when the enquiry has not said** `[R-CABINET v1]`: who is making the
+cabinetry, and whether an existing benchtop is being replaced. Both change the job and
+neither is usually mentioned. ⛔ **Silence is not a "no"** — an enquiry that does not
+mention flat-pack has not told you the cabinetry is trade-built.
+
 ⛔ **A DRAFT REPLY IS CUSTOMER-FACING TEXT AND NOTHING ELSE.** No instruction to staff,
 no warning, no caveat about the enquiry — those belong in the internal note, which is
 shown to the person and never sent. A draft that opens by telling someone not to send it
