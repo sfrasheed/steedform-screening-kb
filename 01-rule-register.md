@@ -262,10 +262,23 @@ Never resolve the fork from the brand or colour name. *(Dolomite is routinely so
 
 **History:** **v1 23 Jul 2026**, gap closed 27 Jul 2026
 
-### R-CLASS · v1 · LAW
-**ENGINEERED STONE ONLY. ANYTHING ELSE IS DECLINED — 🔴 BLOCKING, UNQUALIFIED.** Ruled by
-Stella Rasheed, 8 September 2026, and it runs **before** drawings, scope, site or
-anything else: what the material is decides whether there is a job to screen.
+### R-CLASS · v2 · LAW
+**FOR AN UNRATED CUSTOMER ONLY: ENGINEERED STONE, OR THE ENQUIRY IS DECLINED — 🔴
+BLOCKING, UNQUALIFIED.** Ruled by Stella Rasheed, 8 September 2026.
+
+⛔ **SCOPE FIRST, BECAUSE IT IS THE WHOLE RULE.** This applies **only where the account is
+not recorded** — no confident match `[R-ACCTMATCH v5]`, an unknown entity
+`[R-ENTITY v1]`, or a blank Customer Tier, which is 131 of 191 accounts. **A RATED
+CUSTOMER MAY SPECIFY ANY MATERIAL SteedForm sells.** Miller Kitchens ordering Vasari
+Porcelain is ordinary work and must never be touched by this rule.
+
+**Why it is scoped that way:** a rated customer has a history, terms and a relationship,
+and porcelain or natural stone from them is a job SteedForm knows how to take. The same
+material from a stranger is an unvetted customer on the least forgiving materials at
+once, and that is the combination being declined — not the material.
+
+It runs **before** drawings, scope or site *for an unrated enquiry*: what the material is
+decides whether there is a job to screen at all.
 
 **Read `Material Type` (`color_mm4qt817`) live off Materials Library `5029570546`.**
 `Engineered Stone` proceeds. `Porcelain` and `Natural Stone` are declined.
@@ -275,27 +288,29 @@ engineered brands are Zenith Surfaces · Caesarstone ICON · Lavistone Gen Surfa
 Silestone QXERON · Eclos · Kaya Surfaces — but that is today's answer, not the rule. A
 brand added tomorrow must be read, and a list here would go on being confidently wrong.
 
-**What this declines: 222 of 400 materials as at 8 Sep 2026** — Dekton (50), Vasari
-Porcelain (40), Sensa (35), Neolith (31), Caesarstone Porcelain (24), Smartstone
-Sintered (24), Scalea (18).
+**What this declines, FOR AN UNRATED ENQUIRY ONLY: 222 of 400 materials as at 8 Sep
+2026** — Dekton (50), Vasari Porcelain (40), Sensa (35), Neolith (31), Caesarstone
+Porcelain (24), Smartstone Sintered (24), Scalea (18). **For a rated customer it declines
+nothing.**
 
 ⚠ **A RANGE OR TIER CARRIES ITS CLASS** `[R-RANGE v2]`. "Caesarstone M3" is engineered and
 proceeds; "Caesarstone Porcelain" does not. The two share a brand name and land on
 opposite sides of this rule, which is exactly the case to get right.
 
-⚠ **This is a ruled decline, not a capability stop** `[R-ANDON v2]`. SteedForm can
-fabricate porcelain and natural stone and the knowledge for both is retained in full —
+⚠ **This is a ruled decline, not a capability stop** `[R-ANDON v2]`, and it is about the
+CUSTOMER as much as the material. SteedForm fabricates porcelain and natural stone every
+week for rated customers, and the knowledge for both is live, not historical —
 `05` §5's faceting thresholds, `05` §6.1b's overhang tables, the alfresco and outdoor
-rules. **They describe work not currently taken, and none of it is deleted:** a scope
-decision reverses more easily than knowledge is rebuilt.
+rules. **All of it remains in force for rated customers**, which is most of the work.
 
-⚠ **`[R-DEKTON v1]` is now redundant but not wrong.** Dekton was already declining under
-a phase-out; it is declined here as porcelain, sooner and for a broader reason.
+⚠ **`[R-DEKTON v1]` still applies to everyone**, rated or not — the phase-out is a
+material decision and is not scoped to unrated customers the way this rule is.
 **Carried by:** `03 Risk Scoring` · `05 Material & Capability` · `09 Response Templates`
 
-**History:** **v1 **8 Sep 2026 (Stella Rasheed)**** — the offering is narrowed to
-engineered stone. Registered as a rule rather than applied as a habit, so the day it
-changes back there is one place to change it.
+**History:** **v2 **8 Sep 2026 (Stella Rasheed)**** — scoped to unrated customers, which is
+what was asked for and what v1 got wrong. v1 read as a global narrowing of the offering
+and would have declined an A-tier customer's porcelain. · **v1 **8 Sep 2026** —
+registered unscoped, in error.
 
 ### R-CABINET · v1 · LAW
 **WHAT THE STONE SITS ON IS A SCREENING QUESTION.** Two facts are usually absent from an

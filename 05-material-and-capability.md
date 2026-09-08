@@ -1,14 +1,13 @@
 # 05 — Material & Capability
 
-⛔ **ENGINEERED STONE ONLY, FROM 8 SEPTEMBER 2026** `[R-CLASS v1]`. Porcelain and natural
-stone are **declined — 🔴 blocking, Unqualified** — read from `Material Type`
-(`color_mm4qt817`) on the board, never from a brand list.
+⛔ **UNRATED CUSTOMERS: ENGINEERED STONE ONLY** `[R-CLASS v2]`. Where the account is not
+recorded, porcelain and natural stone are **declined — 🔴 blocking, Unqualified**. Read
+the class from `Material Type` (`color_mm4qt817`) on the board, never from a brand list.
 
-⚠ **THE PORCELAIN AND NATURAL-STONE KNOWLEDGE BELOW IS RETAINED AND IS NOT WRONG.** It
-describes work SteedForm can do and is not currently taking. Faceting thresholds,
-overhang tables, alfresco and outdoor rules — all of it stands, and none of it is
-reachable through a normal screen while `[R-CLASS v1]` holds. A scope decision reverses
-more easily than this is rebuilt.
+✅ **FOR A RATED CUSTOMER THIS DOCUMENT APPLIES IN FULL.** Porcelain and natural stone are
+ordinary work — faceting thresholds, overhang tables, alfresco and outdoor rules are all
+live. `[R-CLASS v2]` declines an unvetted customer on the least forgiving materials; it
+does not narrow what SteedForm sells.
 
 
 **Status:** v1.0 — clean extraction for the Deep Screen app. Reference layer; the Rule Register (`01-rule-register.md`) is authoritative over everything here.
