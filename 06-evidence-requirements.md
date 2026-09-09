@@ -27,7 +27,7 @@ A screen reaches a verdict only when the facts it needs are actually present at 
 |---|---|---|
 | Material / colour | brand, range, category or commercial tier `[R-MATERIAL-TERMS v1]` | exact colour name + finish `[R-MATERIAL-TERMS v1]` |
 | Thickness | nominal, by area | confirmed per piece |
-| Edge profile | generic (pencil, mitred 40) | exact profile, material-checked against the Capability Matrix **and against `Print Construction` `color_mm6hz0dd`** `[R-PROFILE v5]` |
+| Edge profile | generic (pencil, mitred 40) | exact profile, material-checked against the Capability Matrix **and against `Print Construction` `color_mm6hz0dd`** `[R-PROFILE v6]` |
 | Cut-outs | count + generic type | model number + Appliance Library link + QC Status |
 | Appliances / sinks | generic description | model number, mounting type, linked Library record **+ QC Status** |
 | Site | suburb / postcode | full SITE street address; **plus the DELIVERY address whenever it differs from site** (the supply-only / freight case, `[R-SUPPLYONLY v2]`). Billing is an accounts field and is never a screening bar |

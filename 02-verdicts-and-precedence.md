@@ -82,7 +82,7 @@ The stated reason is the same in all three cases: **keyword evidence is too weak
 | Occupancy — occupied dwelling or trading ongoing concern | `[R-OCCUPANCY v1]` |
 | Live Customer Tier `Do-Not-Quote`, or an unresolved account match | `[R-C1 v4]` `[R-ACCTMATCH v5]` |
 | Out of area, while the Supply Only conversion is undecided | `[R-AREA v1]` |
-| Spec conflicts | `[R-30MM v1]` `[R-PROFILE v5]` `[R-ALFRESCO v1]` |
+| Spec conflicts | `[R-30MM v1]` `[R-PROFILE v6]` `[R-ALFRESCO v1]` |
 | Below the one-slab minimum, non-A-tier | `[R-C3 v1]` |
 | The natural-stone rule set | `[R-NATURAL v1]` |
 | Unknown entity — "who is asking" | `[R-ENTITY v1]` |

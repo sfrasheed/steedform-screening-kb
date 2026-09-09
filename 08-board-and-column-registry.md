@@ -149,7 +149,7 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 | **Brand / Range** | `dropdown_mm4p7eja` | **Which manufacturer's table applies.** `[D11]`'s overhang limits are per brand and differ by a factor of two between brands stocked side by side, so this column decides which row of `05` §6.1b is read. ⚠ **Brands live HERE, not in the item name** — item names are colours (*Absolute Black*, *Landr*). Verified 7 Sep 2026: Zenith Surfaces 57 · Dekton 50 · Caesarstone ICON 45 · Lavistone Gen Surface 41 · Sensa 35 · Vasari Porcelain 32 · Neolith 31 · Silestone QXERON 25 · Caesarstone Porcelain 24 · Smartstone Sintered 24 · Scalea 18 · Eclos 7 · Kaya Surfaces 3 |
 | **Supplier Range / Tier** | `dropdown_mm4q13wg` | **The price band inside a brand, and how customers most often name a material** — "Caesarstone M3", "Zenith Prestige", "Vasari Cat 2". A tier is a SUBSET of a brand and answers `[R-RANGE v2]` more precisely than the brand does. ⚠ **Read it with `Brand / Range`**: `M0`–`M4` and `P1`–`P3` are Caesarstone's alone, but `Deluxe` is Smartstone *and* Zenith, `Premium` is Lavistone *and* Zenith, `Group 0`–`2` are Dekton *and* Neolith, and `Builder Group 1`–`2` are Scalea *and* Sensa. A bare tier resolves only where exactly one brand carries it |
 | Stone Sub-Type | `dropdown_mm4rq7jd` | **Granite · Marble · Quartzite · Travertine · Limestone** — every branch `[R-D5 v9]` needs, corrected 7 Sep 2026 from an earlier note calling it granite vs non-granite. ✅ **Verified 3 Sep 2026: 3 of 392, all `Marble`** — Scalea Arabescato Corchia, Sensa Arabescato Corchia, Sensa Nero Portoro. Exactly what `[R-SUBTYPE v2]` records. The library holds **53 natural stones**, so `[R-D5 v9]`'s conservative fallback fires on **50 of 53** — a blank takes the conservative branch plus a visible flag `[R-SUBTYPE v2]` |
-| **Print Construction** | `color_mm6hz0dd` | `Face-printed` · `Full body` · blank. **Blank FAILS CLOSED to review — never read blank as "not printed"** `[R-PROFILE v5]`. ⛔ **99% BLANK — see §7.1. The rule is correct and the column is not being maintained the way it assumes** |
+| **Print Construction** | `color_mm6hz0dd` | `Face-printed` · `Full body` · blank. **Blank FAILS CLOSED to review — never read blank as "not printed"** `[R-PROFILE v6]`. ⛔ **99% BLANK — see §7.1. The rule is correct and the column is not being maintained the way it assumes** |
 | Bookmatch Available | `boolean_mm4r4qcp` | Vein-match feasibility `[R-MA2 v1]` |
 | Discontinued | `boolean_mm4r934z` | A discontinued colour scores 🟡 |
 | Alias Names | `long_text_mm4ps74s` | Alternate names for the same material. Matching remains exact and unique — no fuzzy or closest-result matching `[R-MATERIAL-TERMS v1]`. ⛔ **100% BLANK.** There are no aliases, so every alternative name a customer writes fails to match — silently, because exact matching has no fallback to report |
@@ -394,7 +394,7 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 
 ⚠ **Coverage is not identity.** These exports settle *how populated* a column is. They do **not** settle a single column ID, and they cannot: an export carries names, not identifiers. **OR-26 is untouched by this.**
 
-**Why this section exists.** Several rules in this set **fail closed on blank data** — `[R-PROFILE v5]`, `[R-SUBTYPE v2]`, `[R-D5 v9]`, `[R-LEADTIME v2]`, `[R-MA5 v3]`. A fail-closed rule is only as good as the column behind it: **a rule that is perfectly correct against an empty column sends every job to review, and looks like a broken screen.** Coverage therefore belongs in the registry, beside the identifier, and should be re-measured whenever the boards are re-exported.
+**Why this section exists.** Several rules in this set **fail closed on blank data** — `[R-PROFILE v6]`, `[R-SUBTYPE v2]`, `[R-D5 v9]`, `[R-LEADTIME v2]`, `[R-MA5 v3]`. A fail-closed rule is only as good as the column behind it: **a rule that is perfectly correct against an empty column sends every job to review, and looks like a broken screen.** Coverage therefore belongs in the registry, beside the identifier, and should be re-measured whenever the boards are re-exported.
 
 ### 7.1 Print Construction — populated in full, 7 September 2026
 
@@ -404,16 +404,16 @@ All three return a plausible-but-wrong answer, and **all three produce "nothing 
 | **blank** | **387** |
 | `Full body` | **0** |
 
-✅ **FULLY POPULATED, 7 September 2026 — 392 of 392, no blanks.** 228 `Full body` · 164 `Face-printed`. Populated by Stella Rasheed. **This closes OR-40**, which turned on the column being kept as a positive marker while `[R-PROFILE v5]` read blank as unknown: with no blanks the two readings cannot disagree. The fail-closed branch is unchanged and now guards a new material added without being marked. The seven Cosentino **Eclos** rows that briefly read `Porcelain / Full body` were a type error and were corrected to `Engineered Stone` the same day; no porcelain now reads `Full body`.
+✅ **FULLY POPULATED, 7 September 2026 — 392 of 392, no blanks.** 228 `Full body` · 164 `Face-printed`. Populated by Stella Rasheed. **This closes OR-40**, which turned on the column being kept as a positive marker while `[R-PROFILE v6]` read blank as unknown: with no blanks the two readings cannot disagree. The fail-closed branch is unchanged and now guards a new material added without being marked. The seven Cosentino **Eclos** rows that briefly read `Porcelain / Full body` were a type error and were corrected to `Engineered Stone` the same day; no porcelain now reads `Full body`.
 
 ⛔ **As it stands, 387 of 392 materials send every pencil-profile job to Needs Review**, and the reason would not be the rule — it would be an empty column.
 
 | Option | Effect |
 |---|---|
 | **Populate `Full body` on the other 387** | Blank becomes meaningful again, the rule works as designed, and a genuinely unknown material still fails closed. **Recommended** — a bulk edit that preserves the safety property |
-| Amend `[R-PROFILE v5]` so blank means full body | One line, no data work — but it removes the fail-closed guard, and a new face-printed range added without marking would then be priced with a pencil. **That is QU-58883** |
+| Amend `[R-PROFILE v6]` so blank means full body | One line, no data work — but it removes the fail-closed guard, and a new face-printed range added without marking would then be priced with a pencil. **That is QU-58883** |
 
-**Until one is chosen:** flag it, but say why. The flag reads *"print construction not recorded"* — **never** *"may be face-printed"*. ⚠ **Do not amend the rule on the quiet.** `[R-PROFILE v5]` is a LAW and this is a Register change, not a board change.
+**Until one is chosen:** flag it, but say why. The flag reads *"print construction not recorded"* — **never** *"may be face-printed"*. ⚠ **Do not amend the rule on the quiet.** `[R-PROFILE v6]` is a LAW and this is a Register change, not a board change.
 
 ### 7.2 Coverage table
 
