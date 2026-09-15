@@ -64,7 +64,26 @@ Where every fact physically lives, and how to get it out or in without losing it
 
 | Field | Column ID | Screening role |
 |---|---|---|
-| Customer Tier | `color_mm64t0aj` | Commercial disposition — the only disposition **label** `[R-C1 v4]`. ⚠ **60 of 188 populated (68% blank)** — and under `[R-LEADTIME v2]` a blank tier now sets the quoted date, not just the waiver |
+| **Customer Tier** | ⛔ **NOT A COLUMN — it is the GROUP the account sits in** | Commercial disposition, the only disposition **label** `[R-C1 v4]`. **Corrected 15 September 2026 against the live board.** `color_mm64t0aj` **does not exist on Accounts** and never did in this shape — a rule reading it gets nothing, which is why *"Customer Tier cannot be read"* is one of the most frequent blocking flags on record, and why every tier-dependent rule — A-tier waivers, `[R-LEADTIME v2]`, markup, the `[R-SCOPE v2]` client-supplied carve-out — has been failing closed. **Read the item's `group`.** |
+
+**The seven tier groups on Accounts `5029570132`, counted live 15 September 2026 — 192 accounts:**
+
+| Group | Id | Accounts |
+|---|---|---|
+| 💎 A-VIP | `group_mm64kmbs` | 14 |
+| 🅰 A | `group_mm64jhmz` | 9 |
+| 🅱 B | `group_mm649npz` | 29 |
+| 🅲 C | `group_mm6433p2` | 49 |
+| Commercial | `group_mm724xzy` | 12 |
+| ⛔ Do-Not-Quote | `group_mm64qe7k` | 9 |
+| ❓ Not yet rated | `group_mm6469sj` | 70 |
+
+⚠ **Two figures carried by this file were also wrong, and both mattered.** It recorded *"60 of 188
+populated (68% blank)"*; the live board is **192 accounts with 122 rated and 70 unrated — 36% blank,
+not 68%**. It recorded Customer Tier holding **13** Do-Not-Quote against Account Status's 11; the
+Do-Not-Quote **group holds 9**. ⛔ **A-tier is TWO groups** — A-VIP and A, 23 accounts between them.
+A rule that reads only `A` misses the 14 most valuable accounts on the board.
+
 | Client Rating A/B/C | `color_mm64jqn0` | Behaviour. ⛔ **0 of 188 populated** |
 | Rating — Payment | `color_mm64kd3q` | Sub-rating. **109 of 188 populated** — the only rating field carrying data |
 | Rating — Measure-ready | `color_mm64je94` | Sub-rating. ⛔ **0 of 188 populated** — and OR-14's site-readiness ruling scores on it |
