@@ -25,7 +25,7 @@ Every operational rule the screen applies, stated once, with an ID and a version
 
 **The standing rule, from 27 July 2026:** *every NEW or AMENDED operational rule is written HERE FIRST, and only then propagated.* A rule that exists anywhere else but not here is, by definition, unregistered.
 
-**IDs are permanent.** Never reused, never renumbered. A superseded rule keeps its ID, is marked `SUPERSEDED`, and points at whatever replaced it. Every historical record depends on this. **The complete ID index in §7 lists all 51 registered IDs**, including those outside screening scope, so that no ID is ever silently reissued.
+**IDs are permanent.** Never reused, never renumbered. A superseded rule keeps its ID, is marked `SUPERSEDED`, and points at whatever replaced it. Every historical record depends on this. **The complete ID index in §7 lists all 52 registered IDs**, including those outside screening scope, so that no ID is ever silently reissued.
 
 **Versions are how drift is caught.** Each rule carries `vN`. Any document or executable restating a rule must carry the tag inline, e.g. `[R-D5 v5]`. A checker greps every carrier and reports:
 - **MISSING** — a carrier that should enforce the rule never mentions it
@@ -683,9 +683,39 @@ occupancy `[R-OCCUPANCY v1]` · live Customer Tier `Do-Not-Quote`, or an unresol
 ⛔ **"Curves >40mm" was STRUCK from layer 2 on 23 Jul 2026 — see `[R-D5 v9]`.** It must never be re-added, and **"seven" is stale wherever it appears.**
 **Ropox Flexi Electric is APPROVED and is NOT first-of-kind.**
 Both layers are amended only by an **MD or GM** decision, recorded here with a version bump.
+⚠ **THREE OF THESE NO LONGER AUTO-DECLINE ON AN A-VIP OR 🅰 A ACCOUNT** — out of area, a build that cannot be made, and a material not permitted `[R-OPSAPPROVE v1]`. They route to Jordan Tomlinson instead. Every other blocking ground, and every other tier, is untouched.
 **Why:** the stale count "seven" has been found and fixed **four separate times** in different files; each time it silently revived the struck curves rule. v2 fixed the count but described layer 2 as "the blocking closed list", which read as the whole list — leaving seven conditions the screen applies every day with no rule behind them.
 **Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `06 Evidence Requirements` · `07 Service Area & Site` · `09 Response Templates`
 **History:** v1 20 Jul 2026 (seven adopted) · **v2 23 Jul 2026** (curves struck → six) · **v3 **3 Sep 2026 (Stella Rasheed)**** — closes OR-06. The two layers are separated and named; layer 1 is registered for the first time, as six new rules.
+
+### R-OPSAPPROVE · v1 · LAW
+**THREE GROUNDS, A-VIP AND A ONLY, AND JORDAN TOMLINSON DECIDES.** Ruled by Stella Rasheed, 17 September 2026.
+
+**Scope — read the GROUP, not a column** `[08 §2.1]`: **💎 A-VIP** (`group_mm64kmbs`, 14 accounts) and **🅰 A** (`group_mm64jhmz`, 9) — 23 accounts as at 15 September 2026. ⛔ **B, C, Commercial, Do-Not-Quote and ❓ Not yet rated get none of this.** Their declines stand exactly as written. An account whose tier cannot be read is **not** A-tier: an unreadable tier is unverified, never assumed `[R-C1 v4]`.
+
+**The three grounds, and only these three:**
+
+| Ground | Where it comes from |
+|---|---|
+| Out of area, or the Supply Only conversion undecided | `[R-AREA v1]` `[R-SUPPLYONLY v2]` |
+| A build that cannot be made | `[R-PROFILE v6]` `[R-30MM v1]` `[R-D5 v9]` |
+| A material not permitted for this customer or this use | `[R-CLASS v2]` `[R-DEKTON v1]` `[R-ALFRESCO v1]` `[R-NATURAL v1]` |
+
+**What changes.** On an A-VIP or A account these three no longer auto-decline. The screen routes to **Needs Review, named to Jordan Tomlinson (Ops Manager)**. On every other account, nothing changes.
+
+⛔ **APPROVAL IS A COMMERCIAL DECISION AND NEVER A PHYSICAL ONE.** A build that cannot be made is still ⛔ and the screen still says so, in those words. What Jordan decides is **what SteedForm does about it** — a substitute build, a different material, or a decline. **Approval never converts ⛔ into "quote it as drawn."** Capability and risk do not blend, for any customer, at any tier `[R-ANDON v2]`.
+
+✅ **HIS DECISION IS THE LAST ONE.** The job proceeds to quoting on what he approved and is **NOT re-screened**. Ruled 17 September 2026.
+
+⚠ **That is deliberate, and it has a cost — stated here so nobody discovers it in a remake.** The moment the job passes him, the screen's **other** findings on it stop being binding. A job routed for one ground and approved carries its remaining conditions unenforced, because nothing re-reads them.
+
+⛔ **Therefore the approval must say what was approved.** *"Approved"* is not a decision. *"Approved on 20mm Zenith in place of the 40mm Vasari, alfresco piece dropped"* is. An approval that does not name the thing approved leaves no record of what the quote was allowed to be.
+
+⛔ **WHAT THIS RULE DOES NOT TOUCH — ruled explicitly, 17 September 2026.** **Who the customer is** — no account, unrated, tier unreadable `[R-ACCTMATCH v5]` `[R-ENTITY v1]` `[R-RETAIL v1]` `[R-CLIENTFIT v1]` — and **drawings absent or unreadable** `[R-DRAWINGS v1]`. Those are a different kind of thing: not exceptions to be granted but facts to be established, and no tier makes either waivable. ⚠ **They are also the two largest blocking grounds in the record — 70% and 24% of screens respectively, measured 15 September 2026 — and this rule leaves both deliberately alone.** A future reader who assumes the biggest categories must have been included has the rule backwards.
+
+**Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `09 Response Templates`
+
+**History:** **v1 **17 Sep 2026 (Stella Rasheed)**** — registered. The three grounds, the two tier groups, the named approver, and the two categories deliberately excluded.
 
 ### R-ANDON · v2 · LAW
 **⛔ CAPABILITY and 🔴 RISK are two different verdicts and MUST NEVER BLEND (MD ruling 23 Jul 2026).** Both currently render as one undifferentiated 🔴, which is the bug.
@@ -887,6 +917,7 @@ Once `Job Type` is set to **`Supply Only [− FREIGHT]`** the lane drops to 🟡
 | `R-DRAWINGS` | v1 | §3 Evidence and verdicts |
 | `R-BLOCK` | v3 | §3 Evidence and verdicts |
 | `R-ANDON` | v2 | §3 Evidence and verdicts |
+| `R-OPSAPPROVE` | v1 | §3 Evidence and verdicts — the A-tier exception route |
 | `R-MA5` | v3 | §3 Evidence and verdicts |
 | `R-RESCREEN` | v1 | §3 Evidence and verdicts |
 | `R-SITE` | v1 | §4 Site, service area and logistics |

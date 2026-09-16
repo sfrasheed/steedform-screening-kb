@@ -26,6 +26,8 @@ There are exactly four board verdicts. They are not interchangeable and they go 
 | **Needs Review** | A **human at SteedForm** must make a call before this goes further. | A named person — MD, GM or estimator |
 | **Unqualified** | A confirmed decline rule applies, or client fit is unresolved or declined. | Decline communication `09` |
 
+⚠ **ON AN A-VIP OR 🅰 A ACCOUNT, THREE DECLINE GROUNDS BECOME A NEEDS REVIEW NAMED TO JORDAN TOMLINSON** `[R-OPSAPPROVE v1]` — out of area, a build that cannot be made, and a material not permitted. His decision is final and the job is **not re-screened**, so the screen's other findings on it stop binding at that moment; the approval must therefore name what was approved. ⛔ It never converts ⛔ capability into "quote it as drawn", and it does **not** reach who-the-customer-is or absent drawings, which stay exactly as they are at every tier.
+
 ⚠ **Needs Info and Needs Review are not variants of each other.** `[R-DRAWINGS v1]` routes missing drawings to **Needs Info** — the client must supply something. `[R-BLOCK v3]` routes a blocking flag to **Needs Review** — a human decides. Collapsing the two sends the wrong request to the wrong party.
 
 ### The PDF brief vocabulary

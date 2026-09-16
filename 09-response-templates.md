@@ -65,6 +65,8 @@ Verdict vocabulary is the screening skill's board mode: **Qualified · Needs Inf
 | **New trade customer** while at capacity for new trade customers | Unqualified (capacity, not policy) | **T-DECLINE-10** | Single version, all tiers | None — a capacity call | ⚠ **None** — proposed §6 exception, not yet ruled | **Yes — re-contact is promised** |
 | Clean — no blocking flags | Qualified | No template (internal routing) | — | — | Proceeds to quoting (T-QUOTE-01) | — |
 
+⛔ **DO NOT SEND A DECLINE ON AN A-VIP OR 🅰 A ACCOUNT FOR THESE THREE GROUNDS** `[R-OPSAPPROVE v1]` — out of area, a build that cannot be made, or a material not permitted. Those route to **Jordan Tomlinson** and a letter goes out only if he decides to decline. Sending one before he has ruled declines a job SteedForm may well want. Every other ground, and every other tier, is unchanged.
+
 ### Precedence when more than one decline fires
 
 **Send the MORE SPECIFIC template.** If the enquiry also fails on scope (IKEA, client-supplied stone, existing cabinetry), use `T-DECLINE-03`, `T-DECLINE-07`, or the `[R-SCOPE v2]` ground that fits — because those name the *particular* thing that is wrong, and a specific reason is what the four-step pattern (§5) requires.
