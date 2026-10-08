@@ -77,10 +77,17 @@ jobs:
           echo "LOADED=$((added+replaced))" >> "$GITHUB_ENV"
 
       # ⚠ REPORTING ONLY — it must never fail the run. The rules are loaded by
-      # the step above; this one just says which open jobs now carry an older
-      # answer. On 8 October 2026 it errored and painted a successful load red,
-      # which is worse than useless: it says "your rules did not load" when they
-      # did. `continue-on-error` plus a guarded parse keeps the signal honest.
+      # the step above; this one says which open jobs now carry an older answer.
+      #
+      # ⛔ THE PAYLOAD GOES TO A FILE, NEVER TO argv OR THE ENVIRONMENT.
+      # On 8 October 2026 this step failed with **exit 126** and painted a
+      # successful load red. The cause: it passed the whole response as one
+      # shell argument, and Linux caps a SINGLE argument at 128 KB
+      # (MAX_ARG_STRLEN). The response had grown to **143 KB across 288 rows** —
+      # it crosses that line as the number of screens grows, which is why it
+      # worked in September and broke in October. execve returns E2BIG and bash
+      # reports it as 126, "found but cannot execute".
+      # An environment variable is NOT a fix: env strings share the same limit.
       - name: Say which jobs are now screened against old rules
         continue-on-error: true
         env:
@@ -90,37 +97,12 @@ jobs:
         run: |
           set -uo pipefail
           BASE="${BASE%/}"
-          stale=$(curl -sS --max-time 30 "$BASE/api/kb/stale" \
-            -H "CF-Access-Client-Id: $CF_ID" \
-            -H "CF-Access-Client-Secret: $CF_SECRET") || stale=''
 
-          # Through stdin, not argv: the list grows with every screen ever run
-          # and an argument list has a ceiling.
-          printf '%s' "$stale" | python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json, sys
-          raw = sys.stdin.read().strip()
-          print("## Criteria loaded\n")
-          if not raw:
-              print("_The rules loaded. The staleness check could not be reached — that is this "
-                    "step only, and says nothing about the load._")
-              raise SystemExit(0)
-          try:
-              d = json.loads(raw)
-          except json.JSONDecodeError:
-              print("_The rules loaded. The staleness check returned something that was not JSON "
-                    "(an Access redirect, most likely) — that is this step only._")
-              print("```"); print(raw[:400]); print("```")
-              raise SystemExit(0)
-          rows = d.get("stale", [])
-          print(f"Fingerprint `{str(d.get('fingerprint',''))[:16]}…`\n")
-          if not rows:
-              print("Nothing open was screened against older rules.")
-          else:
-              # A rule can be corrected everywhere and still leave every job
-              # already screened carrying the old answer. R-RESCREEN v1.
-              print(f"**{len(rows)} open job(s) now screened against older rules — re-run them.**\n")
-              for r in rows[:50]:
-                  print(f"- {r.get('client_name') or r.get('reference')}")
-              if len(rows) > 50:
-                  print(f"- …and {len(rows)-50} more")
-          PY
+          # Straight to disk — it never becomes a shell value.
+          curl -sS --max-time 30 -o stale.json "$BASE/api/kb/stale" \
+            -H "CF-Access-Client-Id: $CF_ID" \
+            -H "CF-Access-Client-Secret: $CF_SECRET" || true
+
+          python3 stale_report.py >> "$GITHUB_STEP_SUMMARY" || \
+            echo "_The rules loaded. This summary could not be written — that is this step only._" \
+              >> "$GITHUB_STEP_SUMMARY"
