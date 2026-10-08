@@ -76,30 +76,51 @@ jobs:
           echo "$added added · $replaced replaced · $same unchanged"
           echo "LOADED=$((added+replaced))" >> "$GITHUB_ENV"
 
+      # ⚠ REPORTING ONLY — it must never fail the run. The rules are loaded by
+      # the step above; this one just says which open jobs now carry an older
+      # answer. On 8 October 2026 it errored and painted a successful load red,
+      # which is worse than useless: it says "your rules did not load" when they
+      # did. `continue-on-error` plus a guarded parse keeps the signal honest.
       - name: Say which jobs are now screened against old rules
+        continue-on-error: true
         env:
           BASE: ${{ secrets.DEEP_SCREEN_URL }}
           CF_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
           CF_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
         run: |
-          set -euo pipefail
+          set -uo pipefail
           BASE="${BASE%/}"
-          stale=$(curl -sS "$BASE/api/kb/stale" \
+          stale=$(curl -sS --max-time 30 "$BASE/api/kb/stale" \
             -H "CF-Access-Client-Id: $CF_ID" \
-            -H "CF-Access-Client-Secret: $CF_SECRET")
+            -H "CF-Access-Client-Secret: $CF_SECRET") || stale=''
 
-          python3 - "$stale" <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          # Through stdin, not argv: the list grows with every screen ever run
+          # and an argument list has a ceiling.
+          printf '%s' "$stale" | python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json, sys
-          d = json.loads(sys.argv[1])
-          rows = d.get("stale", [])
+          raw = sys.stdin.read().strip()
           print("## Criteria loaded\n")
-          print(f"Fingerprint `{d.get('fingerprint','')[:16]}…`\n")
+          if not raw:
+              print("_The rules loaded. The staleness check could not be reached — that is this "
+                    "step only, and says nothing about the load._")
+              raise SystemExit(0)
+          try:
+              d = json.loads(raw)
+          except json.JSONDecodeError:
+              print("_The rules loaded. The staleness check returned something that was not JSON "
+                    "(an Access redirect, most likely) — that is this step only._")
+              print("```"); print(raw[:400]); print("```")
+              raise SystemExit(0)
+          rows = d.get("stale", [])
+          print(f"Fingerprint `{str(d.get('fingerprint',''))[:16]}…`\n")
           if not rows:
               print("Nothing open was screened against older rules.")
           else:
               # A rule can be corrected everywhere and still leave every job
               # already screened carrying the old answer. R-RESCREEN v1.
               print(f"**{len(rows)} open job(s) now screened against older rules — re-run them.**\n")
-              for r in rows:
+              for r in rows[:50]:
                   print(f"- {r.get('client_name') or r.get('reference')}")
+              if len(rows) > 50:
+                  print(f"- …and {len(rows)-50} more")
           PY
