@@ -39,7 +39,7 @@ strip, the findings or the order-gate conditions — the screen still finds all 
 
 ## What this document decides
 
-Which message goes out once a screening verdict is reached, and exactly what it says. It maps every screening outcome to one template, gives the template's text as it is actually sent, states which are permanent declines and which leave the door open, and fixes the house voice a generated message must obey. Where a template's trigger is a Rule Register rule, the rule is cited by ID, never restated. **As at 3 September 2026 every decline ground in this document that has an authority has a REGISTERED one** — `[R-RETAIL v1]` grounds T-DECLINE-08 and `[R-DEKTON v1]` grounds T-DECLINE-06, both ratified that day. The templates that carry no rule (T-DECLINE-01, T-DECLINE-04, T-QUALIFY-01, T-FOLLOWUP-01) carry none because they are judgement or capacity calls, not because a ratification is outstanding.
+Which message goes out once a screening verdict is reached, and exactly what it says. It maps every screening outcome to one template, gives the template's text as it is actually sent, states which are permanent declines and which leave the door open, and fixes the house voice a generated message must obey. Where a template's trigger is a Rule Register rule, the rule is cited by ID, never restated. **As at 3 September 2026 every decline ground in this document that has an authority has a REGISTERED one** — `[R-RETAIL v2]` grounds T-DECLINE-08 and `[R-DEKTON v1]` grounds T-DECLINE-06, both ratified that day. The templates that carry no rule (T-DECLINE-01, T-DECLINE-04, T-QUALIFY-01, T-FOLLOWUP-01) carry none because they are judgement or capacity calls, not because a ratification is outstanding.
 
 ---
 
@@ -52,7 +52,7 @@ Verdict vocabulary is the screening skill's board mode: **Qualified · Needs Inf
 | No readable drawings / insufficient documentation | Needs Info | **T-INFO-01** | Trade · Homeowner | `[R-DRAWINGS v1]` | Send the requirements PDF; quote in 2 business days once complete | Yes — the enquiry stays live |
 | Trade / commercial enquiry SteedForm intends to quote but must scope first | Qualified → Info Gathering | **T-QUALIFY-01** | Single version (Trade / Commercial only) | — (not a decline) | Qualifying questions, then pricing | Yes |
 | No response to T-INFO-01 | Needs Info (chase) | **T-FOLLOWUP-01** | All tiers | — | Restate the missing items | Yes |
-| **No approved trade account behind the job** (retail / direct; DIY, kit and IKEA cabinetry) | Unqualified | **T-DECLINE-08** | Homeowner / Direct · Trade / Designer | **`[R-RETAIL v1]`** — the test is the trade account behind the job, never who sent the email (IKEA ground also: `[R-SCOPE v2]`) | **Primary: the trade route** (their cabinetmaker/builder contacts us, or a trade-account conversation). Legacy second | **No — permanent.** No "try us later" |
+| **No approved trade account behind the job** — ⛔ **ONLY where a human has ruled it**: `Client Fit = Declined`, or a matched account in ⛔ Do-Not-Quote `[R-CLIENTFIT v2]`. An UNRESOLVED sender gets no letter, it gets a review | Unqualified | **T-DECLINE-08** | Homeowner / Direct · Trade / Designer | **`[R-RETAIL v2]`** — the test is the trade account behind the job, never who sent the email (IKEA ground also: `[R-SCOPE v2]`) | **Primary: the trade route** (their cabinetmaker/builder contacts us, or a trade-account conversation). Legacy second | **No — permanent.** No "try us later" |
 | Scope outside capability (non-stone, ultra-complex bespoke, outside geographic range) | Unqualified | **T-DECLINE-01** | Trade · Homeowner | None stated in source | Optional alternative supplier suggestion | Trade version invites the next fitting job |
 | Client-supplied material / install-only / fab-and-install-only | **Unqualified** — except on an A-tier account, where it is **Needs Review** first | **T-DECLINE-07** | Trade / Cabinetmaker · Homeowner / Standard | `[R-SCOPE v2]` — client-supplied slabs are a hard stop for every account **except an A-tier account, the one carve-out in the table**, where they become a 🔴 RISK routed to Needs Review `[R-BLOCK v3]` for a named human to accept or decline | **SteedForm-supplied material — quote the full scope.** ⚠ **No Legacy referral** | Only by converting to a SteedForm-supplied job |
 | Existing / DIY / re-used / relocated cabinetry | Unqualified | **T-DECLINE-03** | Trade · Homeowner | `[R-SCOPE v2]` — replacement or remedial work on someone else's stone, and IKEA kitchens, are **DECLINE or refer** items | Re-quote once new cabinetry is built by a qualified joiner and drawings exist | Conditional — on new cabinetry |
@@ -65,13 +65,15 @@ Verdict vocabulary is the screening skill's board mode: **Qualified · Needs Inf
 | **New trade customer** while at capacity for new trade customers | Unqualified (capacity, not policy) | **T-DECLINE-10** | Single version, all tiers | None — a capacity call | ⚠ **None** — proposed §6 exception, not yet ruled | **Yes — re-contact is promised** |
 | Clean — no blocking flags | Qualified | No template (internal routing) | — | — | Proceeds to quoting (T-QUOTE-01) | — |
 
+⛔ **DO NOT SEND T-DECLINE-08 BECAUSE A SENDER DID NOT MATCH AN ACCOUNT** `[R-RETAIL v2]`, ruled 8 October 2026. "We could not place them" is not a decline and is not a letter — it is a Needs Review for a person, who may then approve the customer, ask who the work is for, or rule a decline. **Designers especially**: they are often acting for an approved trade account, and declining them loses that account too. Where the enquiry does not say who the work is for, **ask** `[R-ASK v3]`.
+
 ⛔ **DO NOT SEND A DECLINE ON AN A-VIP OR 🅰 A ACCOUNT FOR THESE THREE GROUNDS** `[R-OPSAPPROVE v1]` — out of area, a build that cannot be made, or a material not permitted. Those route to **Jordan Tomlinson** and a letter goes out only if he decides to decline. Sending one before he has ruled declines a job SteedForm may well want. Every other ground, and every other tier, is unchanged.
 
 ### Precedence when more than one decline fires
 
 **Send the MORE SPECIFIC template.** If the enquiry also fails on scope (IKEA, client-supplied stone, existing cabinetry), use `T-DECLINE-03`, `T-DECLINE-07`, or the `[R-SCOPE v2]` ground that fits — because those name the *particular* thing that is wrong, and a specific reason is what the four-step pattern (§5) requires.
 
-⚠ **The original reason for this ordering is spent.** The source rule read *"…because those carry Rule Register authority and this one does not yet."* **T-DECLINE-08 now carries `[R-RETAIL v1]`**, ratified 3 September 2026, so the authority asymmetry is gone. **The precedence itself still stands**, on specificity alone.
+⚠ **The original reason for this ordering is spent.** The source rule read *"…because those carry Rule Register authority and this one does not yet."* **T-DECLINE-08 now carries `[R-RETAIL v2]`**, ratified 3 September 2026, so the authority asymmetry is gone. **The precedence itself still stands**, on specificity alone.
 
 The common real case — a homeowner, with existing cabinetry, and no trade account — fires T-DECLINE-08, T-DECLINE-03 and a `[R-SCOPE v2]` ground at once. Send the **more specific** one.
 
@@ -103,7 +105,7 @@ All decline templates carry the standing Legacy Granite & Marble referral (§6) 
 - **Variants:** **one version, all tiers.** Wording supplied by Stella Rasheed, 8 September 2026; the earlier Trade/Homeowner split is retired below.
 - **Redirect:** Legacy Granite & Marble. T-DECLINE-01 is **not** one of the three exceptions in §6, so the standing referral applies.
 - **Permanent?** Permanent for this project. Not a client-type decline.
-- ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-01 is about the *work*; T-DECLINE-08 is about *who is behind the job* `[R-RETAIL v1]`. A retail enquiry for work SteedForm does every day is a T-DECLINE-08, never a T-DECLINE-01.
+- ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-01 is about the *work*; T-DECLINE-08 is about *who is behind the job* `[R-RETAIL v2]`. A retail enquiry for work SteedForm does every day is a T-DECLINE-08, never a T-DECLINE-01.
 - ⛔ **"Outside geographic range" is NOT a decline ground at screening** `[R-AREA v1]`. Out of area is **blocking → Needs Review** while the Supply Only conversion is undecided, and once `Job Type` is set to `Supply Only [− FREIGHT]` the job proceeds on that delivery model `[R-SUPPLYONLY v2]`. **Distance changes the delivery model, not whether SteedForm wants the work.**
 
 > Hi {{recipient.first_name}},
@@ -342,10 +344,10 @@ All decline templates carry the standing Legacy Granite & Marble referral (§6) 
 **This is the highest-volume decline SteedForm sends** (4 in one month, August 2026). Added 27 August 2026 (v1.6); before that it had neither a rule nor a template.
 
 - **Trigger:** no approved SteedForm trade customer is supplying and installing the cabinetry.
-- ⚖ **The test is the trade account behind the job — NOT who sent the email** `[R-RETAIL v1]`. A homeowner whose kitchen is being built by an approved cabinetmaker is a normal trade job, routed through that cabinetmaker. A builder, designer or joiner with no SteedForm account is a decline, however they present. DIY, kit and IKEA cabinetry are always a decline (IKEA: `[R-SCOPE v2]`).
+- ⚖ **The test is the trade account behind the job — NOT who sent the email** `[R-RETAIL v2]`. A homeowner whose kitchen is being built by an approved cabinetmaker is a normal trade job, routed through that cabinetmaker. A builder, designer or joiner with no SteedForm account is a decline, however they present. DIY, kit and IKEA cabinetry are always a decline (IKEA: `[R-SCOPE v2]`).
 - **Stage / verdict:** Triage → Disqualified (Unqualified)
-- **Rule authority:** **`[R-RETAIL v1]`** — ratified 3 September 2026 (OR-08), closing the position the MD recorded on 27 August 2026. **This template's ground carries full Register authority.** The precedence rule (§1) still sends an enquiry that also fails on scope to the more specific template, now on specificity rather than on any shortfall of authority.
-- ⚖ **The Direct Homeowner x1.55+ markup tier SURVIVES** `[R-RETAIL v1]`. It continues to apply where a trade account **is** behind the job and the homeowner is driving it — the tier prices hand-holding. **It is not a route around this decline:** no trade account behind the job means a decline at any markup. See `04-customer-and-account.md` §7.1.
+- **Rule authority:** **`[R-RETAIL v2]`** — ratified 3 September 2026 (OR-08), closing the position the MD recorded on 27 August 2026. **This template's ground carries full Register authority.** The precedence rule (§1) still sends an enquiry that also fails on scope to the more specific template, now on specificity rather than on any shortfall of authority.
+- ⚖ **The Direct Homeowner x1.55+ markup tier SURVIVES** `[R-RETAIL v2]`. It continues to apply where a trade account **is** behind the job and the homeowner is driving it — the tier prices hand-holding. **It is not a route around this decline:** no trade account behind the job means a decline at any markup. See `04-customer-and-account.md` §7.1.
 - ⛔ **The "qualified cabinetmaker" test is SUPERSEDED.** The screening skill's *"retail/homeowner-direct OK only for a new-build kitchen with a qualified cabinetmaker involved"* is retired. **The test is an approved SteedForm trade account**, not a qualified cabinetmaker — a competent, licensed cabinetmaker with no SteedForm account does not satisfy it.
 - **Variants:** Homeowner / Direct · Trade / Designer, plus an optional supply-only block.
 - **Redirect: the trade route is primary** — their cabinetmaker or builder gets in touch and the job proceeds through them, or (trade/designer version) a conversation about becoming an approved trade customer. The Legacy referral is **secondary** and sits below the trade line.
@@ -399,7 +401,7 @@ trade to contact us instead. ⛔ **Never frame this as capability** ("we can't d
 is permanent; capacity is `T-DECLINE-04`. If the enquiry ALSO fails on scope (IKEA, client-supplied
 stone, existing cabinetry), use the more specific template — `T-DECLINE-03`, `07`, or a
 `[R-SCOPE v2]` ground — because those name the particular thing that is wrong. **This template's own
-ground is `[R-RETAIL v1]` and carries full Register authority**; the precedence is about specificity,
+ground is `[R-RETAIL v2]` and carries full Register authority**; the precedence is about specificity,
 not authority.
 
 ---
@@ -412,7 +414,7 @@ not authority.
 - **Variants:** one version, all tiers. Wording supplied by Stella Rasheed, 8 September 2026.
 - **Redirect:** Legacy Granite & Marble — ruled 8 September 2026 (Stella Rasheed). The supplied wording said only *"continue looking for a local stone fabricator"*; naming nobody would have made this the only decline in the document that leaves someone with a bare no, against §6.
 - **Permanent?** Permanent for this enquiry as specified. It is not a statement about the customer forever — an account that later gets rated is screened on its rating.
-- ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-08 is *no approved trade account* `[R-RETAIL v1]` and leads with the trade route. T-DECLINE-09 is *unrated **and** the material fails `[R-CLASS v2]`*. Where both fire, send the **more specific** one per §1 precedence.
+- ⚠ **Do not conflate with T-DECLINE-08.** T-DECLINE-08 is *no approved trade account* `[R-RETAIL v2]` and leads with the trade route. T-DECLINE-09 is *unrated **and** the material fails `[R-CLASS v2]`*. Where both fire, send the **more specific** one per §1 precedence.
 
 > Hi {{recipient.first_name}},
 >

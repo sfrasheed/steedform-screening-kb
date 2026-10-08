@@ -11,7 +11,7 @@
 
 ## What this document decides
 
-Whether we quote this customer at all, and on what evidence. It fixes the corpus's single worst ambiguity — four unrelated things called "tier" — by naming each axis, its field, and its job. It sets the closed ladder by which a Lead is linked to an Account `[R-ACCTMATCH v5]`, establishes that client fit is decided *before* drawings, scope, material or value `[R-CLIENTFIT v1]`, and defines the minimum account read `[R-ACCT v3]` — including the mandatory Notes/Flags column, where DUMP markers, ten-year revenue and win rate now exclusively live. It carries the A/B/C behaviour rubric and the one-slab minimum `[R-C3 v1]`, states the client-type decline ground `[R-RETAIL v1]`, and carries the unknown-entity block `[R-ENTITY v1]`.
+Whether we quote this customer at all, and on what evidence. It fixes the corpus's single worst ambiguity — four unrelated things called "tier" — by naming each axis, its field, and its job. It sets the closed ladder by which a Lead is linked to an Account `[R-ACCTMATCH v5]`, establishes that client fit is decided *before* drawings, scope, material or value `[R-CLIENTFIT v2]`, and defines the minimum account read `[R-ACCT v3]` — including the mandatory Notes/Flags column, where DUMP markers, ten-year revenue and win rate now exclusively live. It carries the A/B/C behaviour rubric and the one-slab minimum `[R-C3 v1]`, states the client-type decline ground `[R-RETAIL v2]`, and carries the unknown-entity block `[R-ENTITY v1]`.
 
 ---
 
@@ -25,7 +25,7 @@ This is the most load-bearing section in the document. The corpus uses "tier" fo
 |---|---|---|---|---|---|
 | **a** | **Customer Tier** | Accounts `5029570132`, `color_mm64t0aj` | Commercial **VALUE / disposition** — how much we want their work | `A - Anchor/VIP` · `A - Win Back` · `Gate - Selective` · `Do-Not-Quote` | The **disposition LABEL** `[R-C1 v4]`. `Do-Not-Quote` → Needs Review. A-tiers waive the one-slab minimum `[R-C3 v1]`. Gate-Selective → flag + Needs Review. |
 | **b** | **Client Rating A/B/C** | Accounts `5029570132`, `color_mm64jqn0` (+ sub-ratings) | **BEHAVIOUR** — how smoothly they run operationally | A · B · C · blank | **Prices friction; never blocks.** Feeds the CLIENT risk lane. See §5. |
-| **c** | **Pricing-markup tier** | `Pricing Rules.md` — Markup Decision Framework | The **starting markup factor** by customer type | Commercial x1.25–1.35 · Standard Residential x1.35 · Builder/Trade x1.40 · Direct Homeowner x1.55+ | A pricing lever, not a screening gate. Never a verdict input. **`Direct Homeowner x1.55+` survives `[R-RETAIL v1]`** — see §7.1. ⚠ The category list itself is an **outstanding MD action**, §1.4. |
+| **c** | **Pricing-markup tier** | `Pricing Rules.md` — Markup Decision Framework | The **starting markup factor** by customer type | Commercial x1.25–1.35 · Standard Residential x1.35 · Builder/Trade x1.40 · Direct Homeowner x1.55+ | A pricing lever, not a screening gate. Never a verdict input. **`Direct Homeowner x1.55+` survives `[R-RETAIL v2]`** — see §7.1. ⚠ The category list itself is an **outstanding MD action**, §1.4. |
 | **d** | **Account Status** | Accounts `5029570132`, `color_mm64cbq0` | **LIFECYCLE** history | Active · Win-Back · Prospect · On Hold · Dormant · Do-Not-Quote | ⛔ **STALE. Must never block, qualify, score or describe a Lead** `[R-C1 v4]` `[R-ACCT v3]`. May be displayed as context only. |
 
 ⛔ **These four must never be conflated, merged into one field, or read as each other.** Tier says what they are *worth*; the rating says how smoothly they *run*; the markup tier says what we *charge*; Account Status says nothing screening may use.
@@ -46,10 +46,10 @@ The four markup tiers in `Sales Qualification.md` match `Pricing Rules.md` §The
 | `Sales Qualification.md` (pre-Big-Reset / Anthill-era, self-declared stale) | Current position |
 |---|---|
 | *"The tier is identified at triage — it's **known from the source of the enquiry**, not from a formal scoring process."* | ⛔ **Killed.** Reference data comes from the **BOARD, on every screen — never from memory, an earlier pass, a historical note, a pasted snapshot, or a value copied onto the lead** `[R-REF v2]`. The account is reached only through the closed ladder `[R-ACCTMATCH v5]`; **an exact name match may never by itself apply Customer Tier, Gate-Selective, A-tier waivers, markup or SLA.** |
-| Verdicts **PROCEED / REQUEST INFO / DECLINE** | **Qualified / Needs Info / Needs Review / Unqualified** — the Leads board vocabulary, with `[R-CLIENTFIT v1]` precedence. |
+| Verdicts **PROCEED / REQUEST INFO / DECLINE** | **Qualified / Needs Info / Needs Review / Unqualified** — the Leads board vocabulary, with `[R-CLIENTFIT v2]` precedence. |
 | *"Minimum job size … parked until Production Intelligence matures."* | `[R-C3 v1]` — one slab per job. See §6. |
 
-⚠ **`Direct Homeowner x1.55+` is not repealed by the client-type decline.** `[R-RETAIL v1]` decides *whether there is a job*; the markup tier decides *what it is priced at* once a trade account is behind it. See §7.1.
+⚠ **`Direct Homeowner x1.55+` is not repealed by the client-type decline.** `[R-RETAIL v2]` decides *whether there is a job*; the markup tier decides *what it is priced at* once a trade account is behind it. See §7.1.
 
 **Floor and approval (from `Pricing Rules.md`, carried here only as context for axis (c)):** x1.25 (20% GP) is the absolute minimum; no job leaves the building below it. Pricing below x1.35 requires Matthew or Sarah (GM). *(The overlap between "below x1.35" and the Commercial band's x1.25–1.35 top is a pricing-document question, not a customer-screening one.)*
 
@@ -96,7 +96,7 @@ Accounts `5029570132` also carries `numeric_mm64mvp3` **Markup**, listed among t
 
 On a generic domain, tiers 2–3 **do not apply**; the sender drops to **tier 4 — candidate only, human confirmation required**. It is not an automatic name match. At least 8 accounts use a generic domain as their main address (Styleline, All Class, DeBoar, K H Kitchens, Saunders, Oskar Brezovic, Dylan Boehm, Zee), so matching on `gmail.com` would link every retail enquiry to whichever account happens to share it.
 
-⚠ **A generic address can still be recognised for client fit by an exact full-email Contact/Account match** `[R-CLIENTFIT v1]`. The shared domain alone is never recognition.
+⚠ **A generic address can still be recognised for client fit by an exact full-email Contact/Account match** `[R-CLIENTFIT v2]`. The shared domain alone is never recognition.
 
 ### 2.2 Shared-domain ambiguity
 
@@ -123,7 +123,7 @@ On a generic domain, tiers 2–3 **do not apply**; the sender drops to **tier 4 
 
 ---
 
-## 3. Client fit precedence `[R-CLIENTFIT v1]`
+## 3. Client fit precedence `[R-CLIENTFIT v2]`
 
 **Operative one-liner:** client fit is decided **before drawings, scope, material, value or technical suitability**. Apply it immediately after the matching ladder and before every other commercial or technical rule.
 
@@ -144,7 +144,7 @@ On a generic domain, tiers 2–3 **do not apply**; the sender drops to **tier 4 
 
 **Operative one-liner:** *"who is asking"* is a **BLOCKING** check → **Needs Review**. Where no account matches confidently, the enquiry is **not scored as if it came from a known customer**. It is one of the layer-1 blocking conditions `[R-BLOCK v3]`.
 
-⚠ **This check runs AFTER `[R-CLIENTFIT v1]`, not instead of it.** Client fit decides whether SteedForm acts for this enquirer at all; this decides whether the account behind them is known well enough to score. Both apply, in that order.
+⚠ **This check runs AFTER `[R-CLIENTFIT v2]`, not instead of it.** Client fit decides whether SteedForm acts for this enquirer at all; this decides whether the account behind them is known well enough to score. Both apply, in that order.
 
 ⛔ **A near-miss is NEVER silently matched and NEVER silently dropped** `[R-ACCTMATCH v5]`. A tier-4 name candidate, an ambiguous shared domain, a generic-domain sender — each is a near-miss, and each takes the same treatment.
 
@@ -328,7 +328,7 @@ These sit in the CLIENT risk lane and are listed here only where they turn on th
 | # | Signal | Score |
 |---|---|---|
 | **C1** | **Tier disposition** via the account link: unconfirmed Do-Not-Quote match → 🔴 · `Gate - Selective` → 🔴, flag **"Gate account — quote selectively"** (this exact text, nothing appended) → Needs Review, never a clean Qualify · `A - Anchor/VIP` / `A - Win Back` → 🟢 · untiered established → 🟡 | 🔴 / 🟡 / 🟢 |
-| **C2** | **Unknown entity** — no confident account match → **BLOCKING, Needs Review** `[R-ENTITY v1]`. Write *"possible account match: X — unconfirmed"* verbatim and treat the account as **untiered**: no A-tier waiver, no Gate-Selective handling, no markup, no SLA. ⚠ Under `[R-CLIENTFIT v1]` an unrecognised sender is **Unqualified** before any material or drawing consideration; material merit must never upgrade an unresolved client-fit outcome. | 🔴 — see §3.1 |
+| **C2** | **Unknown entity** — no confident account match → **BLOCKING, Needs Review** `[R-ENTITY v1]`. Write *"possible account match: X — unconfirmed"* verbatim and treat the account as **untiered**: no A-tier waiver, no Gate-Selective handling, no markup, no SLA. ⚠ Under `[R-CLIENTFIT v2]` an unrecognised sender is **Unqualified** before any material or drawing consideration; material merit must never upgrade an unresolved client-fit outcome. | 🔴 — see §3.1 |
 | **C8** | **Below the one-slab minimum** with no tier waiver → 🔴 `[R-C3 v1]` | 🔴 |
 
 **Any label on `color_mm64t0aj` that is not one of the four tier labels — template cruft, blank — is treated as untiered, and all standard rules apply in full.**
@@ -355,9 +355,9 @@ These sit in the CLIENT risk lane and are listed here only where they turn on th
 
 ---
 
-## 7. Trade account behind the job `[R-RETAIL v1]`
+## 7. Trade account behind the job `[R-RETAIL v2]`
 
-**Operative one-liner:** **a job with no approved SteedForm trade customer supplying and installing the cabinetry is a DECLINE.** SteedForm is a B2B fabricator; the work reaches the client through a trade account. **Ratified 3 September 2026 (OR-08)** — it is a registered rule, not a dated position, and it carries full Register authority.
+**Operative one-liner — AMENDED 8 October 2026 (Stella Rasheed):** **a job with no approved SteedForm trade customer supplying and installing the cabinetry does not proceed to a quote — it goes to a person** `[R-RETAIL v2]` `[R-CLIENTFIT v2]`. ⛔ **It is no longer an automatic decline.** A decline needs a human ruling: `Client Fit = Declined`, or a matched account in ⛔ Do-Not-Quote. A builder, designer or joiner we have not matched yet is a gap in our record, not a fact about them. SteedForm is a B2B fabricator; the work reaches the client through a trade account. **Ratified 3 September 2026 (OR-08)** — it is a registered rule, not a dated position, and it carries full Register authority.
 
 ⚖ **The test is the TRADE ACCOUNT BEHIND THE JOB — never who sent the email.**
 

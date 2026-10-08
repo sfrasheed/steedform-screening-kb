@@ -24,6 +24,7 @@
 | **OR-40** | Print Construction is 99% blank — populate the column, or amend `[R-PROFILE v5]`? | ✅ **CLOSED 7 Sep 2026 — the column was populated.** 392 of 392, no blanks. The rule was never amended, which was the right half to leave alone |
 | **OR-41** | Site-readiness scores on two entirely empty columns | **OPEN** |
 | **OR-42** | Replacement benchtops — `[R-CABINET v2]` says never decline, the supplied template declines | **OPEN** — raised 8 Sep 2026 |
+| **OR-43** | Thin documentation — Needs Info, or Needs Review? | **OPEN** — raised 8 Oct 2026 |
 | **OR-39** | The Serviceable Areas board has a third zone value no rule handles | **OPEN** — one row today |
 | OR-38 | Is Screening Philosophy retired as a document? | **OPEN** — low stakes |
 | OR-26 | No board identifier verified against a live board | **DEFERRED** by the owner |
@@ -202,3 +203,37 @@ authoritative and the screen flags and prices — it does not decline.
 ---
 
 *Related: `RULINGS-2026-09-03.md` · `01-rule-register.md` · `CHANGES.md` · `DATA-VERIFICATION-2026-09-03.md` (the board exports behind OR-39, OR-40 and OR-41) · `08-board-and-column-registry.md` §7 (the coverage record).*
+
+---
+
+## OR-43 — Thin documentation: Needs Info, or Needs Review?
+
+**Raised:** 8 October 2026, alongside the `[R-CLIENTFIT v2]` and `[R-RETAIL v2]` rulings.
+**Status:** OPEN. The rule is **unchanged** meanwhile — `[R-DRAWINGS v1]` still routes to **Needs Info**.
+
+**What was said.** *"Based on lack of training from our sales team, we can't dictate whether we
+should quote or not based on the documentation given — I would change this to a Needs Review rather
+than a straight flat-out decline."*
+
+**Why it was not simply actioned.** The premise is right and the fix may already be in. Thin
+documentation was **never** a decline: `[R-DRAWINGS v1]` has always routed it to **Needs Info**. It
+*looked* like a decline because `[R-CLIENTFIT v1]` outranked it and declined first — and that is
+exactly what `[R-CLIENTFIT v2]` has now stopped. So the observed behaviour should be fixed already,
+without touching this rule.
+
+**What is still a real choice.** The two verdicts go to different people, and the Register is
+explicit that collapsing them is an error:
+
+| Verdict | Means | Who acts |
+|---|---|---|
+| **Needs Info** | the client must supply something | the customer, via a reply asking for it |
+| **Needs Review** | a person at SteedForm decides | MD / GM / estimator |
+
+Moving drawings to Needs Review would stop the app asking the customer for a readable set and park
+it with a person instead. That is defensible where sales has not been trained to collect drawings —
+a person may know to phone rather than email — but it is a different thing from what was asked for,
+and it would make SteedForm, not the client, responsible for closing the gap on every thin enquiry.
+
+**What is needed:** a ruling, once the `[R-CLIENTFIT v2]` change has been observed in live screens.
+If thin documentation now lands as Needs Info and the reply asks for drawings, that is probably the
+behaviour wanted and this closes with no change.

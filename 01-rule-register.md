@@ -62,21 +62,27 @@ Every operational rule the screen applies, stated once, with an ID and a version
 
 *Who is asking, and are they an account we act for?*
 
-### R-CLIENTFIT · v1 · LAW
-**Client fit is decided before drawings, scope, material, value or technical suitability.** First apply `[R-ACCTMATCH v4]`.
+### R-CLIENTFIT · v2 · LAW
+**AN UNRESOLVED CLIENT FIT IS A NEEDS REVIEW. IT IS NOT A DECLINE.** Ruled by Stella Rasheed, 8 October 2026. Client fit is still decided before drawings, scope, material, value or technical suitability — what changes is what it *produces*. Apply `[R-ACCTMATCH v5]` first.
 
-- **Recognised** means either: (a) `[R-ACCTMATCH v4]` tier 1–3 safely linked one Account, or (b) a human has explicitly approved the new customer in the Leads `Client Fit` column (`color_mm69h52c`).
-- A free/generic address (gmail, hotmail, outlook, bigpond, internode, optusnet, yahoo, live, icloud and equivalents) can still be recognised by an **exact full-email** Contact/Account match. The shared domain alone is never recognition.
-- If no Account is safely linked and `Client Fit` is not **Approved New**, set `Client Fit = Review Required`, set Lead Status = **Unqualified**, and write: `UNRECOGNISED SENDER — client-fit approval required before drawings are considered.`
-- `Client Fit = Declined` always remains **Unqualified**. `Client Fit = Recognised` or **Approved New** allows the normal drawing/technical screen to continue.
-- Drawing presence, readability, job size, material and technical merit must never upgrade an unresolved client-fit outcome. Preserve and file the supplied evidence, but do not convert the Lead or let a drawing rescan/reconciliation promote it.
-- A human approval is recorded by setting `Client Fit = Approved New`; a known customer is recorded as `Recognised`. Re-runs must respect those explicit states and must not repeatedly reset an approved new customer.
+- **Recognised** means either: (a) `[R-ACCTMATCH v5]` tiers 1–3 safely linked one Account, or (b) a human has explicitly approved the new customer in the Leads `Client Fit` column (`color_mm69h52c`).
+- A free/generic address (the closed list of eleven, `[R-ACCTMATCH v5]` §2.1) can still be recognised by an **exact full-email** Contact or Account match. The shared domain alone is never recognition.
+- **Where nothing resolves: `Client Fit = Review Required`, verdict NEEDS REVIEW**, and say in one line who could not be placed. ⛔ **Not Unqualified.** "We do not know who this is" is a question for a person, not an answer to the customer.
+- `Client Fit = Declined`, or a matched account sitting in **⛔ Do-Not-Quote**, remains **Unqualified** — that is a decision someone has already made, and this rule does not reopen it.
+- Drawing presence, readability, job size, material and technical merit still must never *upgrade* an unresolved client fit to Qualified. They may now be assessed and reported alongside it, which they could not be before.
+- A human approval is recorded as `Approved New`; a known customer as `Recognised`. Re-runs must respect those states and never reset an approved new customer.
 
-**Precedence:** this gate runs after junk triage and safe account matching, but before DRAWINGS and every technical/commercial disposition rule. It therefore outranks `Needs Info` for missing drawings and `Qualified` for clean drawings.
+⛔ **A BUSINESS DOMAIN IS NEVER, BY ITSELF, A DECLINE GROUND.** A domain that is not on the closed list of eleven belongs to a business, and a business that is asking for a stone quote is a question for a person. This covers cabinetmakers, builders, joiners, designers, shopfitters and commercial fit-out firms alike — **no judgement is to be made from what the domain appears to be**, in either direction. It is not recognition either: it does not link an account, apply a tier, or confer a waiver `[R-ACCTMATCH v5]`.
 
-**Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `04 Customer & Account` · `06 Evidence Requirements` · `08 Board Registry & Mechanics`
+⛔ **THE SENDER'S DOMAIN IS NOT THE CUSTOMER — INCLUDING `@steedform.com`.** `[R-RETAIL v2]` has always said the test is the trade account *behind the job*, never who sent the email. A SteedForm staff member forwarding a customer's enquiry is not a client-fit failure: screen the customer inside the message. **Five staff forwards were declined on their own sender's domain** by 8 October 2026 — `19 Grenfell Street Quote`, `Fw: Teal Flat Kitchen bench tops`, `Fw: Steedform Introduction` among them.
 
-**History:** **v1 16 Aug 2026 (MD)** — unrecognised senders route to Unqualified for a client-fit decision regardless of drawings.
+**What this unblocks, and why it mattered.** This gate outranked everything, so nothing downstream ever ran on an unrecognised sender. `[R-AREA v1]` says out of area is *never* a decline and converts to Supply Only — it never got the chance. `[R-DRAWINGS v1]` routes thin documentation to Needs Info — it never got the chance. `[R-CLASS v2]` decides the material question — same. **Measured 8 October 2026: of 96 Unqualified verdicts, 93 were client fit, and 31 of those were real stone enquiries from business domains** — among them `btcustomcabinets.com.au`, `velocekitchens.au` twice, and `weylandcabinetmakers.com.au`, `tbrs.au` and `thgconstruction.au`, **which are existing accounts.** The gate was declining customers SteedForm already has.
+
+**Precedence:** unchanged in order — after junk triage and account matching, before drawings and every technical or commercial disposition. It no longer *terminates* the screen, so those rules now run and report.
+
+**Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `04 Customer & Account` · `06 Evidence Requirements` · `08 Board Registry & Mechanics` · `09 Response Templates`
+
+**History:** **v2 **8 Oct 2026 (Stella Rasheed)**** — the unresolved outcome moves from Unqualified to Needs Review; a business domain is named as never a decline ground on its own; the sender's domain, `@steedform.com` included, is named as not the customer. Also repairs a stale tag: v1 cited `[R-ACCTMATCH v4]` throughout and the live rule is **v5**. · v1 — client fit decided first, and an unresolved fit set Unqualified.
 
 ### R-ACCTMATCH · v5 · LAW
 *(v3 ratified by MD 10 Aug 2026, closing four incompatible definitions that were live across this Register, the estimator skill and both sweep prompts. A wrong link changes Customer Tier treatment, Gate-Selective, A-tier waivers, SLA and risk score — this is verdict-changing, not editorial.)*
@@ -168,21 +174,35 @@ Every operational rule the screen applies, stated once, with an ID and a version
 
 **History:** **v1** (pre-existing, registered 27 Jul 2026)
 
-### R-RETAIL · v1 · LAW
-**A job with no approved SteedForm trade customer supplying and installing the cabinetry is a DECLINE.** SteedForm is a B2B fabricator; the work reaches the client through a trade account.
-⚖ **The test is the TRADE ACCOUNT BEHIND THE JOB — never who sent the email.** A homeowner emailing on behalf of their cabinetmaker is fine. A builder, designer or joiner with no SteedForm account is a decline, however they present.
-**The decline is PERMANENT** — no "try us later" language. The primary redirect is the trade route: the enquirer engages an approved trade customer, who deals with SteedForm.
-**The Direct Homeowner x1.55+ markup tier SURVIVES** and continues to apply where a trade account is behind the job and the homeowner is driving the project. The tier prices hand-holding; it is not a route around this rule.
-**Why:** this is the highest-volume decline SteedForm sends — four in one month in August 2026 — and until 27 Aug 2026 it had neither a rule nor a template. `T-DECLINE-01` is scope-outside-capability, which is a different thing from client type, and the two were being conflated.
-⚠ The screening skill carries a different test — *"retail/homeowner-direct OK only for a new-build kitchen with a qualified cabinetmaker involved"*. **That is superseded: the test is an approved trade account, not a qualified cabinetmaker.**
+### R-RETAIL · v2 · LAW
+**A job with no approved SteedForm trade customer supplying and installing the cabinetry does not proceed to a quote.** SteedForm is a B2B fabricator; the work reaches the client through a trade account.
+
+⚖ **The test is the TRADE ACCOUNT BEHIND THE JOB — never who sent the email.** A homeowner emailing on behalf of their cabinetmaker is fine. A staff forward from `@steedform.com` is screened on the customer inside it `[R-CLIENTFIT v2]`.
+
+✅ **WHAT CHANGED, 8 October 2026 (Stella Rasheed): "no account" is a NEEDS REVIEW, not a decline.**
+v1 read *"a builder, designer or joiner with no SteedForm account is a decline, however they present."* **That sentence is struck.** A builder, designer or joiner is exactly who SteedForm sells to — not having matched them to an account yet is a gap in our record, not a fact about them.
+
+⛔ **DESIGNERS ARE EXPLICITLY IN SCOPE OF THAT CHANGE.** A designer is very often acting **for** an approved trade account, and declining them loses that account's work as well as theirs. Where the enquiry does not say who the work is ultimately for, **the reply asks** — that one question resolves most of them `[R-ASK v3]`.
+
+⛔ **A PERMANENT DECLINE STILL EXISTS, AND IT IS NARROWER.** It applies where a human has ruled on it: `Client Fit = Declined`, or a matched account in **⛔ Do-Not-Quote**. There the decline is permanent, with no "try us later" language, and `T-DECLINE-08` is the letter. **An unresolved sender gets no letter at all** — it gets a person.
+
+**The redirect is unchanged where a decline does stand:** the enquirer engages an approved trade customer, who deals with SteedForm.
+
+**The Direct Homeowner x1.55+ markup tier SURVIVES** and applies where a trade account is behind the job and the homeowner is driving it. The tier prices hand-holding; it is not a route around this rule.
+
+**Why v1 read as it did, and why that is no longer right.** It was written on 27 Aug 2026 as the highest-volume decline SteedForm sent — four in one month — to give a real practice a rule and a template. It did that. But by 8 October 2026 it had become the single largest cause of every decline in the record, and several of them were existing customers: see the measurement in `[R-CLIENTFIT v2]`.
+
+⚠ The screening skill carries a different test — *"retail/homeowner-direct OK only for a new-build kitchen with a qualified cabinetmaker involved"*. **That remains superseded.**
+
 **Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `04 Customer & Account` · `09 Response Templates` (T-DECLINE-08)
-**History:** **v1 3 Sep 2026 (Stella Rasheed)** — closes OR-08. Ratifies the rule T-DECLINE-08 had been citing as "pending ratification as R-RETAIL v1" since 27 Aug 2026.
+
+**History:** **v2 **8 Oct 2026 (Stella Rasheed)**** — "however they present" struck; designers named as in scope; the permanent decline narrowed to a human ruling or Do-Not-Quote; everything else routes to Needs Review `[R-CLIENTFIT v2]`. · v1 27 Aug 2026 — registered.
 
 ### R-ENTITY · v1 · LAW
 **"Who is asking" is a BLOCKING check → Needs Review.** Where no account matches confidently, the enquiry is not scored as if it came from a known customer.
 ⛔ **A near-miss is NEVER silently matched and NEVER silently dropped** `[R-ACCTMATCH v5]`. Write the confirm flag **verbatim** — *"possible account match: X — unconfirmed"* — and treat the account as **UNTIERED** until a human confirms. A wrong tier match is worse than no match, in both directions.
 **An untiered account gets no tier-dependent treatment:** no A-tier waiver, no Gate-Selective handling, no markup, no SLA.
-⚠ **This check runs after `[R-CLIENTFIT v1]`, not instead of it.** Client fit decides whether SteedForm acts for this enquirer at all; this decides whether the account behind them is known well enough to score.
+⚠ **This check runs after `[R-CLIENTFIT v2]`, not instead of it.** Client fit decides whether SteedForm acts for this enquirer at all; this decides whether the account behind them is known well enough to score.
 **Why:** applied as blocking with no rule behind it. Its absence is what let a near-miss be silently resolved either way.
 **Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `03 Risk Scoring` (C2) · `04 Customer & Account`
 **History:** **v1 3 Sep 2026 (Stella Rasheed)** — registers one of the seven layer-1 conditions named in `[R-BLOCK v3]`.
@@ -711,7 +731,7 @@ Both layers are amended only by an **MD or GM** decision, recorded here with a v
 
 ⛔ **Therefore the approval must say what was approved.** *"Approved"* is not a decision. *"Approved on 20mm Zenith in place of the 40mm Vasari, alfresco piece dropped"* is. An approval that does not name the thing approved leaves no record of what the quote was allowed to be.
 
-⛔ **WHAT THIS RULE DOES NOT TOUCH — ruled explicitly, 17 September 2026.** **Who the customer is** — no account, unrated, tier unreadable `[R-ACCTMATCH v5]` `[R-ENTITY v1]` `[R-RETAIL v1]` `[R-CLIENTFIT v1]` — and **drawings absent or unreadable** `[R-DRAWINGS v1]`. Those are a different kind of thing: not exceptions to be granted but facts to be established, and no tier makes either waivable. ⚠ **They are also the two largest blocking grounds in the record — 70% and 24% of screens respectively, measured 15 September 2026 — and this rule leaves both deliberately alone.** A future reader who assumes the biggest categories must have been included has the rule backwards.
+⛔ **WHAT THIS RULE DOES NOT TOUCH — ruled explicitly, 17 September 2026.** **Who the customer is** — no account, unrated, tier unreadable `[R-ACCTMATCH v5]` `[R-ENTITY v1]` `[R-RETAIL v2]` `[R-CLIENTFIT v2]` — and **drawings absent or unreadable** `[R-DRAWINGS v1]`. Those are a different kind of thing: not exceptions to be granted but facts to be established, and no tier makes either waivable. ⚠ **Since 8 October 2026 neither of them declines anything anyway** — client fit routes to Needs Review `[R-CLIENTFIT v2]` and drawings to Needs Info `[R-DRAWINGS v1]` — so there is nothing here for this rule to have exempted. ⚠ **They are also the two largest blocking grounds in the record — 70% and 24% of screens respectively, measured 15 September 2026 — and this rule leaves both deliberately alone.** A future reader who assumes the biggest categories must have been included has the rule backwards.
 
 **Carried by:** the `estimator-screening` skill and Claude deep scans (EXECUTABLE) · `02 Verdicts & Precedence` · `03 Risk Scoring` · `09 Response Templates`
 

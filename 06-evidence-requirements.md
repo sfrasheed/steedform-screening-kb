@@ -79,7 +79,7 @@ A screen reaches a verdict only when the facts it needs are actually present at 
 
 ⚠ **The blocking list has TWO layers and both are closed** `[R-BLOCK v3]`. **Layer 1** is the base list applied since screening began and registered on 3 September 2026: occupancy · `Do-Not-Quote` or an unresolved account match · out of area while the Supply Only conversion is undecided · spec conflicts · below the one-slab minimum (non-A-tier) · the natural-stone rule set · unknown-entity checks. **Layer 2** is the 20 July 2026 addition set — **six** rules, and the one this document reads most often is **appliance QC Status `Rejected — Do Not Use`** (§4). ⛔ **"Seven" is stale wherever it appears**, and "curves >40mm" was struck from layer 2 on 23 July 2026 `[R-D5 v9]` — it must never be re-added.
 
-**Precedence note:** client fit is decided before drawings are considered. An unresolved client fit is **Unqualified** even when the drawings are complete and technically clean, and drawing presence or quality must never upgrade it `[R-CLIENTFIT v1]`.
+**Precedence note:** client fit is decided before drawings are considered. An unresolved client fit is **Unqualified** even when the drawings are complete and technically clean, and drawing presence or quality must never upgrade it `[R-CLIENTFIT v2]`.
 
 ### Dimension confidence, once drawings are readable
 

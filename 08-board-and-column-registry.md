@@ -108,7 +108,7 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 
 | Field | Populated | Why it matters to screening |
 |---|---|---|
-| **Segment** | 141 / 188 | ⚠ **The closest thing on the board to the trade-account test.** Cabinetmaker 50 · Builder 44 · Other 43 · Commercial 4. `[R-RETAIL v1]` turns on trade vs retail, and `[R-INTERSTATE v1]`'s gate turns on commercial. **Neither rule currently names a field** — this is the candidate, and it must be ruled before it is read |
+| **Segment** | 141 / 188 | ⚠ **The closest thing on the board to the trade-account test.** Cabinetmaker 50 · Builder 44 · Other 43 · Commercial 4. `[R-RETAIL v2]` turns on trade vs retail, and `[R-INTERSTATE v1]`'s gate turns on commercial. **Neither rule currently names a field** — this is the candidate, and it must be ruled before it is read |
 | **Markup (SP)** | 130 / 188 | A **second** markup field, distinct from `numeric_mm64mvp3`. Values run −25 to −60, dominated by **−35 (71)** and **−40 (47)**. OR-30 records the markup-category list as "still to be set"; the board is already carrying a de facto one |
 | Domain | — | Derived from the POC email. Does not replace the `[R-ACCTMATCH v5]` ladder |
 | Rating updated | — | Date stamp on the rating fields |
@@ -127,7 +127,7 @@ Found in the 3 September 2026 export. **Column IDs are not known for any of them
 | Field | Column ID | Screening role |
 |---|---|---|
 | Account relation | `board_relation_mm64fq68` | Follow this to Accounts. Reading it as ordinary text returns null `[R-READ v1]` |
-| Client Fit | `color_mm69h52c` | `Recognised` · `Approved New` · `Review Required` · `Declined` `[R-CLIENTFIT v1]` |
+| Client Fit | `color_mm69h52c` | `Recognised` · `Approved New` · `Review Required` · `Declined` `[R-CLIENTFIT v2]` |
 | Screening Flags / Decline Reason | `long_text_mm64zg50` | ⛔ **Never prepend** `[R-LONGTEXT v2]` |
 | Internet Message-ID | `text_mm64cjv2` | Stored **bare**, angle brackets stripped `[R-INTAKE-ID v3]` |
 | Files | `file_mm64vge9` | Drawings and attachments |

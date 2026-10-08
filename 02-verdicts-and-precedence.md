@@ -11,7 +11,7 @@
 
 ## What this document decides
 
-Four verdicts, one order of application. The order matters more than any single rule: client fit is settled before drawings are even looked at, a blocking flag routes to a human rather than to a decline, and missing paperwork only decides the outcome when nothing decisive is already known. Three conditions can never be auto-declined by a machine no matter how confident the evidence looks. When in doubt the answer is Needs Review, never a guess.
+Four verdicts, one order of application. The order matters more than any single rule: client fit is settled before drawings are even looked at — though since 8 Oct 2026 settling it unresolved means **Needs Review, not a decline** `[R-CLIENTFIT v2]`, so the rules it used to outrank now run, a blocking flag routes to a human rather than to a decline, and missing paperwork only decides the outcome when nothing decisive is already known. Three conditions can never be auto-declined by a machine no matter how confident the evidence looks. When in doubt the answer is Needs Review, never a guess.
 
 ---
 
@@ -24,7 +24,7 @@ There are exactly four board verdicts. They are not interchangeable and they go 
 | **Qualified** | Clean, or carrying non-blocking flags only. The flags travel with it to the deal. | Estimating — proceed to quote |
 | **Needs Info** | Something the **client** must supply is missing, and nothing decisive is known without it. | The client, via an information request `09` |
 | **Needs Review** | A **human at SteedForm** must make a call before this goes further. | A named person — MD, GM or estimator |
-| **Unqualified** | A confirmed decline rule applies, or client fit is unresolved or declined. | Decline communication `09` |
+| **Unqualified** | A confirmed decline rule applies, or a human has already ruled on this customer — `Client Fit = Declined`, or a matched account in ⛔ Do-Not-Quote. ⛔ **An UNRESOLVED client fit is no longer Unqualified** — it is Needs Review `[R-CLIENTFIT v2]`, ruled 8 Oct 2026. | Decline communication `09` |
 
 ⚠ **ON AN A-VIP OR 🅰 A ACCOUNT, THREE DECLINE GROUNDS BECOME A NEEDS REVIEW NAMED TO JORDAN TOMLINSON** `[R-OPSAPPROVE v1]` — out of area, a build that cannot be made, and a material not permitted. His decision is final and the job is **not re-screened**, so the screen's other findings on it stop binding at that moment; the approval must therefore name what was approved. ⛔ It never converts ⛔ capability into "quote it as drawn", and it does **not** reach who-the-customer-is or absent drawings, which stay exactly as they are at every tier.
 
@@ -42,7 +42,7 @@ A written Estimator Screening Brief uses **PROCEED / ASSESS / DECLINE**. The map
 
 | Step | Test | Verdict |
 |---|---|---|
-| **0** | `[R-CLIENTFIT v1]` — no safely linked Account and `Client Fit` is not `Approved New`; or `Client Fit = Declined` | **Unqualified.** Stop. |
+| **0** | `[R-CLIENTFIT v2]` — no safely linked Account and `Client Fit` is not `Approved New`; or `Client Fit = Declined` | **Unqualified.** Stop. |
 | **1** | A confirmed auto-decline rule applies `[R-BLOCK v3]` — **except the three carve-outs below** | **Unqualified** |
 | **2** | Any blocking flag `[R-BLOCK v3]` | **Needs Review** |
 | **3** | Missing or unreadable documents **and nothing decisive is known** `[R-DRAWINGS v1]` | **Needs Info** |
@@ -52,7 +52,7 @@ A written Estimator Screening Brief uses **PROCEED / ASSESS / DECLINE**. The map
 
 ### Step 0 is genuinely first
 
-`[R-CLIENTFIT v1]` runs after junk triage and safe account matching, but **before drawings and before every technical and commercial disposition rule**. It therefore outranks Needs Info for missing drawings *and* Qualified for clean drawings. Drawing presence, readability, job size, material and technical merit **may never upgrade an unresolved client-fit outcome**. Preserve and file the supplied evidence; do not let a drawing rescan promote the lead.
+`[R-CLIENTFIT v2]` runs after junk triage and safe account matching, but **before drawings and before every technical and commercial disposition rule**. It therefore outranks Needs Info for missing drawings *and* Qualified for clean drawings. Drawing presence, readability, job size, material and technical merit **may never upgrade an unresolved client-fit outcome**. Preserve and file the supplied evidence; do not let a drawing rescan promote the lead.
 
 ### The three carve-outs at step 1 — never auto-declined
 
